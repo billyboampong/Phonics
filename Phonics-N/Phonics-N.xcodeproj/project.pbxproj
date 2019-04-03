@@ -35,6 +35,9 @@
 		2814C78A2228D6A50035B3E4 /* M.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2814C7872228D6A50035B3E4 /* M.mp3 */; };
 		2814C78B2228D6A50035B3E4 /* Q.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2814C7882228D6A50035B3E4 /* Q.mp3 */; };
 		2814C78D2228D7840035B3E4 /* O.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2814C78C2228D7840035B3E4 /* O.mp3 */; };
+		285A72842254FF4D003A4F19 /* AllPhonicsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285A72832254FF4D003A4F19 /* AllPhonicsVC.swift */; };
+		285A72862255153E003A4F19 /* BasicReadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285A72852255153E003A4F19 /* BasicReadingVC.swift */; };
+		285A728822552301003A4F19 /* AdvancedReadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285A728722552301003A4F19 /* AdvancedReadingVC.swift */; };
 		2871A9C421FBBDFA00DA0403 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2871A9C321FBBDFA00DA0403 /* AppDelegate.swift */; };
 		2871A9C621FBBDFB00DA0403 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2871A9C521FBBDFB00DA0403 /* ViewController.swift */; };
 		2871A9C921FBBDFB00DA0403 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2871A9C721FBBDFB00DA0403 /* Main.storyboard */; };
@@ -128,6 +131,9 @@
 		2814C7872228D6A50035B3E4 /* M.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = M.mp3; sourceTree = "<group>"; };
 		2814C7882228D6A50035B3E4 /* Q.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Q.mp3; sourceTree = "<group>"; };
 		2814C78C2228D7840035B3E4 /* O.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = O.mp3; sourceTree = "<group>"; };
+		285A72832254FF4D003A4F19 /* AllPhonicsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllPhonicsVC.swift; sourceTree = "<group>"; };
+		285A72852255153E003A4F19 /* BasicReadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicReadingVC.swift; sourceTree = "<group>"; };
+		285A728722552301003A4F19 /* AdvancedReadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedReadingVC.swift; sourceTree = "<group>"; };
 		2871A9C021FBBDFA00DA0403 /* Phonics-N.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Phonics-N.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2871A9C321FBBDFA00DA0403 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2871A9C521FBBDFB00DA0403 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -276,6 +282,9 @@
 				2893E30F222CCA6E00C579D0 /* VowelsVC.swift */,
 				289671472243F116000227AD /* ConsonantsVC.swift */,
 				28CA4E3A2253C8D2009D8443 /* DoubleLettersVC.swift */,
+				285A72832254FF4D003A4F19 /* AllPhonicsVC.swift */,
+				285A72852255153E003A4F19 /* BasicReadingVC.swift */,
+				285A728722552301003A4F19 /* AdvancedReadingVC.swift */,
 				2871A9C721FBBDFB00DA0403 /* Main.storyboard */,
 				2871A9CA21FBBDFE00DA0403 /* Assets.xcassets */,
 				2871A9CC21FBBDFE00DA0403 /* LaunchScreen.storyboard */,
@@ -516,6 +525,9 @@
 				2814C7482225D6B30035B3E4 /* BGM Singleton.swift in Sources */,
 				2871A9C621FBBDFB00DA0403 /* ViewController.swift in Sources */,
 				2893E310222CCA6E00C579D0 /* VowelsVC.swift in Sources */,
+				285A72842254FF4D003A4F19 /* AllPhonicsVC.swift in Sources */,
+				285A72862255153E003A4F19 /* BasicReadingVC.swift in Sources */,
+				285A728822552301003A4F19 /* AdvancedReadingVC.swift in Sources */,
 				289671482243F116000227AD /* ConsonantsVC.swift in Sources */,
 				2871A9C421FBBDFA00DA0403 /* AppDelegate.swift in Sources */,
 				28CA4E3B2253C8D2009D8443 /* DoubleLettersVC.swift in Sources */,
@@ -595,7 +607,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -650,7 +662,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -671,7 +683,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bb.Phonics-N";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.BBWave.Phonics-N";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -689,7 +701,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bb.Phonics-N";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.BBWave.Phonics-N";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

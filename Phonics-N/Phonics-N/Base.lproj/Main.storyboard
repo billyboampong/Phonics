@@ -176,7 +176,7 @@
                                     <action selector="refreshVowelAudio:" destination="NxA-4A-bnW" eventType="touchUpInside" id="Ud4-Ih-azO"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tR3-vC-qav" userLabel="Correct / Wrong label">
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tR3-vC-qav" userLabel="Vowel Answer Label">
                                 <rect key="frame" x="57" y="97" width="300" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="40"/>
@@ -330,7 +330,7 @@
         <!--Basic Lessons-->
         <scene sceneID="dnj-Hm-HzK">
             <objects>
-                <viewController title="Basic Lessons" automaticallyAdjustsScrollViewInsets="NO" id="8Fl-P3-PXd" customClass="ViewController" customModule="Phonics_N" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Basic Lessons" automaticallyAdjustsScrollViewInsets="NO" id="8Fl-P3-PXd" customClass="BasicReadingVC" customModule="Phonics_N" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rlA-Db-mLX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -344,10 +344,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="backbutton"/>
                                 <connections>
-                                    <action selector="dismissCurrentView:" destination="8Fl-P3-PXd" eventType="touchUpInside" id="QwJ-yU-gaO"/>
+                                    <action selector="dismissBasicReadingVC:" destination="8Fl-P3-PXd" eventType="touchUpInside" id="q0v-K7-W9o"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="F-O-X" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uSG-Vn-EF7" userLabel="AnswerHeader">
+                            <button opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V21-Mq-Fxs" userLabel="refreshBasicAudio">
+                                <rect key="frame" x="359" y="40" width="35" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="refreshbutton"/>
+                                <connections>
+                                    <action selector="refreshBasicAudio:" destination="8Fl-P3-PXd" eventType="touchUpInside" id="MeS-xt-s2M"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="32" translatesAutoresizingMaskIntoConstraints="NO" id="uSG-Vn-EF7" userLabel="AnswerHeader">
                                 <rect key="frame" x="57" y="90" width="300" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="64"/>
@@ -357,42 +365,62 @@
                                 <rect key="frame" x="107" y="212" width="200" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6F5-GL-hK3" userLabel="UL-Box">
+                            <button opaque="NO" alpha="0.94999999999999996" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6F5-GL-hK3" userLabel="UL-Box">
                                 <rect key="frame" x="37" y="455" width="160" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="40"/>
                                 <state key="normal" title="PIG" backgroundImage="answerbutton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="basicFace01Pressed:" destination="8Fl-P3-PXd" eventType="touchUpInside" id="imX-JP-Q2q"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RHA-vK-bVy" userLabel="UR-Box">
+                            <button opaque="NO" alpha="0.94999999999999996" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RHA-vK-bVy" userLabel="UR-Box">
                                 <rect key="frame" x="217" y="455" width="160" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="40"/>
                                 <state key="normal" title="FOX" backgroundImage="answerbutton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="basicFace02Pressed:" destination="8Fl-P3-PXd" eventType="touchUpInside" id="NE2-X7-LXM"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REi-Vk-5gC" userLabel="LL-Box">
+                            <button opaque="NO" alpha="0.94999999999999996" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REi-Vk-5gC" userLabel="LL-Box">
                                 <rect key="frame" x="37" y="565" width="160" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="40"/>
                                 <state key="normal" title="DOG" backgroundImage="answerbutton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="basicFace03Pressed:" destination="8Fl-P3-PXd" eventType="touchUpInside" id="sR6-VL-NBM"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhX-n2-jHX" userLabel="LR-Box">
+                            <button opaque="NO" alpha="0.94999999999999996" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhX-n2-jHX" userLabel="LR-Box">
                                 <rect key="frame" x="217" y="565" width="160" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="40"/>
                                 <state key="normal" title="CAT" backgroundImage="answerbutton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="basicFace04Pressed:" destination="8Fl-P3-PXd" eventType="touchUpInside" id="CXa-C8-gpK"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="aXX-pi-NvA"/>
                     </view>
+                    <connections>
+                        <outlet property="basicAnswerImage" destination="uV4-YZ-ezO" id="fhF-gS-VGC"/>
+                        <outlet property="basicAnswerLabel" destination="uSG-Vn-EF7" id="YcA-fR-ke8"/>
+                        <outlet property="basicFace01" destination="6F5-GL-hK3" id="0Ff-qx-xeK"/>
+                        <outlet property="basicFace02" destination="RHA-vK-bVy" id="16d-Um-0ah"/>
+                        <outlet property="basicFace03" destination="REi-Vk-5gC" id="QnY-V1-4Y3"/>
+                        <outlet property="basicFace04" destination="xhX-n2-jHX" id="AIA-BA-KH9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NqP-l6-0fs" sceneMemberID="firstResponder"/>
             </objects>
@@ -1635,7 +1663,7 @@
         <!--Advanced Lessons-->
         <scene sceneID="6bF-F3-zDq">
             <objects>
-                <viewController title="Advanced Lessons" automaticallyAdjustsScrollViewInsets="NO" id="5mO-SS-l6Y" customClass="ViewController" customModule="Phonics_N" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Advanced Lessons" automaticallyAdjustsScrollViewInsets="NO" id="5mO-SS-l6Y" customClass="AdvancedReadingVC" customModule="Phonics_N" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LZI-uv-vcV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1649,10 +1677,10 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="backbutton"/>
                                 <connections>
-                                    <action selector="dismissCurrentView:" destination="5mO-SS-l6Y" eventType="touchUpInside" id="Ryh-DP-S5u"/>
+                                    <action selector="dismissAdvancedReadingVC:" destination="5mO-SS-l6Y" eventType="touchUpInside" id="nni-7a-7xR"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ELEPHANT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pnl-ZQ-IfQ" userLabel="AnswerHeader">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="pnl-ZQ-IfQ" userLabel="AnswerHeader">
                                 <rect key="frame" x="57" y="90" width="300" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="50"/>
@@ -1662,42 +1690,70 @@
                                 <rect key="frame" x="107" y="212" width="200" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rl8-pK-qrL" userLabel="UL-Box">
+                            <button opaque="NO" alpha="0.94999999999999996" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rl8-pK-qrL" userLabel="UL-Box">
                                 <rect key="frame" x="37" y="455" width="160" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="24"/>
                                 <state key="normal" title="ELEPHANT" backgroundImage="answerbutton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="advancedFace01Pressed:" destination="5mO-SS-l6Y" eventType="touchUpInside" id="aYC-Fs-sDp"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PhJ-PO-5ge" userLabel="UR-Box">
+                            <button opaque="NO" alpha="0.94999999999999996" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PhJ-PO-5ge" userLabel="UR-Box">
                                 <rect key="frame" x="217" y="455" width="160" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="24"/>
                                 <state key="normal" title="CHICKEN" backgroundImage="answerbutton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="advancedFace02Pressed:" destination="5mO-SS-l6Y" eventType="touchUpInside" id="E81-B9-SPu"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OZs-B0-oMu" userLabel="LL-Box">
+                            <button opaque="NO" alpha="0.94999999999999996" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OZs-B0-oMu" userLabel="LL-Box">
                                 <rect key="frame" x="37" y="565" width="160" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="24"/>
                                 <state key="normal" title="CHURCH" backgroundImage="answerbutton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="advancedFace03Pressed:" destination="5mO-SS-l6Y" eventType="touchUpInside" id="1cZ-H8-lS4"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jai-lJ-zf9" userLabel="LR-Box">
+                            <button opaque="NO" alpha="0.94999999999999996" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jai-lJ-zf9" userLabel="LR-Box">
                                 <rect key="frame" x="217" y="565" width="160" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="24"/>
                                 <state key="normal" title="CHEESE" backgroundImage="answerbutton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="advancedFace04Pressed:" destination="5mO-SS-l6Y" eventType="touchUpInside" id="6ie-SV-ZhK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mKb-H2-fRk" userLabel="refreshBasicAudio">
+                                <rect key="frame" x="359" y="40" width="35" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="refreshbutton"/>
+                                <connections>
+                                    <action selector="refreshAdvancedAudio:" destination="5mO-SS-l6Y" eventType="touchUpInside" id="e85-te-RyZ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="N75-bB-TnQ"/>
                     </view>
+                    <connections>
+                        <outlet property="advancedAnswerImage" destination="RtL-fr-uFE" id="jxX-dD-diA"/>
+                        <outlet property="advancedAnswerLabel" destination="pnl-ZQ-IfQ" id="4IL-Kw-Fxs"/>
+                        <outlet property="advancedFace01" destination="rl8-pK-qrL" id="yH3-cQ-QrW"/>
+                        <outlet property="advancedFace02" destination="PhJ-PO-5ge" id="1In-oT-xU4"/>
+                        <outlet property="advancedFace03" destination="OZs-B0-oMu" id="EOP-eG-FXJ"/>
+                        <outlet property="advancedFace04" destination="Jai-lJ-zf9" id="Ual-g1-h2W"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v7t-Tu-5LV" sceneMemberID="firstResponder"/>
             </objects>
@@ -1721,6 +1777,14 @@
                                 <state key="normal" backgroundImage="backbutton"/>
                                 <connections>
                                     <action selector="dismissConsonantsVC:" destination="JZl-z2-cbY" eventType="touchUpInside" id="kod-gN-T3s"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0i-PL-ysR" userLabel="refreshConsonantAudio">
+                                <rect key="frame" x="359" y="40" width="35" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="refreshbutton"/>
+                                <connections>
+                                    <action selector="refreshConsonantAudio:" destination="JZl-z2-cbY" eventType="touchUpInside" id="ife-hw-Nc7"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GEN-bs-ARD">
@@ -1802,15 +1866,6 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0i-PL-ysR" userLabel="refreshVowelAudio">
-                                <rect key="frame" x="359" y="40" width="35" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="refreshbutton"/>
-                                <connections>
-                                    <action selector="refreshConsonantAudio:" destination="JZl-z2-cbY" eventType="touchUpInside" id="ife-hw-Nc7"/>
-                                    <action selector="refreshVowelAudio:" destination="NxA-4A-bnW" eventType="touchUpInside" id="zJI-Ez-cbp"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="KYi-Cs-jXP"/>
@@ -1849,7 +1904,15 @@
                                     <action selector="dismissDoubleLettersVC:" destination="b0Q-om-ab9" eventType="touchUpInside" id="Clo-AO-1ZF"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CORRECT!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D81-Jt-FDn">
+                            <button opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sJe-NS-erZ" userLabel="refreshDoubleAudio">
+                                <rect key="frame" x="359" y="40" width="35" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="refreshbutton"/>
+                                <connections>
+                                    <action selector="refreshDoubleAudio:" destination="b0Q-om-ab9" eventType="touchUpInside" id="mP2-KK-kFv"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D81-Jt-FDn">
                                 <rect key="frame" x="57" y="97" width="300" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="40"/>
@@ -1928,16 +1991,6 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sJe-NS-erZ" userLabel="refreshVowelAudio">
-                                <rect key="frame" x="359" y="40" width="35" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="refreshbutton"/>
-                                <connections>
-                                    <action selector="refreshConsonantAudio:" destination="JZl-z2-cbY" eventType="touchUpInside" id="FnQ-vz-cf7"/>
-                                    <action selector="refreshDoubleAudio:" destination="b0Q-om-ab9" eventType="touchUpInside" id="mP2-KK-kFv"/>
-                                    <action selector="refreshVowelAudio:" destination="NxA-4A-bnW" eventType="touchUpInside" id="s8n-lG-CvF"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="3VO-sa-gSR"/>
@@ -1959,7 +2012,7 @@
         <!--All Lessons-->
         <scene sceneID="0cy-tK-dKM">
             <objects>
-                <viewController title="All Lessons" automaticallyAdjustsScrollViewInsets="NO" id="MOq-Te-Z0d" customClass="ViewController" customModule="Phonics_N" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="All Lessons" automaticallyAdjustsScrollViewInsets="NO" id="MOq-Te-Z0d" customClass="AllPhonicsVC" customModule="Phonics_N" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9iV-4k-VuF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1973,10 +2026,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="backbutton"/>
                                 <connections>
-                                    <action selector="dismissCurrentView:" destination="MOq-Te-Z0d" eventType="touchUpInside" id="b3V-E1-Rer"/>
+                                    <action selector="dismissAllPhonicsVC:" destination="MOq-Te-Z0d" eventType="touchUpInside" id="lVq-nT-hQA"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CORRECT!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEU-Gp-pib">
+                            <button opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h38-zU-BDq" userLabel="refreshAllAudio">
+                                <rect key="frame" x="359" y="40" width="35" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="refreshbutton"/>
+                                <connections>
+                                    <action selector="refreshAllAudio:" destination="MOq-Te-Z0d" eventType="touchUpInside" id="mce-1b-uRN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEU-Gp-pib">
                                 <rect key="frame" x="57" y="97" width="300" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="40"/>
@@ -1989,6 +2050,9 @@
                                 <state key="normal" title="B" backgroundImage="vowelanswerbutton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="allFace02Pressed:" destination="MOq-Te-Z0d" eventType="touchUpInside" id="6ms-lp-ZjL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abD-xa-YZM">
                                 <rect key="frame" x="52" y="336" width="140" height="140"/>
@@ -1997,6 +2061,9 @@
                                 <state key="normal" title="C" backgroundImage="vowelanswerbutton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="allFace03Pressed:" destination="MOq-Te-Z0d" eventType="touchUpInside" id="ftZ-cU-LhM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iyS-bF-4dn">
                                 <rect key="frame" x="222" y="336" width="140" height="140"/>
@@ -2005,6 +2072,9 @@
                                 <state key="normal" title="D" backgroundImage="vowelanswerbutton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="allFace04Pressed:" destination="MOq-Te-Z0d" eventType="touchUpInside" id="h9B-BH-NMP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QKH-NX-Ex8">
                                 <rect key="frame" x="222" y="506" width="140" height="140"/>
@@ -2013,6 +2083,9 @@
                                 <state key="normal" title="oo" backgroundImage="vowelanswerbutton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="allFace06Pressed:" destination="MOq-Te-Z0d" eventType="touchUpInside" id="NMW-1r-7FM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZVN-fG-Gfz">
                                 <rect key="frame" x="52" y="166" width="140" height="140"/>
@@ -2021,6 +2094,9 @@
                                 <state key="normal" title="A" backgroundImage="vowelanswerbutton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="allFace01Pressed:" destination="MOq-Te-Z0d" eventType="touchUpInside" id="nxV-iA-8ft"/>
+                                </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRN-Bn-oQG">
                                 <rect key="frame" x="52" y="506" width="140" height="140"/>
@@ -2029,6 +2105,9 @@
                                 <state key="normal" title="ee" backgroundImage="vowelanswerbutton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="allFace05Pressed:" destination="MOq-Te-Z0d" eventType="touchUpInside" id="cFE-EJ-oQa"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999998807907104" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ALL PHONICS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UVy-IC-thp">
                                 <rect key="frame" x="95" y="36" width="225" height="48"/>
@@ -2041,6 +2120,15 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="VaV-IB-ogc"/>
                     </view>
+                    <connections>
+                        <outlet property="allAnswerLabel" destination="mEU-Gp-pib" id="eWq-df-UaC"/>
+                        <outlet property="allFace01" destination="ZVN-fG-Gfz" id="RQE-7S-A9X"/>
+                        <outlet property="allFace02" destination="hMy-5F-Z8N" id="CvH-84-Abr"/>
+                        <outlet property="allFace03" destination="abD-xa-YZM" id="9Jf-dh-96m"/>
+                        <outlet property="allFace04" destination="iyS-bF-4dn" id="kbi-aH-Npe"/>
+                        <outlet property="allFace05" destination="eRN-Bn-oQG" id="v2N-PY-eAa"/>
+                        <outlet property="allFace06" destination="QKH-NX-Ex8" id="pL2-Xu-XQt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tph-fG-iSe" sceneMemberID="firstResponder"/>
             </objects>

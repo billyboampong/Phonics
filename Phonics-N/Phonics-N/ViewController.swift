@@ -6,6 +6,9 @@
 //  Copyright © 2019 BBWave. All rights reserved.
 //
 
+
+// ** THIS VC CONTROLS ALL VIEWS THAT ARE NOT LESSONS **
+
 import UIKit
 import AVFoundation
 

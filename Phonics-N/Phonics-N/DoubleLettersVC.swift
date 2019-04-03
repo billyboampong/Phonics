@@ -3,7 +3,7 @@
 //  Phonics-N
 //
 //  Created by Billy Boampong on 02/04/2019.
-//  Copyright © 2019 BB++. All rights reserved.
+//  Copyright © 2019 BBWave. All rights reserved.
 //
 
 import UIKit
@@ -30,12 +30,12 @@ class DoubleLettersVC: UIViewController {
     
     
     
-    // Selects a random double letter for the question
+// Selects a random double letter for the question
     func randomDouble() {
         randomDoubleIndex = Int.random(in: 0 ... 5)
     }
     
-    // Plays audio based on 'selectedSoundFileName' input
+// Plays audio based on 'selectedSoundFileName' input
     func playAudio() {
         let path = Bundle.main.path(forResource: selectedSoundFileName, ofType:nil)!
         let url = URL(fileURLWithPath: path)
@@ -47,7 +47,7 @@ class DoubleLettersVC: UIViewController {
     }
     
     
-    // Check answer function
+// Check answer function
     func checkAnswer (sender: UIButton) {
         let doubleFaces = [doubleFace01, doubleFace02, doubleFace03, doubleFace04, doubleFace05, doubleFace06]
         let tag = sender.tag - 1
@@ -61,7 +61,7 @@ class DoubleLettersVC: UIViewController {
         
     }
     
-    // Plays 'correct' audio, highlights 'correct' button and disables/enables 'correct' button
+// Plays 'correct' audio, highlights 'correct' button and disables/enables 'correct' button
     func rightAnswer (sender: UIButton) {
         selectedSoundFileName = "ThatsCorrect.mp3"
         playAudio()
@@ -79,7 +79,7 @@ class DoubleLettersVC: UIViewController {
         })
     }
     
-    //Plays 'wrong' audio and highlights 'wrong' button
+// Plays 'wrong' audio and highlights 'wrong' button
     func wrongAnswer (sender: UIButton) {
         selectedSoundFileName = "Uhoh.mp3"
         playAudio()
@@ -98,7 +98,7 @@ class DoubleLettersVC: UIViewController {
     
     
     
-    // New question audio setup and play
+// New question audio setup and play
     func newQuestion() {
         randomDouble()
         selectedSoundFileName = "WhichOneIs.mp3"
@@ -113,7 +113,7 @@ class DoubleLettersVC: UIViewController {
         }
     }
     
-    // Consonant button faces refresh function
+// Consonant button faces refresh function
     func newFaces() {
         let doubleFaces = [doubleFace01, doubleFace02, doubleFace03, doubleFace04, doubleFace05, doubleFace06]
         for (doubleFace, double) in zip(doubleFaces, doubleArray.shuffled()) {
@@ -122,14 +122,14 @@ class DoubleLettersVC: UIViewController {
     }
     
     
-    // Establishes correct answer based on consonant audio played
+// Establishes correct answer based on consonant audio played
     func newAnswer() {
         let possibleArray = [doubleFace01.currentTitle, doubleFace02.currentTitle, doubleFace03.currentTitle, doubleFace04.currentTitle, doubleFace05.currentTitle, doubleFace06.currentTitle]
         playedDouble = possibleArray[randomDoubleIndex]!
         print(playedDouble)
     }
     
-    // Combines functions to refresh the whole question and views
+// Combines functions to refresh the whole question and views
     func refreshDoublesWithDelay() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.0, execute: {
             self.newFaces()
@@ -139,7 +139,7 @@ class DoubleLettersVC: UIViewController {
         })
     }
     
-    // Local VC back button function
+// Local VC back button function
     @IBAction func dismissDoubleLettersVC(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }

@@ -3,7 +3,7 @@
 //  Phonics-N
 //
 //  Created by Billy Boampong on 26/02/2019.
-//  Copyright © 2019 BB++. All rights reserved.
+//  Copyright © 2019 BBWave. All rights reserved.
 //
 
 import Foundation
