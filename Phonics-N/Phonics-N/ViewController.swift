@@ -30,12 +30,6 @@ class ViewController: UIViewController {
     
     let altadvancedWordArray = ["B-OI-L", "CH-EE-SE", "CH-I-CK-E-N", "CH-U-R-CH", "C-L-O-CK", "C-OR-N", "D-R-E-SS", "D-U-CK", "E-L-E-PH-A-N-T", "F-OO-T", "G-OA-L", "H-I-SS", "M-OU-TH", "QU-EE-N", "R-I-NG", "R-OO-F", "S-EE-D", "SH-EE-P", "SH-O-P", "S-OA-P", "S-T-AR", "T-AI-L", "T-I-SS-UE", "T-R-AI-N", "T-R-O-PH-Y"]
     
-    let consonantArray = ["B", "C", "D", "F", "G", "H", "J", "K", "L", "M", "N", "P", "Q", "R", "S", "T", "V", "W", "X", "Y", "Z"]
-    
-    let doubleletterArray = ["ai", "ar", "ch", "ck", "ee", "ie", "ng", "oa", "oi", "oo", "or", "ou", "ph", "qu", "sh", "ss", "th", "ue"]
-    
-    var randomConsonantIndex : Int = 0
-    var randomDoubleLettersIndex : Int = 0
     
     
     func playAudio() {

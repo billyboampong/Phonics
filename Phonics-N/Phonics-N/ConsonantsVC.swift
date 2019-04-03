@@ -48,7 +48,18 @@ class ConsonantsVC: UIViewController {
     
 
 // Check answer function
-    //TO DO
+    func checkAnswer (sender: UIButton) {
+        let consonantFaces = [consonantFace01, consonantFace02, consonantFace03, consonantFace04, consonantFace05, consonantFace06]
+        let tag = sender.tag - 1
+        if consonantFaces[tag]!.currentTitle == playedConsonant {
+            rightAnswer(sender: consonantFaces[tag]!)
+            refreshConsonantsWithDelay()
+        }
+        else {
+            wrongAnswer(sender: consonantFaces[tag]!)
+        }
+        
+    }
     
 // Plays 'correct' audio, highlights 'correct' button and disables/enables 'correct' button
     func rightAnswer (sender: UIButton) {
@@ -104,7 +115,7 @@ class ConsonantsVC: UIViewController {
     
 // Consonant button faces refresh function
     func newFaces() {
-        let consonantFaces = [consonantFace01, consonantFace02, consonantFace03, consonantFace04, consonantFace05]
+        let consonantFaces = [consonantFace01, consonantFace02, consonantFace03, consonantFace04, consonantFace05, consonantFace06]
         for (consonantFace, consonant) in zip(consonantFaces, consonantArray.shuffled()) {
             consonantFace?.setTitle(consonant, for: .normal)
         }
@@ -121,9 +132,9 @@ class ConsonantsVC: UIViewController {
 // Combines functions to refresh the whole question and views
     func refreshConsonantsWithDelay() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.0, execute: {
+            self.newFaces()
             self.newQuestion()
             self.newAnswer()
-            self.newFaces()
             self.consonantAnswerLabel.text = ""
         })
     }
@@ -146,74 +157,34 @@ class ConsonantsVC: UIViewController {
         newQuestion()
         newAnswer()
         
-        
     }
     
     @IBAction func consonantFace01Pressed(_ sender: UIButton) {
-        if consonantFace01.currentTitle == playedConsonant {
-            rightAnswer(sender: consonantFace01)
-            refreshConsonantsWithDelay()
-        }
-        else {
-            wrongAnswer(sender: consonantFace01)
-        }
+        checkAnswer(sender: consonantFace01)
     }
     
     @IBAction func consonantFace02Pressed(_ sender: UIButton) {
-        if consonantFace02.currentTitle == playedConsonant {
-            rightAnswer(sender: consonantFace02)
-            refreshConsonantsWithDelay()
-        }
-        else {
-            wrongAnswer(sender: consonantFace02)
-        }
+        checkAnswer(sender: consonantFace02)
     }
     
     @IBAction func consonantFace03Pressed(_ sender: UIButton) {
-        if consonantFace03.currentTitle == playedConsonant {
-            rightAnswer(sender: consonantFace03)
-            refreshConsonantsWithDelay()
-        }
-        else {
-            wrongAnswer(sender: consonantFace03)
-        }
+        checkAnswer(sender: consonantFace03)
     }
     
     
     @IBAction func consonantFace04Pressed(_ sender: UIButton) {
-        if consonantFace04.currentTitle == playedConsonant {
-            rightAnswer(sender: consonantFace04)
-            refreshConsonantsWithDelay()
-        }
-        else {
-            wrongAnswer(sender: consonantFace04)
-        }
+        checkAnswer(sender: consonantFace04)
     }
     
     @IBAction func consonantFace05Pressed(_ sender: UIButton) {
-        if consonantFace05.currentTitle == playedConsonant {
-            rightAnswer(sender: consonantFace05)
-            refreshConsonantsWithDelay()
-        }
-        else {
-            wrongAnswer(sender: consonantFace05)
-        }
+        checkAnswer(sender: consonantFace05)
     }
     
     @IBAction func consonantFace06Pressed(_ sender: UIButton) {
-        if consonantFace06.currentTitle == playedConsonant {
-            rightAnswer(sender: consonantFace06)
-            refreshConsonantsWithDelay()
-        }
-        else {
-            wrongAnswer(sender: consonantFace06)
-        }
+        checkAnswer(sender: consonantFace06)
     }
     
 }
 
 // TO DO
-// for consonants maybe choose question audio based on an array created from the button.currenttitles
-// checkanswer function
-
-//first answer always has a soultion next answer doesnt, check new/face/question/answer functions
+// add soundbites

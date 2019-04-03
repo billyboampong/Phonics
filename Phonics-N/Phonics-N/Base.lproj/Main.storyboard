@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -1832,7 +1832,7 @@
         <!--Double Letters Lessons-->
         <scene sceneID="1C3-P0-aR9">
             <objects>
-                <viewController title="Double Letters Lessons" automaticallyAdjustsScrollViewInsets="NO" id="b0Q-om-ab9" customClass="ViewController" customModule="Phonics_N" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Double Letters Lessons" automaticallyAdjustsScrollViewInsets="NO" id="b0Q-om-ab9" customClass="DoubleLettersVC" customModule="Phonics_N" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SGW-0r-OgK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1846,7 +1846,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="backbutton"/>
                                 <connections>
-                                    <action selector="dismissCurrentView:" destination="b0Q-om-ab9" eventType="touchUpInside" id="Vsb-9s-XMf"/>
+                                    <action selector="dismissDoubleLettersVC:" destination="b0Q-om-ab9" eventType="touchUpInside" id="Clo-AO-1ZF"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CORRECT!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D81-Jt-FDn">
@@ -1855,65 +1855,102 @@
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="40"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D4u-PX-WdI">
+                            <button opaque="NO" alpha="0.94999999999999996" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D4u-PX-WdI">
                                 <rect key="frame" x="222" y="166" width="140" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="75"/>
                                 <state key="normal" title="sh" backgroundImage="vowelanswerbutton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="doubleFace02Pressed:" destination="b0Q-om-ab9" eventType="touchUpInside" id="gfJ-bH-kYS"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xUi-Gb-6pa">
+                            <button opaque="NO" alpha="0.94999999999999996" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xUi-Gb-6pa">
                                 <rect key="frame" x="52" y="336" width="140" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="75"/>
                                 <state key="normal" title="th" backgroundImage="vowelanswerbutton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="doubleFace03Pressed:" destination="b0Q-om-ab9" eventType="touchUpInside" id="mxg-kE-f2c"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U6B-uQ-KRZ">
+                            <button opaque="NO" alpha="0.94999999999999996" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U6B-uQ-KRZ">
                                 <rect key="frame" x="222" y="336" width="140" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="75"/>
                                 <state key="normal" title="ph" backgroundImage="vowelanswerbutton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="doubleFace04Pressed:" destination="b0Q-om-ab9" eventType="touchUpInside" id="7Tm-Ff-Xur"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wgt-wH-qLG">
+                            <button opaque="NO" alpha="0.94999999999999996" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wgt-wH-qLG">
                                 <rect key="frame" x="222" y="506" width="140" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="75"/>
                                 <state key="normal" title="oo" backgroundImage="vowelanswerbutton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="doubleFace06Pressed:" destination="b0Q-om-ab9" eventType="touchUpInside" id="sbo-ZM-lWG"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ujb-L9-FQ7">
+                            <button opaque="NO" alpha="0.94999999999999996" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ujb-L9-FQ7">
                                 <rect key="frame" x="52" y="166" width="140" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="75"/>
                                 <state key="normal" title="ch" backgroundImage="vowelanswerbutton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="doubleFace01Pressed:" destination="b0Q-om-ab9" eventType="touchUpInside" id="F6R-qA-QKS"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5oV-ff-ooh">
+                            <button opaque="NO" alpha="0.94999999999999996" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5oV-ff-ooh">
                                 <rect key="frame" x="52" y="506" width="140" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="75"/>
                                 <state key="normal" title="ee" backgroundImage="vowelanswerbutton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="doubleFace05Pressed:" destination="b0Q-om-ab9" eventType="touchUpInside" id="bwk-Cw-n08"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999998807907104" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DOUBLE LETTERS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3xL-py-7Vb">
                                 <rect key="frame" x="58" y="36" width="299" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="28"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sJe-NS-erZ" userLabel="refreshVowelAudio">
+                                <rect key="frame" x="359" y="40" width="35" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="refreshbutton"/>
+                                <connections>
+                                    <action selector="refreshConsonantAudio:" destination="JZl-z2-cbY" eventType="touchUpInside" id="FnQ-vz-cf7"/>
+                                    <action selector="refreshDoubleAudio:" destination="b0Q-om-ab9" eventType="touchUpInside" id="mP2-KK-kFv"/>
+                                    <action selector="refreshVowelAudio:" destination="NxA-4A-bnW" eventType="touchUpInside" id="s8n-lG-CvF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="3VO-sa-gSR"/>
                     </view>
+                    <connections>
+                        <outlet property="doubleAnswerLabel" destination="D81-Jt-FDn" id="S3k-7l-PpG"/>
+                        <outlet property="doubleFace01" destination="ujb-L9-FQ7" id="SfK-8B-AVU"/>
+                        <outlet property="doubleFace02" destination="D4u-PX-WdI" id="3f7-w9-tKl"/>
+                        <outlet property="doubleFace03" destination="xUi-Gb-6pa" id="RAq-ZQ-Dhb"/>
+                        <outlet property="doubleFace04" destination="U6B-uQ-KRZ" id="6Ue-NZ-eNk"/>
+                        <outlet property="doubleFace05" destination="5oV-ff-ooh" id="9LT-ji-LZM"/>
+                        <outlet property="doubleFace06" destination="wgt-wH-qLG" id="e9F-ac-nWh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zlu-jn-ByC" sceneMemberID="firstResponder"/>
             </objects>
@@ -1945,7 +1982,7 @@
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="40"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hMy-5F-Z8N">
+                            <button opaque="NO" alpha="0.94999999999999996" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hMy-5F-Z8N">
                                 <rect key="frame" x="222" y="166" width="140" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="75"/>
@@ -1953,7 +1990,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abD-xa-YZM">
+                            <button opaque="NO" alpha="0.94999999999999996" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abD-xa-YZM">
                                 <rect key="frame" x="52" y="336" width="140" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="75"/>
@@ -1961,7 +1998,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iyS-bF-4dn">
+                            <button opaque="NO" alpha="0.94999999999999996" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iyS-bF-4dn">
                                 <rect key="frame" x="222" y="336" width="140" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="75"/>
@@ -1969,7 +2006,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QKH-NX-Ex8">
+                            <button opaque="NO" alpha="0.94999999999999996" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QKH-NX-Ex8">
                                 <rect key="frame" x="222" y="506" width="140" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="75"/>
@@ -1977,7 +2014,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZVN-fG-Gfz">
+                            <button opaque="NO" alpha="0.94999999999999996" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZVN-fG-Gfz">
                                 <rect key="frame" x="52" y="166" width="140" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="75"/>
@@ -1985,7 +2022,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRN-Bn-oQG">
+                            <button opaque="NO" alpha="0.94999999999999996" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRN-Bn-oQG">
                                 <rect key="frame" x="52" y="506" width="140" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="75"/>
@@ -2014,83 +2051,83 @@
         <image name="03-Late-Morning" width="1920" height="1080"/>
         <image name="07-Early-Evening" width="1920" height="1080"/>
         <image name="12-Late-Night" width="1920" height="1080"/>
-        <image name="BAG" width="279" height="432"/>
-        <image name="BOIL" width="105.59999847412109" height="98.400001525878906"/>
+        <image name="BAG" width="310" height="480"/>
+        <image name="BOIL" width="440" height="410"/>
         <image name="ELEPHANT" width="420" height="320"/>
         <image name="FOX" width="380" height="320"/>
-        <image name="advancedreadingbutton" width="675" height="351"/>
-        <image name="advancedreadingbutton2" width="675" height="351"/>
+        <image name="advancedreadingbutton" width="750" height="390"/>
+        <image name="advancedreadingbutton2" width="750" height="390"/>
         <image name="answerbutton" width="480" height="270"/>
-        <image name="b-BAG" width="162" height="162"/>
-        <image name="b-BAT" width="162" height="162"/>
-        <image name="b-BED" width="162" height="162"/>
-        <image name="b-BIN" width="162" height="162"/>
-        <image name="b-BOIL" width="162" height="162"/>
-        <image name="b-BOY" width="162" height="162"/>
-        <image name="b-BUS" width="162" height="162"/>
-        <image name="b-CAR" width="162" height="162"/>
-        <image name="b-CAT" width="162" height="162"/>
-        <image name="b-CHEESE" width="162" height="162"/>
-        <image name="b-CHICKEN" width="162" height="162"/>
-        <image name="b-CHURCH" width="162" height="162"/>
-        <image name="b-CLOCK" width="162" height="162"/>
-        <image name="b-CORN" width="162" height="162"/>
-        <image name="b-CUP" width="162" height="162"/>
-        <image name="b-DOG" width="162" height="162"/>
-        <image name="b-DRESS" width="162" height="162"/>
-        <image name="b-DUCK" width="162" height="162"/>
-        <image name="b-ELEPHANT" width="162" height="162"/>
-        <image name="b-FOOT" width="162" height="162"/>
-        <image name="b-FOX" width="162" height="162"/>
-        <image name="b-GOAL" width="162" height="162"/>
-        <image name="b-HAT" width="162" height="162"/>
-        <image name="b-HEN" width="162" height="162"/>
-        <image name="b-HISS" width="162" height="162"/>
-        <image name="b-JAR" width="162" height="162"/>
-        <image name="b-LOG" width="162" height="162"/>
-        <image name="b-MAP" width="162" height="162"/>
-        <image name="b-MOUTH" width="162" height="162"/>
-        <image name="b-PAN" width="162" height="162"/>
-        <image name="b-PEN" width="162" height="162"/>
-        <image name="b-PIG" width="162" height="162"/>
-        <image name="b-QUEEN" width="162" height="162"/>
-        <image name="b-RING" width="162" height="162"/>
-        <image name="b-ROOF" width="162" height="162"/>
-        <image name="b-RUN" width="162" height="162"/>
-        <image name="b-SEED" width="162" height="162"/>
-        <image name="b-SHEEP" width="162" height="162"/>
-        <image name="b-SHOP" width="162" height="162"/>
-        <image name="b-SIT" width="162" height="162"/>
-        <image name="b-SOAP" width="162" height="162"/>
-        <image name="b-STAR" width="162" height="162"/>
-        <image name="b-SUN" width="162" height="162"/>
-        <image name="b-TAIL" width="162" height="162"/>
-        <image name="b-TAP" width="162" height="162"/>
-        <image name="b-TISSUE" width="162" height="162"/>
-        <image name="b-TRAIN" width="162" height="162"/>
-        <image name="b-TROPHY" width="162" height="162"/>
-        <image name="b-VAN" width="162" height="162"/>
-        <image name="b-WET" width="162" height="162"/>
-        <image name="backbutton" width="96" height="96"/>
-        <image name="basicreadingbutton" width="675" height="351"/>
-        <image name="basicreadingbutton2" width="675" height="351"/>
+        <image name="b-BAG" width="180" height="180"/>
+        <image name="b-BAT" width="180" height="180"/>
+        <image name="b-BED" width="180" height="180"/>
+        <image name="b-BIN" width="180" height="180"/>
+        <image name="b-BOIL" width="180" height="180"/>
+        <image name="b-BOY" width="180" height="180"/>
+        <image name="b-BUS" width="180" height="180"/>
+        <image name="b-CAR" width="180" height="180"/>
+        <image name="b-CAT" width="180" height="180"/>
+        <image name="b-CHEESE" width="180" height="180"/>
+        <image name="b-CHICKEN" width="180" height="180"/>
+        <image name="b-CHURCH" width="180" height="180"/>
+        <image name="b-CLOCK" width="180" height="180"/>
+        <image name="b-CORN" width="180" height="180"/>
+        <image name="b-CUP" width="180" height="180"/>
+        <image name="b-DOG" width="180" height="180"/>
+        <image name="b-DRESS" width="180" height="180"/>
+        <image name="b-DUCK" width="180" height="180"/>
+        <image name="b-ELEPHANT" width="180" height="180"/>
+        <image name="b-FOOT" width="180" height="180"/>
+        <image name="b-FOX" width="180" height="180"/>
+        <image name="b-GOAL" width="180" height="180"/>
+        <image name="b-HAT" width="180" height="180"/>
+        <image name="b-HEN" width="180" height="180"/>
+        <image name="b-HISS" width="180" height="180"/>
+        <image name="b-JAR" width="180" height="180"/>
+        <image name="b-LOG" width="180" height="180"/>
+        <image name="b-MAP" width="180" height="180"/>
+        <image name="b-MOUTH" width="180" height="180"/>
+        <image name="b-PAN" width="180" height="180"/>
+        <image name="b-PEN" width="180" height="180"/>
+        <image name="b-PIG" width="180" height="180"/>
+        <image name="b-QUEEN" width="180" height="180"/>
+        <image name="b-RING" width="180" height="180"/>
+        <image name="b-ROOF" width="180" height="180"/>
+        <image name="b-RUN" width="180" height="180"/>
+        <image name="b-SEED" width="180" height="180"/>
+        <image name="b-SHEEP" width="180" height="180"/>
+        <image name="b-SHOP" width="180" height="180"/>
+        <image name="b-SIT" width="180" height="180"/>
+        <image name="b-SOAP" width="180" height="180"/>
+        <image name="b-STAR" width="180" height="180"/>
+        <image name="b-SUN" width="180" height="180"/>
+        <image name="b-TAIL" width="180" height="180"/>
+        <image name="b-TAP" width="180" height="180"/>
+        <image name="b-TISSUE" width="180" height="180"/>
+        <image name="b-TRAIN" width="180" height="180"/>
+        <image name="b-TROPHY" width="180" height="180"/>
+        <image name="b-VAN" width="180" height="180"/>
+        <image name="b-WET" width="180" height="180"/>
+        <image name="backbutton" width="120" height="120"/>
+        <image name="basicreadingbutton" width="750" height="390"/>
+        <image name="basicreadingbutton2" width="750" height="390"/>
         <image name="consonantbox2L" width="255" height="255"/>
-        <image name="consonantbox2S" width="183.60000610351562" height="229.5"/>
+        <image name="consonantbox2S" width="204" height="255"/>
         <image name="consonantlessonbutton" width="450" height="450"/>
         <image name="consonantlessonbutton2" width="450" height="450"/>
         <image name="doublelessonbutton" width="450" height="450"/>
         <image name="doublelessonbutton2" width="450" height="450"/>
         <image name="newlogo" width="1050" height="675"/>
-        <image name="phonicsbutton" width="675" height="351"/>
+        <image name="phonicsbutton" width="750" height="390"/>
         <image name="phonicslessons" width="900" height="450"/>
         <image name="phonicspractice" width="900" height="450"/>
         <image name="playalllessonbutton" width="450" height="450"/>
-        <image name="practicemode" width="130.5" height="60"/>
-        <image name="readingbutton" width="675" height="351"/>
+        <image name="practicemode" width="261" height="120"/>
+        <image name="readingbutton" width="750" height="390"/>
         <image name="readinglessons" width="900" height="450"/>
         <image name="readingpractice" width="900" height="450"/>
-        <image name="refreshbutton" width="115.19999694824219" height="115.19999694824219"/>
-        <image name="settingsbutton" width="96" height="96"/>
+        <image name="refreshbutton" width="120" height="120"/>
+        <image name="settingsbutton" width="120" height="120"/>
         <image name="settingsheader" width="810" height="210"/>
         <image name="vowelanswerbutton" width="420" height="420"/>
         <image name="vowelbox2" width="420" height="420"/>

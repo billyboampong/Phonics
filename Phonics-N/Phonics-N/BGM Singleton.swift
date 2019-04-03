@@ -20,7 +20,7 @@ class MusicHelper {
             audioPlayer!.numberOfLoops = -1
             audioPlayer!.prepareToPlay()
             audioPlayer!.play()
-            audioPlayer?.volume = 0.3
+            audioPlayer?.volume = 0.2
         }
         catch {
             print("Cannot play the file")

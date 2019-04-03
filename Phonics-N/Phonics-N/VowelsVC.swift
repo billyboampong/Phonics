@@ -63,6 +63,22 @@ class VowelsVC: UIViewController {
             print("Couldn't load audio") }
     }
     
+    
+    // Check answer function
+    func checkAnswer (sender: UIButton) {
+        let vowelFaces = [vowelFace01, vowelFace02, vowelFace03, vowelFace04, vowelFace05]
+        let tag = sender.tag - 1
+        if vowelFaces[tag]!.currentTitle == playedVowel {
+            rightAnswer(sender: vowelFaces[tag]!)
+            refreshVowelsWithDelay()
+        }
+        else {
+            wrongAnswer(sender: vowelFaces[tag]!)
+        }
+        
+    }
+    
+    
 // Plays 'correct' audio, highlights 'correct' button and disables/enables 'correct' button
     func rightAnswer (sender: UIButton) {
         selectedSoundFileName = "ThatsCorrect.mp3"
@@ -81,19 +97,6 @@ class VowelsVC: UIViewController {
         })
     }
     
-// Check answer function
-    func checkAnswer (sender: UIButton) {
-        let vowelFaces = [vowelFace01, vowelFace02, vowelFace03, vowelFace04, vowelFace05]
-        let tag = sender.tag - 1
-        if vowelFaces[tag]!.currentTitle == playedVowel {
-            rightAnswer(sender: vowelFaces[tag]!)
-            refreshVowelsWithDelay()
-        }
-        else {
-            wrongAnswer(sender: vowelFaces[tag]!)
-        }
-        
-    }
     
 // Plays 'wrong' audio and highlights 'wrong' button
     func wrongAnswer (sender: UIButton) {
@@ -196,6 +199,3 @@ class VowelsVC: UIViewController {
 
 // TO DO
 // add "good job" and "try again" as alternative soundbites
-
-// 39ff14 fluo green
-// FB2B11 fluo red

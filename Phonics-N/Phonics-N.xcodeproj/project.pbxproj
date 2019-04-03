@@ -46,6 +46,7 @@
 		2893E310222CCA6E00C579D0 /* VowelsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2893E30F222CCA6E00C579D0 /* VowelsVC.swift */; };
 		289671442243DF54000227AD /* ThatsCorrect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 289671432243DF54000227AD /* ThatsCorrect.mp3 */; };
 		289671482243F116000227AD /* ConsonantsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289671472243F116000227AD /* ConsonantsVC.swift */; };
+		28CA4E3B2253C8D2009D8443 /* DoubleLettersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CA4E3A2253C8D2009D8443 /* DoubleLettersVC.swift */; };
 		28D293C92229A21F00AA780C /* HISS.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 28D293B02229A21C00AA780C /* HISS.mp3 */; };
 		28D293CA2229A21F00AA780C /* FOOT.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 28D293B12229A21C00AA780C /* FOOT.mp3 */; };
 		28D293CB2229A21F00AA780C /* TROPHY.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 28D293B22229A21C00AA780C /* TROPHY.mp3 */; };
@@ -140,6 +141,7 @@
 		2893E30F222CCA6E00C579D0 /* VowelsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VowelsVC.swift; sourceTree = "<group>"; };
 		289671432243DF54000227AD /* ThatsCorrect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ThatsCorrect.mp3; path = "../../../../Assets/Audio/Sliced Audio/Phrases/ThatsCorrect.mp3"; sourceTree = "<group>"; };
 		289671472243F116000227AD /* ConsonantsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsonantsVC.swift; sourceTree = "<group>"; };
+		28CA4E3A2253C8D2009D8443 /* DoubleLettersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleLettersVC.swift; sourceTree = "<group>"; };
 		28D293B02229A21C00AA780C /* HISS.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = HISS.mp3; sourceTree = "<group>"; };
 		28D293B12229A21C00AA780C /* FOOT.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = FOOT.mp3; sourceTree = "<group>"; };
 		28D293B22229A21C00AA780C /* TROPHY.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = TROPHY.mp3; sourceTree = "<group>"; };
@@ -269,10 +271,11 @@
 			isa = PBXGroup;
 			children = (
 				2871A9C321FBBDFA00DA0403 /* AppDelegate.swift */,
-				289671472243F116000227AD /* ConsonantsVC.swift */,
+				2814C7472225D6B30035B3E4 /* BGM Singleton.swift */,
 				2871A9C521FBBDFB00DA0403 /* ViewController.swift */,
 				2893E30F222CCA6E00C579D0 /* VowelsVC.swift */,
-				2814C7472225D6B30035B3E4 /* BGM Singleton.swift */,
+				289671472243F116000227AD /* ConsonantsVC.swift */,
+				28CA4E3A2253C8D2009D8443 /* DoubleLettersVC.swift */,
 				2871A9C721FBBDFB00DA0403 /* Main.storyboard */,
 				2871A9CA21FBBDFE00DA0403 /* Assets.xcassets */,
 				2871A9CC21FBBDFE00DA0403 /* LaunchScreen.storyboard */,
@@ -389,6 +392,7 @@
 				TargetAttributes = {
 					2871A9BF21FBBDFA00DA0403 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -514,6 +518,7 @@
 				2893E310222CCA6E00C579D0 /* VowelsVC.swift in Sources */,
 				289671482243F116000227AD /* ConsonantsVC.swift in Sources */,
 				2871A9C421FBBDFA00DA0403 /* AppDelegate.swift in Sources */,
+				28CA4E3B2253C8D2009D8443 /* DoubleLettersVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -668,7 +673,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bb.Phonics-N";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -686,7 +691,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bb.Phonics-N";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
