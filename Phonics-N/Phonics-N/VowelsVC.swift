@@ -83,7 +83,7 @@ class VowelsVC: UIViewController {
     func rightAnswer (sender: UIButton) {
         selectedSoundFileName = "ThatsCorrect.mp3"
         playAudio()
-        vowelAnswerLabel.text = "CORRECT!"
+        vowelAnswerLabel.text = "Correct!"
         vowelAnswerLabel.textColor = UIColor(rgb: 0x39ff14)
         let vowelFaces = [vowelFace01, vowelFace02, vowelFace03, vowelFace04, vowelFace05]
         let tag = sender.tag - 1
@@ -102,7 +102,7 @@ class VowelsVC: UIViewController {
     func wrongAnswer (sender: UIButton) {
         selectedSoundFileName = "Uhoh.mp3"
         playAudio()
-        vowelAnswerLabel.text = "WRONG :("
+        vowelAnswerLabel.text = "Wrong..."
         vowelAnswerLabel.textColor = UIColor(rgb: 0xFB2B11)
         let vowelFaces = [vowelFace01, vowelFace02, vowelFace03, vowelFace04, vowelFace05]
         let tag = sender.tag - 1

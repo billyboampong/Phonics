@@ -65,7 +65,7 @@ class ConsonantsVC: UIViewController {
     func rightAnswer (sender: UIButton) {
         selectedSoundFileName = "ThatsCorrect.mp3"
         playAudio()
-        consonantAnswerLabel.text = "CORRECT!"
+        consonantAnswerLabel.text = "Correct!"
         consonantAnswerLabel.textColor = UIColor(rgb: 0x39ff14)
         let consonantFaces = [consonantFace01, consonantFace02, consonantFace03, consonantFace04, consonantFace05, consonantFace06]
         let tag = sender.tag - 1
@@ -83,7 +83,7 @@ class ConsonantsVC: UIViewController {
     func wrongAnswer (sender: UIButton) {
         selectedSoundFileName = "Uhoh.mp3"
         playAudio()
-        consonantAnswerLabel.text = "WRONG :("
+        consonantAnswerLabel.text = "Wrong..."
         consonantAnswerLabel.textColor = UIColor(rgb: 0xFB2B11)
         let consonantFaces = [consonantFace01, consonantFace02, consonantFace03, consonantFace04, consonantFace05, consonantFace06]
         let tag = sender.tag - 1

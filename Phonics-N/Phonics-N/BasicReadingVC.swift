@@ -26,11 +26,14 @@ class BasicReadingVC: UIViewController {
     @IBOutlet weak var basicFace02: UIButton!
     @IBOutlet weak var basicFace03: UIButton!
     @IBOutlet weak var basicFace04: UIButton!
+    @IBOutlet weak var basicFace05: UIButton!
+    @IBOutlet weak var basicFace06: UIButton!
+    
     
     
 // Selects a random basic word for the question
     func randomBasic() {
-        randomBasicIndex = Int.random(in: 0 ... 3)
+        randomBasicIndex = Int.random(in: 0 ... 5)
     }
     
     
@@ -49,7 +52,7 @@ class BasicReadingVC: UIViewController {
     
 // Check answer function
     func checkAnswer (sender: UIButton) {
-        let basicFaces = [basicFace01, basicFace02, basicFace03, basicFace04]
+        let basicFaces = [basicFace01, basicFace02, basicFace03, basicFace04, basicFace05, basicFace06]
         let tag = sender.tag - 1
         if basicFaces[tag]!.currentTitle == playedBasic {
             rightAnswer(sender: basicFaces[tag]!)
@@ -65,15 +68,14 @@ class BasicReadingVC: UIViewController {
     func rightAnswer (sender: UIButton) {
         selectedSoundFileName = "ThatsCorrect.mp3"
         playAudio()
-//
-        let basicFaces = [basicFace01, basicFace02, basicFace03, basicFace04]
+        basicAnswerLabel.text = "Correct!"
+        basicAnswerLabel.textColor = UIColor(rgb: 0x39ff14)
+        let basicFaces = [basicFace01, basicFace02, basicFace03, basicFace04, basicFace05, basicFace06]
         let tag = sender.tag - 1
         basicFaces[tag]!.layer.cornerRadius = 5
         basicFaces[tag]!.layer.borderColor = UIColor(rgb: 0x39ff14).cgColor
         basicFaces[tag]!.layer.borderWidth = 8.0
         basicFaces[tag]!.isUserInteractionEnabled = false
-        basicAnswerLabel.text = basicFaces[tag]!.currentTitle
-        basicAnswerLabel.textColor = UIColor(rgb: 0x000000)
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.0, execute: {
             basicFaces[tag]!.layer.borderWidth = 0
             basicFaces[tag]!.isUserInteractionEnabled = true
@@ -84,9 +86,9 @@ class BasicReadingVC: UIViewController {
     func wrongAnswer (sender: UIButton) {
         selectedSoundFileName = "Uhoh.mp3"
         playAudio()
-        basicAnswerLabel.text = "WRONG :("
+        basicAnswerLabel.text = "Wrong..."
         basicAnswerLabel.textColor = UIColor(rgb: 0xFB2B11)
-        let basicFaces = [basicFace01, basicFace02, basicFace03, basicFace04]
+        let basicFaces = [basicFace01, basicFace02, basicFace03, basicFace04, basicFace05, basicFace06]
         let tag = sender.tag - 1
         basicFaces[tag]!.layer.cornerRadius = 5
         basicFaces[tag]!.layer.borderColor = UIColor(rgb: 0xFB2B11).cgColor
@@ -102,12 +104,12 @@ class BasicReadingVC: UIViewController {
 // New question audio setup and play
     func newQuestion() {
         randomBasic()
-        selectedSoundFileName = "WhichOneIs.mp3"
+        selectedSoundFileName = "WhichWordIs.mp3"
         playAudio()
         
-        let possibleArray = [basicFace01.currentTitle, basicFace02.currentTitle, basicFace03.currentTitle, basicFace04.currentTitle]
+        let possibleArray = [basicFace01.currentTitle, basicFace02.currentTitle, basicFace03.currentTitle, basicFace04.currentTitle, basicFace05.currentTitle, basicFace06.currentTitle]
         
-        let when = DispatchTime.now() + 1.7
+        let when = DispatchTime.now() + 2.1
         DispatchQueue.main.asyncAfter(deadline: when) {
             self.selectedSoundFileName = possibleArray[self.randomBasicIndex]!+".mp3"
             self.playAudio()
@@ -116,7 +118,7 @@ class BasicReadingVC: UIViewController {
     
 // Consonant button faces refresh function
     func newFaces() {
-        let basicFaces = [basicFace01, basicFace02, basicFace03, basicFace04]
+        let basicFaces = [basicFace01, basicFace02, basicFace03, basicFace04, basicFace05, basicFace06]
         for (basicFace, basic) in zip(basicFaces, basicArray.shuffled()) {
             basicFace?.setTitle(basic, for: .normal)
         }
@@ -125,7 +127,7 @@ class BasicReadingVC: UIViewController {
     
 // Establishes correct answer based on consonant audio played
     func newAnswer() {
-        let possibleArray = [basicFace01.currentTitle, basicFace02.currentTitle, basicFace03.currentTitle, basicFace04.currentTitle]
+        let possibleArray = [basicFace01.currentTitle, basicFace02.currentTitle, basicFace03.currentTitle, basicFace04.currentTitle, basicFace05.currentTitle, basicFace06.currentTitle]
         playedBasic = possibleArray[randomBasicIndex]!
         print(playedBasic)
         basicAnswerImage.image = UIImage(named: playedBasic)
@@ -174,7 +176,6 @@ class BasicReadingVC: UIViewController {
         checkAnswer(sender: basicFace02)
     }
     
-    
     @IBAction func basicFace03Pressed(_ sender: Any) {
         checkAnswer(sender: basicFace03)
     }
@@ -183,6 +184,12 @@ class BasicReadingVC: UIViewController {
         checkAnswer(sender: basicFace04)
     }
     
+    @IBAction func basicFace05Pressed(_ sender: Any) {
+        checkAnswer(sender: basicFace05)
+    }
     
+    @IBAction func basicFace06Pressed(_ sender: Any) {
+        checkAnswer(sender: basicFace06)
+    }
     
 }

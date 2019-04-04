@@ -26,6 +26,8 @@ class AdvancedReadingVC: UIViewController {
     @IBOutlet weak var advancedFace02: UIButton!
     @IBOutlet weak var advancedFace03: UIButton!
     @IBOutlet weak var advancedFace04: UIButton!
+    @IBOutlet weak var advancedFace05: UIButton!
+    @IBOutlet weak var advancedFace06: UIButton!
     
     
 // Selects a random advanced word for the question
@@ -49,7 +51,7 @@ class AdvancedReadingVC: UIViewController {
     
 // Check answer function
     func checkAnswer (sender: UIButton) {
-        let advancedFaces = [advancedFace01, advancedFace02, advancedFace03, advancedFace04]
+        let advancedFaces = [advancedFace01, advancedFace02, advancedFace03, advancedFace04, advancedFace05, advancedFace06]
         let tag = sender.tag - 1
         if advancedFaces[tag]!.currentTitle == playedAdvanced {
             rightAnswer(sender: advancedFaces[tag]!)
@@ -65,15 +67,14 @@ class AdvancedReadingVC: UIViewController {
     func rightAnswer (sender: UIButton) {
         selectedSoundFileName = "ThatsCorrect.mp3"
         playAudio()
-        //
-        let advancedFaces = [advancedFace01, advancedFace02, advancedFace03, advancedFace04]
+        advancedAnswerLabel.text = "Correct!"
+        advancedAnswerLabel.textColor = UIColor(rgb: 0x39ff14)
+        let advancedFaces = [advancedFace01, advancedFace02, advancedFace03, advancedFace04, advancedFace05, advancedFace06]
         let tag = sender.tag - 1
         advancedFaces[tag]!.layer.cornerRadius = 5
         advancedFaces[tag]!.layer.borderColor = UIColor(rgb: 0x39ff14).cgColor
         advancedFaces[tag]!.layer.borderWidth = 8.0
         advancedFaces[tag]!.isUserInteractionEnabled = false
-        advancedAnswerLabel.text = advancedFaces[tag]!.currentTitle
-        advancedAnswerLabel.textColor = UIColor(rgb: 0x000000)
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.0, execute: {
             advancedFaces[tag]!.layer.borderWidth = 0
             advancedFaces[tag]!.isUserInteractionEnabled = true
@@ -84,9 +85,9 @@ class AdvancedReadingVC: UIViewController {
     func wrongAnswer (sender: UIButton) {
         selectedSoundFileName = "Uhoh.mp3"
         playAudio()
-        advancedAnswerLabel.text = "WRONG :("
+        advancedAnswerLabel.text = "Wrong..."
         advancedAnswerLabel.textColor = UIColor(rgb: 0xFB2B11)
-        let advancedFaces = [advancedFace01, advancedFace02, advancedFace03, advancedFace04]
+        let advancedFaces = [advancedFace01, advancedFace02, advancedFace03, advancedFace04, advancedFace05, advancedFace06]
         let tag = sender.tag - 1
         advancedFaces[tag]!.layer.cornerRadius = 5
         advancedFaces[tag]!.layer.borderColor = UIColor(rgb: 0xFB2B11).cgColor
@@ -102,12 +103,12 @@ class AdvancedReadingVC: UIViewController {
 // New question audio setup and play
     func newQuestion() {
         randomAdvanced()
-        selectedSoundFileName = "WhichOneIs.mp3"
+        selectedSoundFileName = "WhichWordIs.mp3"
         playAudio()
         
-        let possibleArray = [advancedFace01.currentTitle, advancedFace02.currentTitle, advancedFace03.currentTitle, advancedFace04.currentTitle]
+        let possibleArray = [advancedFace01.currentTitle, advancedFace02.currentTitle, advancedFace03.currentTitle, advancedFace04.currentTitle, advancedFace05.currentTitle, advancedFace06.currentTitle]
         
-        let when = DispatchTime.now() + 1.7
+        let when = DispatchTime.now() + 2.1
         DispatchQueue.main.asyncAfter(deadline: when) {
             self.selectedSoundFileName = possibleArray[self.randomAdvancedIndex]!+".mp3"
             self.playAudio()
@@ -116,7 +117,7 @@ class AdvancedReadingVC: UIViewController {
     
 // Consonant button faces refresh function
     func newFaces() {
-        let advancedFaces = [advancedFace01, advancedFace02, advancedFace03, advancedFace04]
+        let advancedFaces = [advancedFace01, advancedFace02, advancedFace03, advancedFace04, advancedFace05, advancedFace06]
         for (advancedFace, advanced) in zip(advancedFaces, advancedArray.shuffled()) {
             advancedFace?.setTitle(advanced, for: .normal)
         }
@@ -125,7 +126,7 @@ class AdvancedReadingVC: UIViewController {
     
 // Establishes correct answer based on consonant audio played
     func newAnswer() {
-        let possibleArray = [advancedFace01.currentTitle, advancedFace02.currentTitle, advancedFace03.currentTitle, advancedFace04.currentTitle]
+        let possibleArray = [advancedFace01.currentTitle, advancedFace02.currentTitle, advancedFace03.currentTitle, advancedFace04.currentTitle, advancedFace05.currentTitle, advancedFace06.currentTitle]
         playedAdvanced = possibleArray[randomAdvancedIndex]!
         print(playedAdvanced)
         advancedAnswerImage.image = UIImage(named: playedAdvanced)
@@ -183,6 +184,12 @@ class AdvancedReadingVC: UIViewController {
         checkAnswer(sender: advancedFace04)
     }
     
+    @IBAction func advancedFace05Pressed(_ sender: Any) {
+        checkAnswer(sender: advancedFace05)
+    }
     
+    @IBAction func advancedFace06Pressed(_ sender: Any) {
+        checkAnswer(sender: advancedFace06)
+    }
     
 }
