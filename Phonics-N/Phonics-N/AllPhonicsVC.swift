@@ -16,7 +16,7 @@ class AllPhonicsVC: UIViewController {
     var selectedSoundFileName : String = ""
     var playedAll : String = ""
     var randomAllIndex : Int = 0
-    var allArray = ["B", "C", "D", "F", "G", "H", "J", "K", "L", "M", "N", "P", "Q", "R", "S", "T", "V", "W", "X", "Y", "Z"]
+    var allArray = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "ai", "ar", "ch", "ck", "ee", "ie", "ng", "oa", "oi", "oo", "or", "ou", "ph", "qu", "sh", "ss", "th", "ue"]
     
     
     @IBOutlet weak var allAnswerLabel: UILabel!
@@ -83,7 +83,7 @@ class AllPhonicsVC: UIViewController {
     func wrongAnswer (sender: UIButton) {
         selectedSoundFileName = "Uhoh.mp3"
         playAudio()
-        allAnswerLabel.text = "Wrong!   "
+        allAnswerLabel.text = "Wrong...     "
         allAnswerLabel.textColor = UIColor(rgb: 0xFB2B11)
         let allFaces = [allFace01, allFace02, allFace03, allFace04, allFace05, allFace06]
         let tag = sender.tag - 1
@@ -188,11 +188,6 @@ class AllPhonicsVC: UIViewController {
 
 // TO DO
 // add soundbites
-// add all letter soundfiles
-
-// add all phonic array ->
-//    let phonicSoundArray = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "ai", "ar", "ch", "ck", "ee", "ie", "ng", "oa", "oi", "oo", "or", "ou", "ph", "qu", "sh", "ss", "th", "ue"]
-
 
 
 

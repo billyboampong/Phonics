@@ -23,6 +23,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var advancedPracticeLabel: UILabel!
     
     
+    
     let phonicSoundArray = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "ai", "ar", "ch", "ck", "ee", "ie", "ng", "oa", "oi", "oo", "or", "ou", "ph", "qu", "sh", "ss", "th", "ue"]
     
     let basicWordArray = ["BAG", "BAT", "BED", "BIN", "BOY", "BUS", "CAR", "CAT", "CUP", "DOG", "FOX", "HAT", "HEN", "JAR", "LOG", "MAP", "PAN", "PEN", "PIG", "RUN", "SIT", "SUN", "TAP", "VAN", "WET"]
@@ -49,6 +50,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+ 
+        
         
     }
 

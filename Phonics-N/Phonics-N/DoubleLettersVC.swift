@@ -16,7 +16,7 @@ class DoubleLettersVC: UIViewController {
     var selectedSoundFileName : String = ""
     var playedDouble : String = ""
     var randomDoubleIndex : Int = 0
-    var doubleArray = ["B", "C", "D", "F", "G", "H", "J", "K", "L", "M", "N", "P", "Q", "R", "S", "T", "V", "W", "X", "Y", "Z"]
+    var doubleArray = ["ai", "ar", "ch", "ck", "ee", "ie", "ng", "oa", "oi", "oo", "or", "ou", "ph", "qu", "sh", "ss", "th", "ue"]
     
     
     @IBOutlet weak var doubleAnswerLabel: UILabel!
@@ -83,7 +83,7 @@ class DoubleLettersVC: UIViewController {
     func wrongAnswer (sender: UIButton) {
         selectedSoundFileName = "Uhoh.mp3"
         playAudio()
-        doubleAnswerLabel.text = "Wrong!   "
+        doubleAnswerLabel.text = "Wrong...     "
         doubleAnswerLabel.textColor = UIColor(rgb: 0xFB2B11)
         let doubleFaces = [doubleFace01, doubleFace02, doubleFace03, doubleFace04, doubleFace05, doubleFace06]
         let tag = sender.tag - 1
@@ -188,7 +188,3 @@ class DoubleLettersVC: UIViewController {
 
 // TO DO
 // add soundbites
-// add double letter soundfiles
-
-// add double letter array ->
-//    let doubleletterArray = ["ai", "ar", "ch", "ck", "ee", "ie", "ng", "oa", "oi", "oo", "or", "ou", "ph", "qu", "sh", "ss", "th", "ue"]

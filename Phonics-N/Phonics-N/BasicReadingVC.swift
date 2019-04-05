@@ -86,7 +86,7 @@ class BasicReadingVC: UIViewController {
     func wrongAnswer (sender: UIButton) {
         selectedSoundFileName = "Uhoh.mp3"
         playAudio()
-        basicAnswerLabel.text = "Wrong!   "
+        basicAnswerLabel.text = "Wrong...     "
         basicAnswerLabel.textColor = UIColor(rgb: 0xFB2B11)
         let basicFaces = [basicFace01, basicFace02, basicFace03, basicFace04, basicFace05, basicFace06]
         let tag = sender.tag - 1
@@ -157,15 +157,37 @@ class BasicReadingVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        basicFace01.titleLabel?.adjustsFontSizeToFitWidth = true
+        basicFace01.titleLabel?.minimumScaleFactor = 0.5
+        basicFace01.contentEdgeInsets = UIEdgeInsets(top: 7,left: 7,bottom: 7,right: 7)
+        
+        basicFace02.titleLabel?.adjustsFontSizeToFitWidth = true
+        basicFace02.titleLabel?.minimumScaleFactor = 0.5
+        basicFace02.contentEdgeInsets = UIEdgeInsets(top: 7,left: 7,bottom: 7,right: 7)
+        
+        basicFace03.titleLabel?.adjustsFontSizeToFitWidth = true
+        basicFace03.titleLabel?.minimumScaleFactor = 0.5
+        basicFace03.contentEdgeInsets = UIEdgeInsets(top: 7,left: 7,bottom: 7,right: 7)
+        
+        basicFace04.titleLabel?.adjustsFontSizeToFitWidth = true
+        basicFace04.titleLabel?.minimumScaleFactor = 0.5
+        basicFace04.contentEdgeInsets = UIEdgeInsets(top: 7,left: 7,bottom: 7,right: 7)
+        
+        basicFace05.titleLabel?.adjustsFontSizeToFitWidth = true
+        basicFace05.titleLabel?.minimumScaleFactor = 0.5
+        basicFace05.contentEdgeInsets = UIEdgeInsets(top: 7,left: 7,bottom: 7,right: 7)
+        
+        basicFace06.titleLabel?.adjustsFontSizeToFitWidth = true
+        basicFace06.titleLabel?.minimumScaleFactor = 0.5
+        basicFace06.contentEdgeInsets = UIEdgeInsets(top: 7,left: 7,bottom: 7,right: 7)
+        
+        
         newFaces()
         newQuestion()
         newAnswer()
         
     }
-    
-    
-    
-    
     
     
     @IBAction func basicFace01Pressed(_ sender: Any) {

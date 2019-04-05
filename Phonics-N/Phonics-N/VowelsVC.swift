@@ -87,7 +87,7 @@ class VowelsVC: UIViewController {
     func wrongAnswer (sender: UIButton) {
         selectedSoundFileName = "Uhoh.mp3"
         playAudio()
-        vowelAnswerLabel.text = "Wrong!   "
+        vowelAnswerLabel.text = "Wrong...     "
         vowelAnswerLabel.textColor = UIColor(rgb: 0xFB2B11)
         let vowelFaces = [vowelFace01, vowelFace02, vowelFace03, vowelFace04, vowelFace05]
         let tag = sender.tag - 1
@@ -184,4 +184,4 @@ class VowelsVC: UIViewController {
 }
 
 // TO DO
-// add "good job" and "try again" as alternative soundbites
+// add soundbites
