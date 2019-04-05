@@ -65,7 +65,7 @@ class AllPhonicsVC: UIViewController {
     func rightAnswer (sender: UIButton) {
         selectedSoundFileName = "ThatsCorrect.mp3"
         playAudio()
-        allAnswerLabel.text = "Correct!"
+        allAnswerLabel.text = "CORRECT"
         allAnswerLabel.textColor = UIColor(rgb: 0x39ff14)
         let allFaces = [allFace01, allFace02, allFace03, allFace04, allFace05, allFace06]
         let tag = sender.tag - 1
@@ -83,7 +83,7 @@ class AllPhonicsVC: UIViewController {
     func wrongAnswer (sender: UIButton) {
         selectedSoundFileName = "Uhoh.mp3"
         playAudio()
-        allAnswerLabel.text = "Wrong..."
+        allAnswerLabel.text = "Wrong!   "
         allAnswerLabel.textColor = UIColor(rgb: 0xFB2B11)
         let allFaces = [allFace01, allFace02, allFace03, allFace04, allFace05, allFace06]
         let tag = sender.tag - 1

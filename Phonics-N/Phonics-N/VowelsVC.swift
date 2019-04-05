@@ -10,24 +10,7 @@ import UIKit
 import AVFoundation
 
 
-// UIColor extension code for using RGB hex codes
-extension UIColor {
-    
-    convenience init(red: Int, green: Int, blue: Int) {
-        assert(red >= 0 && red <= 255, "Invalid red component")
-        assert(green >= 0 && green <= 255, "Invalid green component")
-        assert(blue >= 0 && blue <= 255, "Invalid blue component")
-        self.init(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: 1.0)
-    }
-    
-    convenience init(rgb: Int) {
-        self.init(
-            red: (rgb >> 16) & 0xFF,
-            green: (rgb >> 8) & 0xFF,
-            blue: rgb & 0xFF
-        )
-    }
-}
+
 
 class VowelsVC: UIViewController {
     
@@ -38,13 +21,15 @@ class VowelsVC: UIViewController {
     var randomVowelIndex : Int = 0
     var vowelArray = ["A", "E", "I", "O", "U"]
 
+
     @IBOutlet weak var vowelAnswerLabel: UILabel!
-    
+
     @IBOutlet weak var vowelFace01: UIButton!
     @IBOutlet weak var vowelFace02: UIButton!
     @IBOutlet weak var vowelFace03: UIButton!
     @IBOutlet weak var vowelFace04: UIButton!
     @IBOutlet weak var vowelFace05: UIButton!
+    
    
     
 // Selects a random vowel for the question
@@ -83,7 +68,7 @@ class VowelsVC: UIViewController {
     func rightAnswer (sender: UIButton) {
         selectedSoundFileName = "ThatsCorrect.mp3"
         playAudio()
-        vowelAnswerLabel.text = "Correct!"
+        vowelAnswerLabel.text = "CORRECT"
         vowelAnswerLabel.textColor = UIColor(rgb: 0x39ff14)
         let vowelFaces = [vowelFace01, vowelFace02, vowelFace03, vowelFace04, vowelFace05]
         let tag = sender.tag - 1
@@ -102,7 +87,7 @@ class VowelsVC: UIViewController {
     func wrongAnswer (sender: UIButton) {
         selectedSoundFileName = "Uhoh.mp3"
         playAudio()
-        vowelAnswerLabel.text = "Wrong..."
+        vowelAnswerLabel.text = "Wrong!   "
         vowelAnswerLabel.textColor = UIColor(rgb: 0xFB2B11)
         let vowelFaces = [vowelFace01, vowelFace02, vowelFace03, vowelFace04, vowelFace05]
         let tag = sender.tag - 1
@@ -166,6 +151,7 @@ class VowelsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         newQuestion()
         newAnswer()

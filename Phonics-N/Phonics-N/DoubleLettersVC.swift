@@ -65,7 +65,7 @@ class DoubleLettersVC: UIViewController {
     func rightAnswer (sender: UIButton) {
         selectedSoundFileName = "ThatsCorrect.mp3"
         playAudio()
-        doubleAnswerLabel.text = "Correct!"
+        doubleAnswerLabel.text = "CORRECT"
         doubleAnswerLabel.textColor = UIColor(rgb: 0x39ff14)
         let doubleFaces = [doubleFace01, doubleFace02, doubleFace03, doubleFace04, doubleFace05, doubleFace06]
         let tag = sender.tag - 1
@@ -83,7 +83,7 @@ class DoubleLettersVC: UIViewController {
     func wrongAnswer (sender: UIButton) {
         selectedSoundFileName = "Uhoh.mp3"
         playAudio()
-        doubleAnswerLabel.text = "Wrong..."
+        doubleAnswerLabel.text = "Wrong!   "
         doubleAnswerLabel.textColor = UIColor(rgb: 0xFB2B11)
         let doubleFaces = [doubleFace01, doubleFace02, doubleFace03, doubleFace04, doubleFace05, doubleFace06]
         let tag = sender.tag - 1

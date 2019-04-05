@@ -68,7 +68,7 @@ class BasicReadingVC: UIViewController {
     func rightAnswer (sender: UIButton) {
         selectedSoundFileName = "ThatsCorrect.mp3"
         playAudio()
-        basicAnswerLabel.text = "Correct!"
+        basicAnswerLabel.text = "CORRECT"
         basicAnswerLabel.textColor = UIColor(rgb: 0x39ff14)
         let basicFaces = [basicFace01, basicFace02, basicFace03, basicFace04, basicFace05, basicFace06]
         let tag = sender.tag - 1
@@ -86,7 +86,7 @@ class BasicReadingVC: UIViewController {
     func wrongAnswer (sender: UIButton) {
         selectedSoundFileName = "Uhoh.mp3"
         playAudio()
-        basicAnswerLabel.text = "Wrong..."
+        basicAnswerLabel.text = "Wrong!   "
         basicAnswerLabel.textColor = UIColor(rgb: 0xFB2B11)
         let basicFaces = [basicFace01, basicFace02, basicFace03, basicFace04, basicFace05, basicFace06]
         let tag = sender.tag - 1
