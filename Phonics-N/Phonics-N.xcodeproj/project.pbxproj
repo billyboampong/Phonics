@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		280C8C512257FDE800F9D5D1 /* Wow.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 280C8C4E2257FDE700F9D5D1 /* Wow.mp3 */; };
+		280C8C522257FDE800F9D5D1 /* WellDone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 280C8C4F2257FDE700F9D5D1 /* WellDone.mp3 */; };
+		280C8C532257FDE800F9D5D1 /* Amazing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 280C8C502257FDE800F9D5D1 /* Amazing.mp3 */; };
+		280C8C57225A80C000F9D5D1 /* TryAgain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 280C8C54225A80C000F9D5D1 /* TryAgain.mp3 */; };
+		280C8C58225A80C000F9D5D1 /* No.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 280C8C55225A80C000F9D5D1 /* No.mp3 */; };
+		280C8C59225A80C000F9D5D1 /* Wrong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 280C8C56225A80C000F9D5D1 /* Wrong.mp3 */; };
 		2814C7442225A96D0035B3E4 /* BGM.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2814C7432225A96D0035B3E4 /* BGM.mp3 */; };
 		2814C7482225D6B30035B3E4 /* BGM Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2814C7472225D6B30035B3E4 /* BGM Singleton.swift */; };
 		2814C76C2228D4910035B3E4 /* V.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2814C7522228D48F0035B3E4 /* V.mp3 */; };
@@ -121,6 +127,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		280C8C4E2257FDE700F9D5D1 /* Wow.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Wow.mp3; path = "../../../../Assets/Audio/Sliced Audio/Phrases/Wow.mp3"; sourceTree = "<group>"; };
+		280C8C4F2257FDE700F9D5D1 /* WellDone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = WellDone.mp3; path = "../../../../Assets/Audio/Sliced Audio/Phrases/WellDone.mp3"; sourceTree = "<group>"; };
+		280C8C502257FDE800F9D5D1 /* Amazing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Amazing.mp3; path = "../../../../Assets/Audio/Sliced Audio/Phrases/Amazing.mp3"; sourceTree = "<group>"; };
+		280C8C54225A80C000F9D5D1 /* TryAgain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = TryAgain.mp3; path = "../../../../Assets/Audio/Sliced Audio/Phrases/TryAgain.mp3"; sourceTree = "<group>"; };
+		280C8C55225A80C000F9D5D1 /* No.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = No.mp3; path = "../../../../Assets/Audio/Sliced Audio/Phrases/No.mp3"; sourceTree = "<group>"; };
+		280C8C56225A80C000F9D5D1 /* Wrong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Wrong.mp3; path = "../../../../Assets/Audio/Sliced Audio/Phrases/Wrong.mp3"; sourceTree = "<group>"; };
 		2814C7432225A96D0035B3E4 /* BGM.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BGM.mp3; sourceTree = "<group>"; };
 		2814C7472225D6B30035B3E4 /* BGM Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BGM Singleton.swift"; sourceTree = "<group>"; };
 		2814C7522228D48F0035B3E4 /* V.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = V.mp3; sourceTree = "<group>"; };
@@ -334,6 +346,12 @@
 		2893E304222C5E0D00C579D0 /* Phrases */ = {
 			isa = PBXGroup;
 			children = (
+				280C8C55225A80C000F9D5D1 /* No.mp3 */,
+				280C8C54225A80C000F9D5D1 /* TryAgain.mp3 */,
+				280C8C56225A80C000F9D5D1 /* Wrong.mp3 */,
+				280C8C502257FDE800F9D5D1 /* Amazing.mp3 */,
+				280C8C4F2257FDE700F9D5D1 /* WellDone.mp3 */,
+				280C8C4E2257FDE700F9D5D1 /* Wow.mp3 */,
 				289671432243DF54000227AD /* ThatsCorrect.mp3 */,
 				2893E305222C5E1E00C579D0 /* Uhoh.mp3 */,
 				2893E306222C5E1E00C579D0 /* WhichOneIs.mp3 */,
@@ -502,11 +520,15 @@
 				28D294052229A23900AA780C /* HAT.mp3 in Resources */,
 				2814C7712228D4910035B3E4 /* X.mp3 in Resources */,
 				28C08D832257F4F200FAD88D /* ss.mp3 in Resources */,
+				280C8C522257FDE800F9D5D1 /* WellDone.mp3 in Resources */,
+				280C8C532257FDE800F9D5D1 /* Amazing.mp3 in Resources */,
 				28D294102229A23900AA780C /* TAP.mp3 in Resources */,
 				2814C7442225A96D0035B3E4 /* BGM.mp3 in Resources */,
 				28D2940E2229A23900AA780C /* BUS.mp3 in Resources */,
+				280C8C512257FDE800F9D5D1 /* Wow.mp3 in Resources */,
 				28D294042229A23900AA780C /* PAN.mp3 in Resources */,
 				289671442243DF54000227AD /* ThatsCorrect.mp3 in Resources */,
+				280C8C59225A80C000F9D5D1 /* Wrong.mp3 in Resources */,
 				28D293CF2229A21F00AA780C /* SHOP.mp3 in Resources */,
 				28D294132229A23900AA780C /* CUP.mp3 in Resources */,
 				28C08D802257F4F200FAD88D /* ai.mp3 in Resources */,
@@ -550,6 +572,7 @@
 				28D2940C2229A23900AA780C /* CAR.mp3 in Resources */,
 				2814C78A2228D6A50035B3E4 /* M.mp3 in Resources */,
 				28D293CD2229A21F00AA780C /* DRESS.mp3 in Resources */,
+				280C8C57225A80C000F9D5D1 /* TryAgain.mp3 in Resources */,
 				2814C7812228D4910035B3E4 /* T.mp3 in Resources */,
 				28D294072229A23900AA780C /* HEN.mp3 in Resources */,
 				2814C7802228D4910035B3E4 /* L.mp3 in Resources */,
@@ -569,6 +592,7 @@
 				28D294062229A23900AA780C /* BAG.mp3 in Resources */,
 				28D293DA2229A21F00AA780C /* CLOCK.mp3 in Resources */,
 				2814C7752228D4910035B3E4 /* B.mp3 in Resources */,
+				280C8C58225A80C000F9D5D1 /* No.mp3 in Resources */,
 				2814C78D2228D7840035B3E4 /* O.mp3 in Resources */,
 				2814C7762228D4910035B3E4 /* A.mp3 in Resources */,
 				2893E30A222C5E1F00C579D0 /* WhichOneIs.mp3 in Resources */,
@@ -759,7 +783,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DLMKZQ47D7;
 				INFOPLIST_FILE = "Phonics-N/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -778,7 +802,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DLMKZQ47D7;
 				INFOPLIST_FILE = "Phonics-N/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

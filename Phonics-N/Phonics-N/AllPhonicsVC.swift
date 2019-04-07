@@ -17,6 +17,9 @@ class AllPhonicsVC: UIViewController {
     var playedAll : String = ""
     var randomAllIndex : Int = 0
     var allArray = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "ai", "ar", "ch", "ck", "ee", "ie", "ng", "oa", "oi", "oo", "or", "ou", "ph", "qu", "sh", "ss", "th", "ue"]
+    var correctArray = ["ThatsCorrect", "Amazing", "WellDone", "Wow"]
+    var wrongArray = ["Uhoh", "TryAgain", "Wrong", "No"]
+    var randomResponse : Int = 0
     
     
     @IBOutlet weak var allAnswerLabel: UILabel!
@@ -63,7 +66,8 @@ class AllPhonicsVC: UIViewController {
     
 // Plays 'correct' audio, highlights 'correct' button and disables/enables 'correct' button
     func rightAnswer (sender: UIButton) {
-        selectedSoundFileName = "ThatsCorrect.mp3"
+        randomResponse = Int.random(in: 0 ... 3)
+        selectedSoundFileName = "\(correctArray[randomResponse]).mp3"
         playAudio()
         allAnswerLabel.text = "CORRECT"
         allAnswerLabel.textColor = UIColor(rgb: 0x39ff14)
@@ -81,7 +85,8 @@ class AllPhonicsVC: UIViewController {
     
 // Plays 'wrong' audio and highlights 'wrong' button
     func wrongAnswer (sender: UIButton) {
-        selectedSoundFileName = "Uhoh.mp3"
+        randomResponse = Int.random(in: 0 ... 3)
+        selectedSoundFileName = "\(wrongArray[randomResponse]).mp3"
         playAudio()
         allAnswerLabel.text = "Wrong...     "
         allAnswerLabel.textColor = UIColor(rgb: 0xFB2B11)

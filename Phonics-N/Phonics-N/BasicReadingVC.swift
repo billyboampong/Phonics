@@ -17,6 +17,9 @@ class BasicReadingVC: UIViewController {
     var playedBasic : String = ""
     var randomBasicIndex : Int = 0
     var basicArray = ["BAG", "BAT", "BED", "BIN", "BOY", "BUS", "CAR", "CAT", "CUP", "DOG", "FOX", "HAT", "HEN", "JAR", "LOG", "MAP", "PAN", "PEN", "PIG", "RUN", "SIT", "SUN", "TAP", "VAN", "WET"]
+    var correctArray = ["ThatsCorrect", "Amazing", "WellDone", "Wow"]
+    var wrongArray = ["Uhoh", "TryAgain", "Wrong", "No"]
+    var randomResponse : Int = 0
     
     
     @IBOutlet weak var basicAnswerLabel: UILabel!
@@ -66,7 +69,8 @@ class BasicReadingVC: UIViewController {
     
 // Plays 'correct' audio, highlights 'correct' button and disables/enables 'correct' button
     func rightAnswer (sender: UIButton) {
-        selectedSoundFileName = "ThatsCorrect.mp3"
+        randomResponse = Int.random(in: 0 ... 3)
+        selectedSoundFileName = "\(correctArray[randomResponse]).mp3"
         playAudio()
         basicAnswerLabel.text = "CORRECT"
         basicAnswerLabel.textColor = UIColor(rgb: 0x39ff14)
@@ -84,7 +88,8 @@ class BasicReadingVC: UIViewController {
     
 // Plays 'wrong' audio and highlights 'wrong' button
     func wrongAnswer (sender: UIButton) {
-        selectedSoundFileName = "Uhoh.mp3"
+        randomResponse = Int.random(in: 0 ... 3)
+        selectedSoundFileName = "\(wrongArray[randomResponse]).mp3"
         playAudio()
         basicAnswerLabel.text = "Wrong...     "
         basicAnswerLabel.textColor = UIColor(rgb: 0xFB2B11)

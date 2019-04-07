@@ -17,6 +17,9 @@ class DoubleLettersVC: UIViewController {
     var playedDouble : String = ""
     var randomDoubleIndex : Int = 0
     var doubleArray = ["ai", "ar", "ch", "ck", "ee", "ie", "ng", "oa", "oi", "oo", "or", "ou", "ph", "qu", "sh", "ss", "th", "ue"]
+    var correctArray = ["ThatsCorrect", "Amazing", "WellDone", "Wow"]
+    var wrongArray = ["Uhoh", "TryAgain", "Wrong", "No"]
+    var randomResponse : Int = 0
     
     
     @IBOutlet weak var doubleAnswerLabel: UILabel!
@@ -63,7 +66,8 @@ class DoubleLettersVC: UIViewController {
     
 // Plays 'correct' audio, highlights 'correct' button and disables/enables 'correct' button
     func rightAnswer (sender: UIButton) {
-        selectedSoundFileName = "ThatsCorrect.mp3"
+        randomResponse = Int.random(in: 0 ... 3)
+        selectedSoundFileName = "\(correctArray[randomResponse]).mp3"
         playAudio()
         doubleAnswerLabel.text = "CORRECT"
         doubleAnswerLabel.textColor = UIColor(rgb: 0x39ff14)
@@ -81,7 +85,8 @@ class DoubleLettersVC: UIViewController {
     
 // Plays 'wrong' audio and highlights 'wrong' button
     func wrongAnswer (sender: UIButton) {
-        selectedSoundFileName = "Uhoh.mp3"
+        randomResponse = Int.random(in: 0 ... 3)
+        selectedSoundFileName = "\(wrongArray[randomResponse]).mp3"
         playAudio()
         doubleAnswerLabel.text = "Wrong...     "
         doubleAnswerLabel.textColor = UIColor(rgb: 0xFB2B11)

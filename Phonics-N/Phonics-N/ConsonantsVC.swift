@@ -17,6 +17,9 @@ class ConsonantsVC: UIViewController {
     var playedConsonant : String = ""
     var randomConsonantIndex : Int = 0
     var consonantArray = ["B", "C", "D", "F", "G", "H", "J", "K", "L", "M", "N", "P", "Q", "R", "S", "T", "V", "W", "X", "Y", "Z"]
+    var correctArray = ["ThatsCorrect", "Amazing", "WellDone", "Wow"]
+    var wrongArray = ["Uhoh", "TryAgain", "Wrong", "No"]
+    var randomResponse : Int = 0
 
     
     @IBOutlet weak var consonantAnswerLabel: UILabel!
@@ -63,7 +66,8 @@ class ConsonantsVC: UIViewController {
     
 // Plays 'correct' audio, highlights 'correct' button and disables/enables 'correct' button
     func rightAnswer (sender: UIButton) {
-        selectedSoundFileName = "ThatsCorrect.mp3"
+        randomResponse = Int.random(in: 0 ... 3)
+        selectedSoundFileName = "\(correctArray[randomResponse]).mp3"
         playAudio()
         consonantAnswerLabel.text = "CORRECT"
         consonantAnswerLabel.textColor = UIColor(rgb: 0x39ff14)
@@ -81,7 +85,8 @@ class ConsonantsVC: UIViewController {
     
 //Plays 'wrong' audio and highlights 'wrong' button
     func wrongAnswer (sender: UIButton) {
-        selectedSoundFileName = "Uhoh.mp3"
+        randomResponse = Int.random(in: 0 ... 3)
+        selectedSoundFileName = "\(wrongArray[randomResponse]).mp3"
         playAudio()
         consonantAnswerLabel.text = "Wrong...     "
         consonantAnswerLabel.textColor = UIColor(rgb: 0xFB2B11)

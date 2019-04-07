@@ -20,6 +20,9 @@ class VowelsVC: UIViewController {
     var playedVowel : String = ""
     var randomVowelIndex : Int = 0
     var vowelArray = ["A", "E", "I", "O", "U"]
+    var correctArray = ["ThatsCorrect", "Amazing", "WellDone", "Wow"]
+    var wrongArray = ["Uhoh", "TryAgain", "Wrong", "No"]
+    var randomResponse : Int = 0
 
 
     @IBOutlet weak var vowelAnswerLabel: UILabel!
@@ -66,7 +69,8 @@ class VowelsVC: UIViewController {
     
 // Plays 'correct' audio, highlights 'correct' button and disables/enables 'correct' button
     func rightAnswer (sender: UIButton) {
-        selectedSoundFileName = "ThatsCorrect.mp3"
+        randomResponse = Int.random(in: 0 ... 3)
+        selectedSoundFileName = "\(correctArray[randomResponse]).mp3"
         playAudio()
         vowelAnswerLabel.text = "CORRECT"
         vowelAnswerLabel.textColor = UIColor(rgb: 0x39ff14)
@@ -85,7 +89,8 @@ class VowelsVC: UIViewController {
     
 // Plays 'wrong' audio and highlights 'wrong' button
     func wrongAnswer (sender: UIButton) {
-        selectedSoundFileName = "Uhoh.mp3"
+        randomResponse = Int.random(in: 0 ... 3)
+        selectedSoundFileName = "\(wrongArray[randomResponse]).mp3"
         playAudio()
         vowelAnswerLabel.text = "Wrong...     "
         vowelAnswerLabel.textColor = UIColor(rgb: 0xFB2B11)

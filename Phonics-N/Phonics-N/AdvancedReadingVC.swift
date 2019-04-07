@@ -17,6 +17,9 @@ class AdvancedReadingVC: UIViewController {
     var playedAdvanced : String = ""
     var randomAdvancedIndex : Int = 0
     var advancedArray = ["BOIL", "CHEESE", "CHICKEN", "CHURCH", "CLOCK", "CORN", "DRESS", "DUCK", "ELEPHANT", "FOOT", "GOAL", "HISS", "MOUTH", "QUEEN", "RING", "ROOF", "SEED", "SHEEP", "SHOP", "SOAP", "STAR", "TAIL", "TISSUE", "TRAIN", "TROPHY"]
+    var correctArray = ["ThatsCorrect", "Amazing", "WellDone", "Wow"]
+    var wrongArray = ["Uhoh", "TryAgain", "Wrong", "No"]
+    var randomResponse : Int = 0
     
     
     @IBOutlet weak var advancedAnswerLabel: UILabel!
@@ -65,7 +68,8 @@ class AdvancedReadingVC: UIViewController {
     
 // Plays 'correct' audio, highlights 'correct' button and disables/enables 'correct' button
     func rightAnswer (sender: UIButton) {
-        selectedSoundFileName = "ThatsCorrect.mp3"
+        randomResponse = Int.random(in: 0 ... 3)
+        selectedSoundFileName = "\(correctArray[randomResponse]).mp3"
         playAudio()
         advancedAnswerLabel.text = "CORRECT"
         advancedAnswerLabel.textColor = UIColor(rgb: 0x39ff14)
@@ -83,7 +87,8 @@ class AdvancedReadingVC: UIViewController {
     
 // Plays 'wrong' audio and highlights 'wrong' button
     func wrongAnswer (sender: UIButton) {
-        selectedSoundFileName = "Uhoh.mp3"
+        randomResponse = Int.random(in: 0 ... 3)
+        selectedSoundFileName = "\(wrongArray[randomResponse]).mp3"
         playAudio()
         advancedAnswerLabel.text = "Wrong...     "
         advancedAnswerLabel.textColor = UIColor(rgb: 0xFB2B11)
