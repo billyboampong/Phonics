@@ -1,0 +1,22 @@
+Simple Phonics
+Change log 
+
+
+05/04/19 - Version 1.0 released
+
+07/04/19 - Version 1.0.1
+- Additional soundbites for correct/incorrect answers
+- Double letters back button fixed
+- New app icon
+
+
+Upcoming changes
+- Chicken image update
+- Syllable hyphen extension removal
+- Repeats word when image is clicked in reading lessons
+- Button mashing prevention
+- Audio stops playing on view controller exit
+- Alternate voice options and fonts in settings
+- Fonts changed for buttons
+- Logo update
+- Add credits
