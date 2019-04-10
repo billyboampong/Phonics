@@ -73,6 +73,7 @@
 		28C08D872257F4F200FAD88D /* ph.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 28C08D762257F4F200FAD88D /* ph.mp3 */; };
 		28C08D882257F4F200FAD88D /* or.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 28C08D772257F4F200FAD88D /* or.mp3 */; };
 		28C08D8A2257F5BA00FAD88D /* oi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 28C08D892257F5BA00FAD88D /* oi.mp3 */; };
+		28C6E839225D80F700DE0C7E /* GothamRounded-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 28C6E838225D80F700DE0C7E /* GothamRounded-Book.otf */; };
 		28CA4E3B2253C8D2009D8443 /* DoubleLettersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CA4E3A2253C8D2009D8443 /* DoubleLettersVC.swift */; };
 		28D293C92229A21F00AA780C /* HISS.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 28D293B02229A21C00AA780C /* HISS.mp3 */; };
 		28D293CA2229A21F00AA780C /* FOOT.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 28D293B12229A21C00AA780C /* FOOT.mp3 */; };
@@ -195,6 +196,8 @@
 		28C08D762257F4F200FAD88D /* ph.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = ph.mp3; path = "../../../../Assets/Audio/Sliced Audio/Phonic Doubles/ph.mp3"; sourceTree = "<group>"; };
 		28C08D772257F4F200FAD88D /* or.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = or.mp3; path = "../../../../Assets/Audio/Sliced Audio/Phonic Doubles/or.mp3"; sourceTree = "<group>"; };
 		28C08D892257F5BA00FAD88D /* oi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = oi.mp3; path = "../../../../Assets/Audio/Sliced Audio/Phonic Doubles/oi.mp3"; sourceTree = "<group>"; };
+		28C6E82F225D072100DE0C7E /* GothamRounded-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "GothamRounded-Light.otf"; path = "../../../Assets/Fonts/gotham-rounded/GothamRounded-Light.otf"; sourceTree = "<group>"; };
+		28C6E838225D80F700DE0C7E /* GothamRounded-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "GothamRounded-Book.otf"; path = "../../../Assets/Fonts/gotham-rounded/GothamRounded-Book.otf"; sourceTree = "<group>"; };
 		28CA4E3A2253C8D2009D8443 /* DoubleLettersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleLettersVC.swift; sourceTree = "<group>"; };
 		28D293B02229A21C00AA780C /* HISS.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = HISS.mp3; sourceTree = "<group>"; };
 		28D293B12229A21C00AA780C /* FOOT.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = FOOT.mp3; sourceTree = "<group>"; };
@@ -339,8 +342,18 @@
 				2871A9CC21FBBDFE00DA0403 /* LaunchScreen.storyboard */,
 				2871A9CF21FBBDFE00DA0403 /* Info.plist */,
 				2814C70D2225981D0035B3E4 /* Sound Files */,
+				2886324D225D05DA0065F706 /* Fonts */,
 			);
 			path = "Phonics-N";
+			sourceTree = "<group>";
+		};
+		2886324D225D05DA0065F706 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				28C6E838225D80F700DE0C7E /* GothamRounded-Book.otf */,
+				28C6E82F225D072100DE0C7E /* GothamRounded-Light.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		2893E304222C5E0D00C579D0 /* Phrases */ = {
@@ -510,6 +523,7 @@
 			files = (
 				28C08D7E2257F4F200FAD88D /* ie.mp3 in Resources */,
 				28D293C92229A21F00AA780C /* HISS.mp3 in Resources */,
+				28C6E839225D80F700DE0C7E /* GothamRounded-Book.otf in Resources */,
 				2814C78B2228D6A50035B3E4 /* Q.mp3 in Resources */,
 				28D293CC2229A21F00AA780C /* TAIL.mp3 in Resources */,
 				28D293DD2229A21F00AA780C /* RING.mp3 in Resources */,

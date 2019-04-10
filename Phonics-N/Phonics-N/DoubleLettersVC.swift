@@ -56,7 +56,7 @@ class DoubleLettersVC: UIViewController {
         let tag = sender.tag - 1
         if doubleFaces[tag]!.currentTitle == playedDouble {
             rightAnswer(sender: doubleFaces[tag]!)
-            refreshDoublesWithDelay()
+            perform(#selector(refreshDoublesWithDelay), with: nil, afterDelay: 3.0)
         }
         else {
             wrongAnswer(sender: doubleFaces[tag]!)
@@ -135,18 +135,17 @@ class DoubleLettersVC: UIViewController {
     }
     
 // Combines functions to refresh the whole question and views
-    func refreshDoublesWithDelay() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0, execute: {
+    @objc func refreshDoublesWithDelay() {
             self.newFaces()
             self.newQuestion()
             self.newAnswer()
             self.doubleAnswerLabel.text = ""
-        })
     }
     
 // Local VC back button function
     @IBAction func dismissDoubleLettersVC(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
+        NSObject.cancelPreviousPerformRequests(withTarget: self)
     }
     
 // Local refresh button function (replays double letter audio)

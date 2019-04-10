@@ -56,7 +56,7 @@ class ConsonantsVC: UIViewController {
         let tag = sender.tag - 1
         if consonantFaces[tag]!.currentTitle == playedConsonant {
             rightAnswer(sender: consonantFaces[tag]!)
-            refreshConsonantsWithDelay()
+            perform(#selector(refreshConsonantsWithDelay), with: nil, afterDelay: 3.0)
         }
         else {
             wrongAnswer(sender: consonantFaces[tag]!)
@@ -135,18 +135,17 @@ class ConsonantsVC: UIViewController {
     }
     
 // Combines functions to refresh the whole question and views
-    func refreshConsonantsWithDelay() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0, execute: {
+    @objc func refreshConsonantsWithDelay() {
             self.newFaces()
             self.newQuestion()
             self.newAnswer()
             self.consonantAnswerLabel.text = ""
-        })
     }
     
 // Local VC back button function
     @IBAction func dismissConsonantsVC(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
+        NSObject.cancelPreviousPerformRequests(withTarget: self)
     }
     
 // Local refresh button function (replays consonant audio)

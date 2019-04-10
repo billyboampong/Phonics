@@ -9,14 +9,20 @@ Change log
 - Double letters back button fixed
 - New app icon
 
+07/04/19 - Version 1.0.2
+- Syllable hyphen extension removed
+
+08/04/19 - Version 1.0.3
+- Repeats word when image is clicked in reading lessons
+- Audio stops playing on view controller exit
+- Chicken image update and button art layout updated
+
 
 Upcoming changes
-- Chicken image update
-- Syllable hyphen extension removal
-- Repeats word when image is clicked in reading lessons
+
 - Button mashing prevention
-- Audio stops playing on view controller exit
-- Alternate voice options and fonts in settings
-- Fonts changed for buttons
+- Alternate voice options
+- Fonts option with global boolean
 - Logo update
 - Add credits
+- App slicing

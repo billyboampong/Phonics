@@ -58,7 +58,7 @@ class AdvancedReadingVC: UIViewController {
         let tag = sender.tag - 1
         if advancedFaces[tag]!.currentTitle == playedAdvanced {
             rightAnswer(sender: advancedFaces[tag]!)
-            refreshAdvancedsWithDelay()
+            perform(#selector(refreshAdvancedsWithDelay), with: nil, afterDelay: 3.0)
         }
         else {
             wrongAnswer(sender: advancedFaces[tag]!)
@@ -138,25 +138,32 @@ class AdvancedReadingVC: UIViewController {
     }
     
 // Combines functions to refresh the whole question and views
-    func refreshAdvancedsWithDelay() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0, execute: {
+    @objc func refreshAdvancedsWithDelay() {
             self.newFaces()
             self.newQuestion()
             self.newAnswer()
             self.advancedAnswerLabel.text = ""
-        })
     }
     
 // Local VC back button function
     @IBAction func dismissAdvancedReadingVC(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
+        NSObject.cancelPreviousPerformRequests(withTarget: self)
     }
     
-// Local refresh button function (replays phonic audio)
+// Local refresh button function (replays word audio)
     @IBAction func refreshAdvancedAudio(_ sender: Any) {
         selectedSoundFileName = "\(playedAdvanced).mp3"
         playAudio()
     }
+    
+// Image press function (replays word audio)
+    @IBAction func advancedImagePressed(_ sender: Any) {
+        selectedSoundFileName = "\(playedAdvanced).mp3"
+        playAudio()
+    }
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

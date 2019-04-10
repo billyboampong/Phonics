@@ -56,7 +56,7 @@ class AllPhonicsVC: UIViewController {
         let tag = sender.tag - 1
         if allFaces[tag]!.currentTitle == playedAll {
             rightAnswer(sender: allFaces[tag]!)
-            refreshAllsWithDelay()
+            perform(#selector(refreshAllsWithDelay), with: nil, afterDelay: 3.0)
         }
         else {
             wrongAnswer(sender: allFaces[tag]!)
@@ -135,18 +135,17 @@ class AllPhonicsVC: UIViewController {
     }
     
 // Combines functions to refresh the whole question and views
-    func refreshAllsWithDelay() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0, execute: {
+    @objc func refreshAllsWithDelay() {
             self.newFaces()
             self.newQuestion()
             self.newAnswer()
             self.allAnswerLabel.text = ""
-        })
     }
     
 // Local VC back button function
     @IBAction func dismissAllPhonicsVC(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
+        NSObject.cancelPreviousPerformRequests(withTarget: self)
     }
     
 // Local refresh button function (replays phonic audio)

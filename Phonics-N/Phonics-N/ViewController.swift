@@ -85,9 +85,9 @@ class ViewController: UIViewController {
         basicPracticeLabel.text = basicWordArray[sender.tag - 1] }
     
 // Basic practice label hyphen switch
-    @IBAction func basicLabelPressed(_ sender: Any) {
-        if let index = basicWordArray.firstIndex(of:basicPracticeLabel.text!) {
-            basicPracticeLabel.text = altbasicWordArray[index] } }
+//    @IBAction func basicLabelPressed(_ sender: Any) {
+//        if let index = basicWordArray.firstIndex(of:basicPracticeLabel.text!) {
+//            basicPracticeLabel.text = altbasicWordArray[index] } }
     
     
 // Advanced practice audio response
@@ -104,9 +104,9 @@ class ViewController: UIViewController {
         advancedPracticeLabel.text = advancedWordArray[sender.tag - 1] }
     
 // Advanced practice label hyphen switch
-    @IBAction func advancedLabelPressed(_ sender: Any) {
-        if let index = advancedWordArray.firstIndex(of:advancedPracticeLabel.text!) {
-            advancedPracticeLabel.text = altadvancedWordArray[index] } }
+//    @IBAction func advancedLabelPressed(_ sender: Any) {
+//        if let index = advancedWordArray.firstIndex(of:advancedPracticeLabel.text!) {
+//            advancedPracticeLabel.text = altadvancedWordArray[index] } }
 
     
 }

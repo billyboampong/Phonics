@@ -58,7 +58,7 @@ class VowelsVC: UIViewController {
         let tag = sender.tag - 1
         if vowelFaces[tag]!.currentTitle == playedVowel {
             rightAnswer(sender: vowelFaces[tag]!)
-            refreshVowelsWithDelay()
+            perform(#selector(refreshVowelsWithDelay), with: nil, afterDelay: 3.0)
         }
         else {
             wrongAnswer(sender: vowelFaces[tag]!)
@@ -111,11 +111,11 @@ class VowelsVC: UIViewController {
         selectedSoundFileName = "WhichOneIs.mp3"
         playAudio()
         let when = DispatchTime.now() + 1.7
-        DispatchQueue.main.asyncAfter(deadline: when) {
-            self.selectedSoundFileName = self.vowelArray[self.randomVowelIndex]+".mp3"
-            self.playAudio()
-        }
-    }
+            DispatchQueue.main.asyncAfter(deadline: when) {
+                self.selectedSoundFileName = self.vowelArray[self.randomVowelIndex]+".mp3"
+                self.playAudio()
+            }
+       }
     
 // Vowel button faces refresh function
     func newFaces() {
@@ -132,20 +132,18 @@ class VowelsVC: UIViewController {
     }
     
 // Combines functions to refresh the whole question and views
-    func refreshVowelsWithDelay() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0, execute: {
+    @objc func refreshVowelsWithDelay() {
+            self.newFaces()
             self.newQuestion()
             self.newAnswer()
-            self.newFaces()
             self.vowelAnswerLabel.text = ""
-        })
-    }
-    
+        }
     
 // Local VC back button function
     @IBAction func dismissVowelVC(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
-    }
+        NSObject.cancelPreviousPerformRequests(withTarget: self)
+   }
     
 // Local refresh button function (replays vowel audio)
     @IBAction func refreshVowelAudio(_ sender: Any) {
@@ -157,6 +155,7 @@ class VowelsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        vowelFace01.titleLabel?.adjustsFontSizeToFitWidth = true
         
         newQuestion()
         newAnswer()

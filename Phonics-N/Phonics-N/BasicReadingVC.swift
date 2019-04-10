@@ -59,7 +59,7 @@ class BasicReadingVC: UIViewController {
         let tag = sender.tag - 1
         if basicFaces[tag]!.currentTitle == playedBasic {
             rightAnswer(sender: basicFaces[tag]!)
-            refreshBasicsWithDelay()
+            perform(#selector(refreshBasicsWithDelay), with: nil, afterDelay: 3.0)
         }
         else {
             wrongAnswer(sender: basicFaces[tag]!)
@@ -139,18 +139,17 @@ class BasicReadingVC: UIViewController {
     }
     
 // Combines functions to refresh the whole question and views
-    func refreshBasicsWithDelay() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0, execute: {
+    @objc func refreshBasicsWithDelay() {
             self.newFaces()
             self.newQuestion()
             self.newAnswer()
             self.basicAnswerLabel.text = ""
-        })
     }
     
 // Local VC back button function
     @IBAction func dismissBasicReadingVC(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
+        NSObject.cancelPreviousPerformRequests(withTarget: self)
     }
     
 // Local refresh button function (replays phonic audio)
@@ -158,6 +157,14 @@ class BasicReadingVC: UIViewController {
         selectedSoundFileName = "\(playedBasic).mp3"
         playAudio()
     }
+    
+// Image press function (replays word audio)
+    @IBAction func basicImagePressed(_ sender: Any) {
+        selectedSoundFileName = "\(playedBasic).mp3"
+        playAudio()
+    }
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
