@@ -74,6 +74,7 @@
 		28C08D882257F4F200FAD88D /* or.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 28C08D772257F4F200FAD88D /* or.mp3 */; };
 		28C08D8A2257F5BA00FAD88D /* oi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 28C08D892257F5BA00FAD88D /* oi.mp3 */; };
 		28C6E839225D80F700DE0C7E /* GothamRounded-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 28C6E838225D80F700DE0C7E /* GothamRounded-Book.otf */; };
+		28C6E83D225E3A0600DE0C7E /* SettingsClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C6E83C225E3A0600DE0C7E /* SettingsClass.swift */; };
 		28CA4E3B2253C8D2009D8443 /* DoubleLettersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CA4E3A2253C8D2009D8443 /* DoubleLettersVC.swift */; };
 		28D293C92229A21F00AA780C /* HISS.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 28D293B02229A21C00AA780C /* HISS.mp3 */; };
 		28D293CA2229A21F00AA780C /* FOOT.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 28D293B12229A21C00AA780C /* FOOT.mp3 */; };
@@ -198,6 +199,7 @@
 		28C08D892257F5BA00FAD88D /* oi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = oi.mp3; path = "../../../../Assets/Audio/Sliced Audio/Phonic Doubles/oi.mp3"; sourceTree = "<group>"; };
 		28C6E82F225D072100DE0C7E /* GothamRounded-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "GothamRounded-Light.otf"; path = "../../../Assets/Fonts/gotham-rounded/GothamRounded-Light.otf"; sourceTree = "<group>"; };
 		28C6E838225D80F700DE0C7E /* GothamRounded-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "GothamRounded-Book.otf"; path = "../../../Assets/Fonts/gotham-rounded/GothamRounded-Book.otf"; sourceTree = "<group>"; };
+		28C6E83C225E3A0600DE0C7E /* SettingsClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsClass.swift; sourceTree = "<group>"; };
 		28CA4E3A2253C8D2009D8443 /* DoubleLettersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleLettersVC.swift; sourceTree = "<group>"; };
 		28D293B02229A21C00AA780C /* HISS.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = HISS.mp3; sourceTree = "<group>"; };
 		28D293B12229A21C00AA780C /* FOOT.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = FOOT.mp3; sourceTree = "<group>"; };
@@ -330,6 +332,7 @@
 			children = (
 				2871A9C321FBBDFA00DA0403 /* AppDelegate.swift */,
 				2814C7472225D6B30035B3E4 /* BGM Singleton.swift */,
+				28C6E83C225E3A0600DE0C7E /* SettingsClass.swift */,
 				2871A9C521FBBDFB00DA0403 /* ViewController.swift */,
 				2893E30F222CCA6E00C579D0 /* VowelsVC.swift */,
 				289671472243F116000227AD /* ConsonantsVC.swift */,
@@ -645,6 +648,7 @@
 				2893E310222CCA6E00C579D0 /* VowelsVC.swift in Sources */,
 				285A72842254FF4D003A4F19 /* AllPhonicsVC.swift in Sources */,
 				285A72862255153E003A4F19 /* BasicReadingVC.swift in Sources */,
+				28C6E83D225E3A0600DE0C7E /* SettingsClass.swift in Sources */,
 				285A728822552301003A4F19 /* AdvancedReadingVC.swift in Sources */,
 				289671482243F116000227AD /* ConsonantsVC.swift in Sources */,
 				2871A9C421FBBDFA00DA0403 /* AppDelegate.swift in Sources */,

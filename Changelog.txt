@@ -17,6 +17,9 @@ Change log
 - Audio stops playing on view controller exit
 - Chicken image update and button art layout updated
 
+15/04/19 - Version 1.0.4 (underway)
+-button mash
+
 
 Upcoming changes
 
