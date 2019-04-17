@@ -80,10 +80,18 @@ class VowelsVC: UIViewController {
         vowelFaces[tag]!.layer.cornerRadius = 5
         vowelFaces[tag]!.layer.borderColor = UIColor(rgb: 0x39ff14).cgColor
         vowelFaces[tag]!.layer.borderWidth = 8.0
-        vowelFaces[tag]!.isUserInteractionEnabled = false
+        vowelFaces[0]!.isUserInteractionEnabled = false
+        vowelFaces[1]!.isUserInteractionEnabled = false
+        vowelFaces[2]!.isUserInteractionEnabled = false
+        vowelFaces[3]!.isUserInteractionEnabled = false
+        vowelFaces[4]!.isUserInteractionEnabled = false
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.0, execute: {
             vowelFaces[tag]!.layer.borderWidth = 0
-            vowelFaces[tag]!.isUserInteractionEnabled = true
+            vowelFaces[0]!.isUserInteractionEnabled = true
+            vowelFaces[1]!.isUserInteractionEnabled = true
+            vowelFaces[2]!.isUserInteractionEnabled = true
+            vowelFaces[3]!.isUserInteractionEnabled = true
+            vowelFaces[4]!.isUserInteractionEnabled = true
         })
     }
     
@@ -100,6 +108,18 @@ class VowelsVC: UIViewController {
         vowelFaces[tag]!.layer.cornerRadius = 5
         vowelFaces[tag]!.layer.borderColor = UIColor(rgb: 0xFB2B11).cgColor
         vowelFaces[tag]!.layer.borderWidth = 8.0
+        vowelFaces[0]!.isUserInteractionEnabled = false
+        vowelFaces[1]!.isUserInteractionEnabled = false
+        vowelFaces[2]!.isUserInteractionEnabled = false
+        vowelFaces[3]!.isUserInteractionEnabled = false
+        vowelFaces[4]!.isUserInteractionEnabled = false
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.3, execute: {
+            vowelFaces[0]!.isUserInteractionEnabled = true
+            vowelFaces[1]!.isUserInteractionEnabled = true
+            vowelFaces[2]!.isUserInteractionEnabled = true
+            vowelFaces[3]!.isUserInteractionEnabled = true
+            vowelFaces[4]!.isUserInteractionEnabled = true
+        })
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.3, execute: {
             self.vowelAnswerLabel.text = ""
             vowelFaces[tag]!.layer.borderWidth = 0
@@ -155,8 +175,6 @@ class VowelsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        vowelFace01.titleLabel?.adjustsFontSizeToFitWidth = true
         
         newQuestion()
         newAnswer()

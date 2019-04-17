@@ -78,10 +78,20 @@ class AdvancedReadingVC: UIViewController {
         advancedFaces[tag]!.layer.cornerRadius = 5
         advancedFaces[tag]!.layer.borderColor = UIColor(rgb: 0x39ff14).cgColor
         advancedFaces[tag]!.layer.borderWidth = 8.0
-        advancedFaces[tag]!.isUserInteractionEnabled = false
+        advancedFaces[0]!.isUserInteractionEnabled = false
+        advancedFaces[1]!.isUserInteractionEnabled = false
+        advancedFaces[2]!.isUserInteractionEnabled = false
+        advancedFaces[3]!.isUserInteractionEnabled = false
+        advancedFaces[4]!.isUserInteractionEnabled = false
+        advancedFaces[5]!.isUserInteractionEnabled = false
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.0, execute: {
             advancedFaces[tag]!.layer.borderWidth = 0
-            advancedFaces[tag]!.isUserInteractionEnabled = true
+            advancedFaces[0]!.isUserInteractionEnabled = true
+            advancedFaces[1]!.isUserInteractionEnabled = true
+            advancedFaces[2]!.isUserInteractionEnabled = true
+            advancedFaces[3]!.isUserInteractionEnabled = true
+            advancedFaces[4]!.isUserInteractionEnabled = true
+            advancedFaces[5]!.isUserInteractionEnabled = true
         })
     }
     
@@ -97,6 +107,20 @@ class AdvancedReadingVC: UIViewController {
         advancedFaces[tag]!.layer.cornerRadius = 5
         advancedFaces[tag]!.layer.borderColor = UIColor(rgb: 0xFB2B11).cgColor
         advancedFaces[tag]!.layer.borderWidth = 8.0
+        advancedFaces[0]!.isUserInteractionEnabled = false
+        advancedFaces[1]!.isUserInteractionEnabled = false
+        advancedFaces[2]!.isUserInteractionEnabled = false
+        advancedFaces[3]!.isUserInteractionEnabled = false
+        advancedFaces[4]!.isUserInteractionEnabled = false
+        advancedFaces[5]!.isUserInteractionEnabled = false
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.3, execute: {
+            advancedFaces[0]!.isUserInteractionEnabled = true
+            advancedFaces[1]!.isUserInteractionEnabled = true
+            advancedFaces[2]!.isUserInteractionEnabled = true
+            advancedFaces[3]!.isUserInteractionEnabled = true
+            advancedFaces[4]!.isUserInteractionEnabled = true
+            advancedFaces[5]!.isUserInteractionEnabled = true
+        })
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.3, execute: {
             self.advancedAnswerLabel.text = ""
             advancedFaces[tag]!.layer.borderWidth = 0
@@ -129,7 +153,7 @@ class AdvancedReadingVC: UIViewController {
     }
     
     
-// Establishes correct answer based on consonant audio played
+// Establishes correct answer based on advanced audio played
     func newAnswer() {
         let possibleArray = [advancedFace01.currentTitle, advancedFace02.currentTitle, advancedFace03.currentTitle, advancedFace04.currentTitle, advancedFace05.currentTitle, advancedFace06.currentTitle]
         playedAdvanced = possibleArray[randomAdvancedIndex]!

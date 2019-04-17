@@ -17,15 +17,16 @@ Change log
 - Audio stops playing on view controller exit
 - Chicken image update and button art layout updated
 
-15/04/19 - Version 1.0.4 (underway)
--button mash
+15/04/19 - Version 1.0.4
+- Button mashing prevention (sorry Alex!)
+
 
 
 Upcoming changes
 
-- Button mashing prevention
+- Audio sequenced rather than delayed
 - Alternate voice options
-- Fonts option with global boolean
+- Clear font option with global boolean
 - Logo update
 - Add credits
 - App slicing

@@ -76,10 +76,20 @@ class ConsonantsVC: UIViewController {
         consonantFaces[tag]!.layer.cornerRadius = 5
         consonantFaces[tag]!.layer.borderColor = UIColor(rgb: 0x39ff14).cgColor
         consonantFaces[tag]!.layer.borderWidth = 8.0
-        consonantFaces[tag]!.isUserInteractionEnabled = false
+        consonantFaces[0]!.isUserInteractionEnabled = false
+        consonantFaces[1]!.isUserInteractionEnabled = false
+        consonantFaces[2]!.isUserInteractionEnabled = false
+        consonantFaces[3]!.isUserInteractionEnabled = false
+        consonantFaces[4]!.isUserInteractionEnabled = false
+        consonantFaces[5]!.isUserInteractionEnabled = false
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.0, execute: {
             consonantFaces[tag]!.layer.borderWidth = 0
-            consonantFaces[tag]!.isUserInteractionEnabled = true
+            consonantFaces[0]!.isUserInteractionEnabled = true
+            consonantFaces[1]!.isUserInteractionEnabled = true
+            consonantFaces[2]!.isUserInteractionEnabled = true
+            consonantFaces[3]!.isUserInteractionEnabled = true
+            consonantFaces[4]!.isUserInteractionEnabled = true
+            consonantFaces[5]!.isUserInteractionEnabled = true
         })
     }
     
@@ -95,6 +105,20 @@ class ConsonantsVC: UIViewController {
         consonantFaces[tag]!.layer.cornerRadius = 5
         consonantFaces[tag]!.layer.borderColor = UIColor(rgb: 0xFB2B11).cgColor
         consonantFaces[tag]!.layer.borderWidth = 8.0
+        consonantFaces[0]!.isUserInteractionEnabled = false
+        consonantFaces[1]!.isUserInteractionEnabled = false
+        consonantFaces[2]!.isUserInteractionEnabled = false
+        consonantFaces[3]!.isUserInteractionEnabled = false
+        consonantFaces[4]!.isUserInteractionEnabled = false
+        consonantFaces[5]!.isUserInteractionEnabled = false
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.3, execute: {
+            consonantFaces[0]!.isUserInteractionEnabled = true
+            consonantFaces[1]!.isUserInteractionEnabled = true
+            consonantFaces[2]!.isUserInteractionEnabled = true
+            consonantFaces[3]!.isUserInteractionEnabled = true
+            consonantFaces[4]!.isUserInteractionEnabled = true
+            consonantFaces[5]!.isUserInteractionEnabled = true
+        })
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.3, execute: {
             self.consonantAnswerLabel.text = ""
             consonantFaces[tag]!.layer.borderWidth = 0

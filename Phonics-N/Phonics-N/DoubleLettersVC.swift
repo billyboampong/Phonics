@@ -76,10 +76,20 @@ class DoubleLettersVC: UIViewController {
         doubleFaces[tag]!.layer.cornerRadius = 5
         doubleFaces[tag]!.layer.borderColor = UIColor(rgb: 0x39ff14).cgColor
         doubleFaces[tag]!.layer.borderWidth = 8.0
-        doubleFaces[tag]!.isUserInteractionEnabled = false
+        doubleFaces[0]!.isUserInteractionEnabled = false
+        doubleFaces[1]!.isUserInteractionEnabled = false
+        doubleFaces[2]!.isUserInteractionEnabled = false
+        doubleFaces[3]!.isUserInteractionEnabled = false
+        doubleFaces[4]!.isUserInteractionEnabled = false
+        doubleFaces[5]!.isUserInteractionEnabled = false
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.0, execute: {
             doubleFaces[tag]!.layer.borderWidth = 0
-            doubleFaces[tag]!.isUserInteractionEnabled = true
+            doubleFaces[0]!.isUserInteractionEnabled = true
+            doubleFaces[1]!.isUserInteractionEnabled = true
+            doubleFaces[2]!.isUserInteractionEnabled = true
+            doubleFaces[3]!.isUserInteractionEnabled = true
+            doubleFaces[4]!.isUserInteractionEnabled = true
+            doubleFaces[5]!.isUserInteractionEnabled = true
         })
     }
     
@@ -95,6 +105,20 @@ class DoubleLettersVC: UIViewController {
         doubleFaces[tag]!.layer.cornerRadius = 5
         doubleFaces[tag]!.layer.borderColor = UIColor(rgb: 0xFB2B11).cgColor
         doubleFaces[tag]!.layer.borderWidth = 8.0
+        doubleFaces[0]!.isUserInteractionEnabled = false
+        doubleFaces[1]!.isUserInteractionEnabled = false
+        doubleFaces[2]!.isUserInteractionEnabled = false
+        doubleFaces[3]!.isUserInteractionEnabled = false
+        doubleFaces[4]!.isUserInteractionEnabled = false
+        doubleFaces[5]!.isUserInteractionEnabled = false
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.3, execute: {
+            doubleFaces[0]!.isUserInteractionEnabled = true
+            doubleFaces[1]!.isUserInteractionEnabled = true
+            doubleFaces[2]!.isUserInteractionEnabled = true
+            doubleFaces[3]!.isUserInteractionEnabled = true
+            doubleFaces[4]!.isUserInteractionEnabled = true
+            doubleFaces[5]!.isUserInteractionEnabled = true
+        })
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.3, execute: {
             self.doubleAnswerLabel.text = ""
             doubleFaces[tag]!.layer.borderWidth = 0

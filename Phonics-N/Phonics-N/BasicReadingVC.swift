@@ -79,10 +79,20 @@ class BasicReadingVC: UIViewController {
         basicFaces[tag]!.layer.cornerRadius = 5
         basicFaces[tag]!.layer.borderColor = UIColor(rgb: 0x39ff14).cgColor
         basicFaces[tag]!.layer.borderWidth = 8.0
-        basicFaces[tag]!.isUserInteractionEnabled = false
+        basicFaces[0]!.isUserInteractionEnabled = false
+        basicFaces[1]!.isUserInteractionEnabled = false
+        basicFaces[2]!.isUserInteractionEnabled = false
+        basicFaces[3]!.isUserInteractionEnabled = false
+        basicFaces[4]!.isUserInteractionEnabled = false
+        basicFaces[5]!.isUserInteractionEnabled = false
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.0, execute: {
             basicFaces[tag]!.layer.borderWidth = 0
-            basicFaces[tag]!.isUserInteractionEnabled = true
+            basicFaces[0]!.isUserInteractionEnabled = true
+            basicFaces[1]!.isUserInteractionEnabled = true
+            basicFaces[2]!.isUserInteractionEnabled = true
+            basicFaces[3]!.isUserInteractionEnabled = true
+            basicFaces[4]!.isUserInteractionEnabled = true
+            basicFaces[5]!.isUserInteractionEnabled = true
         })
     }
     
@@ -98,6 +108,20 @@ class BasicReadingVC: UIViewController {
         basicFaces[tag]!.layer.cornerRadius = 5
         basicFaces[tag]!.layer.borderColor = UIColor(rgb: 0xFB2B11).cgColor
         basicFaces[tag]!.layer.borderWidth = 8.0
+        basicFaces[0]!.isUserInteractionEnabled = false
+        basicFaces[1]!.isUserInteractionEnabled = false
+        basicFaces[2]!.isUserInteractionEnabled = false
+        basicFaces[3]!.isUserInteractionEnabled = false
+        basicFaces[4]!.isUserInteractionEnabled = false
+        basicFaces[5]!.isUserInteractionEnabled = false
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.3, execute: {
+            basicFaces[0]!.isUserInteractionEnabled = true
+            basicFaces[1]!.isUserInteractionEnabled = true
+            basicFaces[2]!.isUserInteractionEnabled = true
+            basicFaces[3]!.isUserInteractionEnabled = true
+            basicFaces[4]!.isUserInteractionEnabled = true
+            basicFaces[5]!.isUserInteractionEnabled = true
+        })
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.3, execute: {
             self.basicAnswerLabel.text = ""
             basicFaces[tag]!.layer.borderWidth = 0
@@ -130,7 +154,7 @@ class BasicReadingVC: UIViewController {
     }
     
     
-// Establishes correct answer based on consonant audio played
+// Establishes correct answer based on basic audio played
     func newAnswer() {
         let possibleArray = [basicFace01.currentTitle, basicFace02.currentTitle, basicFace03.currentTitle, basicFace04.currentTitle, basicFace05.currentTitle, basicFace06.currentTitle]
         playedBasic = possibleArray[randomBasicIndex]!

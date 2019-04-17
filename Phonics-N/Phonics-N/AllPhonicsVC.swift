@@ -76,10 +76,20 @@ class AllPhonicsVC: UIViewController {
         allFaces[tag]!.layer.cornerRadius = 5
         allFaces[tag]!.layer.borderColor = UIColor(rgb: 0x39ff14).cgColor
         allFaces[tag]!.layer.borderWidth = 8.0
-        allFaces[tag]!.isUserInteractionEnabled = false
+        allFaces[0]!.isUserInteractionEnabled = false
+        allFaces[1]!.isUserInteractionEnabled = false
+        allFaces[2]!.isUserInteractionEnabled = false
+        allFaces[3]!.isUserInteractionEnabled = false
+        allFaces[4]!.isUserInteractionEnabled = false
+        allFaces[5]!.isUserInteractionEnabled = false
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.0, execute: {
             allFaces[tag]!.layer.borderWidth = 0
-            allFaces[tag]!.isUserInteractionEnabled = true
+            allFaces[0]!.isUserInteractionEnabled = true
+            allFaces[1]!.isUserInteractionEnabled = true
+            allFaces[2]!.isUserInteractionEnabled = true
+            allFaces[3]!.isUserInteractionEnabled = true
+            allFaces[4]!.isUserInteractionEnabled = true
+            allFaces[5]!.isUserInteractionEnabled = true
         })
     }
     
@@ -95,6 +105,20 @@ class AllPhonicsVC: UIViewController {
         allFaces[tag]!.layer.cornerRadius = 5
         allFaces[tag]!.layer.borderColor = UIColor(rgb: 0xFB2B11).cgColor
         allFaces[tag]!.layer.borderWidth = 8.0
+        allFaces[0]!.isUserInteractionEnabled = false
+        allFaces[1]!.isUserInteractionEnabled = false
+        allFaces[2]!.isUserInteractionEnabled = false
+        allFaces[3]!.isUserInteractionEnabled = false
+        allFaces[4]!.isUserInteractionEnabled = false
+        allFaces[5]!.isUserInteractionEnabled = false
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.3, execute: {
+            allFaces[0]!.isUserInteractionEnabled = true
+            allFaces[1]!.isUserInteractionEnabled = true
+            allFaces[2]!.isUserInteractionEnabled = true
+            allFaces[3]!.isUserInteractionEnabled = true
+            allFaces[4]!.isUserInteractionEnabled = true
+            allFaces[5]!.isUserInteractionEnabled = true
+        })
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.3, execute: {
             self.allAnswerLabel.text = ""
             allFaces[tag]!.layer.borderWidth = 0
@@ -127,7 +151,7 @@ class AllPhonicsVC: UIViewController {
     }
     
     
-// Establishes correct answer based on consonant audio played
+// Establishes correct answer based on all audio played
     func newAnswer() {
         let possibleArray = [allFace01.currentTitle, allFace02.currentTitle, allFace03.currentTitle, allFace04.currentTitle, allFace05.currentTitle, allFace06.currentTitle]
         playedAll = possibleArray[randomAllIndex]!
