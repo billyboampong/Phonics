@@ -19,13 +19,12 @@ CHANGELOG
 - Button mashing prevention (sorry Alex!)
 
 
-xx/xx/xx - Version 1.0.5
-
+22/04/19 - Version 1.0.5
+- Lesson mode button added for better UI flow
 
 
 UPCOMING CHANGES
 
-- Add lesson mode button
 - Clear font option with global boolean
 - Audio sequenced rather than delayed
 - Logo update
