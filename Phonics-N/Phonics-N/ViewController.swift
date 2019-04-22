@@ -22,6 +22,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var basicPracticeLabel: UILabel!
     @IBOutlet weak var advancedPracticeLabel: UILabel!
     
+
+    
     
     
     let phonicSoundArray = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "ai", "ar", "ch", "ck", "ee", "ie", "ng", "oa", "oi", "oo", "or", "ou", "ph", "qu", "sh", "ss", "th", "ue"]
@@ -51,7 +53,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
- 
         
         
     }

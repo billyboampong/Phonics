@@ -13,9 +13,6 @@
         <array key="GothamRounded-Book.otf">
             <string>GothamRounded-Book</string>
         </array>
-        <array key="GothamRounded-Light.otf">
-            <string>GothamRounded-Light</string>
-        </array>
     </customFonts>
     <scenes>
         <!--Home-->
@@ -30,7 +27,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <button opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qAu-35-MWb" userLabel="PhonicsButton">
-                                <rect key="frame" x="82" y="303" width="250" height="130"/>
+                                <rect key="frame" x="81" y="303" width="252" height="130"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
                                 <state key="normal" backgroundImage="phonicsbutton">
@@ -41,7 +38,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1lL-Mi-EQD" userLabel="ReadingButton">
-                                <rect key="frame" x="82" y="459" width="250" height="130"/>
+                                <rect key="frame" x="81" y="459" width="252" height="130"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
                                 <state key="normal" backgroundImage="readingbutton">
@@ -52,7 +49,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rF2-W8-8FC" userLabel="SettingsButton">
-                                <rect key="frame" x="359" y="40" width="35" height="35"/>
+                                <rect key="frame" x="358" y="40" width="37" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="settingsbutton"/>
                                 <connections>
@@ -112,7 +109,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.75" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KVQ-Qf-ONp" userLabel="PracticeModeButton">
-                                <rect key="frame" x="318" y="46" width="70" height="35"/>
+                                <rect key="frame" x="318" y="47" width="70" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
                                 <state key="normal" backgroundImage="practicemode">
@@ -143,7 +140,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m4E-xh-aN8" userLabel="DoubleLettersLessonButton">
-                                <rect key="frame" x="45" y="443" width="150" height="150"/>
+                                <rect key="frame" x="45" y="443" width="150" height="151"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="doublelessonbutton"/>
                                 <connections>
@@ -151,7 +148,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wnd-1c-jMV" userLabel="AllLessonsButton">
-                                <rect key="frame" x="220" y="443" width="150" height="150"/>
+                                <rect key="frame" x="220" y="443" width="150" height="151"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="playalllessonbutton"/>
                                 <connections>
@@ -186,7 +183,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DDq-sF-IPY" userLabel="dismissVowelsLesson">
-                                <rect key="frame" x="20" y="40" width="35" height="36"/>
+                                <rect key="frame" x="19" y="40" width="37" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="backbutton"/>
                                 <connections>
@@ -194,7 +191,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aZ2-48-cfp" userLabel="refreshVowelAudio">
-                                <rect key="frame" x="359" y="40" width="35" height="35"/>
+                                <rect key="frame" x="358" y="40" width="37" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="refreshbutton"/>
                                 <connections>
@@ -202,9 +199,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4e-Wy-ze3">
-                                <rect key="frame" x="52" y="166" width="140" height="140"/>
+                                <rect key="frame" x="52" y="166" width="139" height="139"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="75"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="75"/>
                                 <state key="normal" title="A" backgroundImage="vowelanswerbutton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -213,9 +210,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JH4-N2-6iG">
-                                <rect key="frame" x="222" y="166" width="140" height="140"/>
+                                <rect key="frame" x="223" y="166" width="139" height="139"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="75"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="75"/>
                                 <state key="normal" title="A" backgroundImage="vowelanswerbutton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -224,9 +221,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="th1-4s-S6I">
-                                <rect key="frame" x="52" y="336" width="140" height="140"/>
+                                <rect key="frame" x="52" y="336" width="139" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="75"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="75"/>
                                 <state key="normal" title="A" backgroundImage="vowelanswerbutton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -235,9 +232,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o6R-6d-A3Q">
-                                <rect key="frame" x="222" y="336" width="140" height="140"/>
+                                <rect key="frame" x="223" y="336" width="139" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="75"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="75"/>
                                 <state key="normal" title="A" backgroundImage="vowelanswerbutton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -246,9 +243,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jaa-KM-0rG">
-                                <rect key="frame" x="137" y="506" width="140" height="140"/>
+                                <rect key="frame" x="137" y="507" width="140" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="75"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="75"/>
                                 <state key="normal" title="A" backgroundImage="vowelanswerbutton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -263,7 +260,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="VOWELS" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="tHQ-pR-jGA" userLabel="Vowels Header">
-                                <rect key="frame" x="88" y="31" width="240" height="54"/>
+                                <rect key="frame" x="88" y="31" width="241" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -298,7 +295,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nN7-7s-pV8" userLabel="dismissReadingLessons">
-                                <rect key="frame" x="20" y="39" width="35" height="35"/>
+                                <rect key="frame" x="19" y="39" width="37" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="backbutton"/>
                                 <connections>
@@ -306,7 +303,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.75" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qXn-eR-4ih" userLabel="PracticeModeButton">
-                                <rect key="frame" x="318" y="46" width="70" height="35"/>
+                                <rect key="frame" x="318" y="47" width="70" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
                                 <state key="normal" backgroundImage="practicemode">
@@ -317,11 +314,11 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="readinglessons" translatesAutoresizingMaskIntoConstraints="NO" id="tUU-uA-EwR" userLabel="ReadingLessonsHeader">
-                                <rect key="frame" x="67" y="103" width="280" height="140"/>
+                                <rect key="frame" x="67" y="102" width="280" height="142"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cev-bA-rni" userLabel="BasicLessonButton">
-                                <rect key="frame" x="82" y="278" width="250" height="130"/>
+                                <rect key="frame" x="81" y="279" width="252" height="129"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
                                 <state key="normal" backgroundImage="basicreadingbutton">
@@ -332,7 +329,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j99-kT-nV6" userLabel="AdvancedLessonButton">
-                                <rect key="frame" x="82" y="438" width="250" height="130"/>
+                                <rect key="frame" x="81" y="438" width="252" height="130"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
                                 <state key="normal" backgroundImage="advancedreadingbutton">
@@ -369,7 +366,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <button opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ii-Mj-O1S" userLabel="dismissBasicLesson">
-                                <rect key="frame" x="20" y="39" width="35" height="35"/>
+                                <rect key="frame" x="19" y="39" width="37" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="backbutton"/>
                                 <connections>
@@ -377,7 +374,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V21-Mq-Fxs" userLabel="refreshBasicAudio">
-                                <rect key="frame" x="359" y="40" width="35" height="35"/>
+                                <rect key="frame" x="358" y="40" width="37" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="refreshbutton"/>
                                 <connections>
@@ -385,11 +382,11 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SIT" translatesAutoresizingMaskIntoConstraints="NO" id="uV4-YZ-ezO" userLabel="Image">
-                                <rect key="frame" x="107" y="80" width="200" height="200"/>
+                                <rect key="frame" x="107" y="81" width="200" height="199"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" alpha="0.94999999999999996" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6F5-GL-hK3" userLabel="UL-Box">
-                                <rect key="frame" x="37" y="355" width="160" height="90"/>
+                                <rect key="frame" x="38" y="355" width="159" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="40"/>
                                 <state key="normal" title="FOX" backgroundImage="answerbutton">
@@ -400,7 +397,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RHA-vK-bVy" userLabel="UR-Box">
-                                <rect key="frame" x="217" y="355" width="160" height="90"/>
+                                <rect key="frame" x="217" y="355" width="159" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="40"/>
                                 <state key="normal" title="FOX" backgroundImage="answerbutton">
@@ -411,7 +408,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REi-Vk-5gC" userLabel="LL-Box">
-                                <rect key="frame" x="37" y="465" width="160" height="90"/>
+                                <rect key="frame" x="38" y="465" width="159" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="40"/>
                                 <state key="normal" title="FOX" backgroundImage="answerbutton">
@@ -422,7 +419,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhX-n2-jHX" userLabel="LR-Box">
-                                <rect key="frame" x="217" y="465" width="160" height="90"/>
+                                <rect key="frame" x="217" y="465" width="159" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="40"/>
                                 <state key="normal" title="FOX" backgroundImage="answerbutton">
@@ -433,7 +430,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999998807907104" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHF-Oh-U8R" userLabel="LL-Box">
-                                <rect key="frame" x="37" y="575" width="160" height="90"/>
+                                <rect key="frame" x="38" y="575" width="159" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="40"/>
                                 <state key="normal" title="FOX" backgroundImage="answerbutton">
@@ -444,7 +441,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999998807907104" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hj5-cF-ScA" userLabel="LL-Box">
-                                <rect key="frame" x="217" y="575" width="160" height="90"/>
+                                <rect key="frame" x="217" y="575" width="159" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="40"/>
                                 <state key="normal" title="FOX" backgroundImage="answerbutton">
@@ -455,7 +452,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="32" translatesAutoresizingMaskIntoConstraints="NO" id="uSG-Vn-EF7" userLabel="AnswerHeader">
-                                <rect key="frame" x="83" y="262" width="249" height="101"/>
+                                <rect key="frame" x="83" y="262" width="250" height="101"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="40"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -509,7 +506,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EB3-eL-EcB" userLabel="dismissSettings">
-                                <rect key="frame" x="20" y="53" width="35" height="35"/>
+                                <rect key="frame" x="20" y="53" width="35" height="34"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="backbutton"/>
                                 <connections>
@@ -554,7 +551,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <button opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jzh-wC-4nN" userLabel="dismissVowelsPractice">
-                                <rect key="frame" x="20" y="40" width="35" height="35"/>
+                                <rect key="frame" x="19" y="40" width="37" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="backbutton"/>
                                 <connections>
@@ -562,16 +559,16 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="VOWELS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="TuO-qv-P8V">
-                                <rect key="frame" x="57" y="80" width="300" height="50"/>
+                                <rect key="frame" x="57" y="81" width="300" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="40"/>
                                 <color key="textColor" red="1" green="0.90588235289999997" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" alpha="0.94999999999999996" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87Y-G1-OEn">
-                                <rect key="frame" x="222" y="166" width="140" height="140"/>
+                                <rect key="frame" x="223" y="166" width="139" height="139"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="75"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="75"/>
                                 <state key="normal" title="E" backgroundImage="vowelbox2">
                                     <color key="titleColor" red="1" green="0.79444028253424659" blue="0.25313035102739728" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -580,9 +577,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g96-ga-gDY">
-                                <rect key="frame" x="52" y="336" width="140" height="140"/>
+                                <rect key="frame" x="52" y="336" width="139" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="75"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="75"/>
                                 <state key="normal" title="I" backgroundImage="vowelbox2">
                                     <color key="titleColor" red="1" green="0.79444028253424659" blue="0.25313035102739728" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -591,9 +588,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="15" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOr-sL-Ch0">
-                                <rect key="frame" x="222" y="336" width="140" height="140"/>
+                                <rect key="frame" x="223" y="336" width="139" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="75"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="75"/>
                                 <state key="normal" title="O" backgroundImage="vowelbox2">
                                     <color key="titleColor" red="1" green="0.79444028253424659" blue="0.25313035102739728" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -602,9 +599,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="21" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgG-wN-Pud">
-                                <rect key="frame" x="137" y="506" width="140" height="140"/>
+                                <rect key="frame" x="137" y="507" width="140" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="75"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="75"/>
                                 <state key="normal" title="U" backgroundImage="vowelbox2">
                                     <color key="titleColor" red="1" green="0.79444028253424659" blue="0.25313035102739728" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -613,9 +610,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lHZ-ub-WZp">
-                                <rect key="frame" x="52" y="166" width="140" height="140"/>
+                                <rect key="frame" x="52" y="166" width="139" height="139"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="75"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="75"/>
                                 <state key="normal" title="A" backgroundImage="vowelbox2">
                                     <color key="titleColor" red="1" green="0.79444028253424659" blue="0.25313035102739728" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -650,7 +647,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <button opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4lk-nY-TUS" userLabel="dismissConsonantsPractice">
-                                <rect key="frame" x="20" y="40" width="35" height="35"/>
+                                <rect key="frame" x="19" y="40" width="37" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="backbutton"/>
                                 <connections>
@@ -658,16 +655,16 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CONSONANTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="yeI-uB-Ag4">
-                                <rect key="frame" x="57" y="80" width="300" height="50"/>
+                                <rect key="frame" x="57" y="81" width="300" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="40"/>
                                 <color key="textColor" red="1" green="0.90588235289999997" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" alpha="0.94999999999999996" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tvB-ve-5Ul">
-                                <rect key="frame" x="20" y="166" width="85" height="85"/>
+                                <rect key="frame" x="19" y="166" width="86" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="55"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="55"/>
                                 <state key="normal" title="B" backgroundImage="consonantbox2L">
                                     <color key="titleColor" red="0.0" green="0.91764705882352937" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -676,9 +673,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XEM-i0-hsC">
-                                <rect key="frame" x="116" y="166" width="85" height="85"/>
+                                <rect key="frame" x="116" y="166" width="85" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="55"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="55"/>
                                 <state key="normal" title="C" backgroundImage="consonantbox2L">
                                     <color key="titleColor" red="0.0" green="0.91764705882352937" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -687,9 +684,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aA1-lo-Q2c">
-                                <rect key="frame" x="212" y="166" width="85" height="85"/>
+                                <rect key="frame" x="212" y="166" width="86" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="55"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="55"/>
                                 <state key="normal" title="D" backgroundImage="consonantbox2L">
                                     <color key="titleColor" red="0.0" green="0.91764705882352937" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -698,9 +695,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kl7-UX-4yq">
-                                <rect key="frame" x="308" y="166" width="85" height="85"/>
+                                <rect key="frame" x="308" y="166" width="86" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="55"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="55"/>
                                 <state key="normal" title="F" backgroundImage="consonantbox2L">
                                     <color key="titleColor" red="0.0" green="0.91764705882352937" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -709,9 +706,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSZ-J8-5WB">
-                                <rect key="frame" x="20" y="271" width="85" height="85"/>
+                                <rect key="frame" x="19" y="271" width="86" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="55"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="55"/>
                                 <state key="normal" title="G" backgroundImage="consonantbox2L">
                                     <color key="titleColor" red="0.0" green="0.91764705882352937" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -720,9 +717,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AL7-6h-Duh">
-                                <rect key="frame" x="116" y="271" width="85" height="85"/>
+                                <rect key="frame" x="116" y="271" width="85" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="55"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="55"/>
                                 <state key="normal" title="H" backgroundImage="consonantbox2L">
                                     <color key="titleColor" red="0.0" green="0.91764705882352937" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -731,9 +728,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hcy-eq-iBX">
-                                <rect key="frame" x="212" y="271" width="85" height="85"/>
+                                <rect key="frame" x="212" y="271" width="86" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="55"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="55"/>
                                 <state key="normal" title="J" backgroundImage="consonantbox2L">
                                     <color key="titleColor" red="0.0" green="0.91764705882352937" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -742,9 +739,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rk9-Rm-giW">
-                                <rect key="frame" x="308" y="271" width="85" height="85"/>
+                                <rect key="frame" x="308" y="271" width="86" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="55"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="55"/>
                                 <state key="normal" title="K" backgroundImage="consonantbox2L">
                                     <color key="titleColor" red="0.0" green="0.91764705882352937" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -753,9 +750,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hlB-fx-98O">
-                                <rect key="frame" x="20" y="376" width="85" height="85"/>
+                                <rect key="frame" x="19" y="376" width="86" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="55"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="55"/>
                                 <state key="normal" title="L" backgroundImage="consonantbox2L">
                                     <color key="titleColor" red="0.0" green="0.91764705882352937" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -766,7 +763,7 @@
                             <button opaque="NO" alpha="0.94999999999999996" tag="13" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fns-uj-k4g">
                                 <rect key="frame" x="116" y="376" width="85" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="55"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="55"/>
                                 <state key="normal" title="M" backgroundImage="consonantbox2L">
                                     <color key="titleColor" red="0.0" green="0.91764705882352937" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -775,9 +772,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="14" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0j-94-1dk">
-                                <rect key="frame" x="212" y="376" width="85" height="85"/>
+                                <rect key="frame" x="212" y="376" width="86" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="55"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="55"/>
                                 <state key="normal" title="N" backgroundImage="consonantbox2L">
                                     <color key="titleColor" red="0.0" green="0.91764705882352937" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -786,9 +783,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="16" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UgD-5g-2jx">
-                                <rect key="frame" x="308" y="376" width="85" height="85"/>
+                                <rect key="frame" x="308" y="376" width="86" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="55"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="55"/>
                                 <state key="normal" title="P" backgroundImage="consonantbox2L">
                                     <color key="titleColor" red="0.0" green="0.91764705882352937" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -797,9 +794,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="17" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ctx-tt-KXR">
-                                <rect key="frame" x="20" y="481" width="85" height="85"/>
+                                <rect key="frame" x="19" y="481" width="86" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="55"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="55"/>
                                 <state key="normal" title="Q" backgroundImage="consonantbox2L">
                                     <color key="titleColor" red="0.0" green="0.91764705882352937" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -810,7 +807,7 @@
                             <button opaque="NO" alpha="0.94999999999999996" tag="18" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mIE-L3-Fum">
                                 <rect key="frame" x="116" y="481" width="85" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="55"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="55"/>
                                 <state key="normal" title="R" backgroundImage="consonantbox2L">
                                     <color key="titleColor" red="0.0" green="0.91764705882352937" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -819,9 +816,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="19" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9b4-5S-fvC">
-                                <rect key="frame" x="212" y="481" width="85" height="85"/>
+                                <rect key="frame" x="212" y="481" width="86" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="55"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="55"/>
                                 <state key="normal" title="S" backgroundImage="consonantbox2L">
                                     <color key="titleColor" red="0.0" green="0.91764705882352937" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -830,9 +827,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="20" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xRh-VF-OJ5">
-                                <rect key="frame" x="308" y="481" width="85" height="85"/>
+                                <rect key="frame" x="308" y="481" width="86" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="55"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="55"/>
                                 <state key="normal" title="T" backgroundImage="consonantbox2L">
                                     <color key="titleColor" red="0.0" green="0.91764705882352937" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -841,9 +838,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="22" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yh3-S6-5ww">
-                                <rect key="frame" x="15" y="586" width="68" height="85"/>
+                                <rect key="frame" x="16" y="586" width="67" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="55"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="40"/>
                                 <state key="normal" title="V" backgroundImage="consonantbox2S">
                                     <color key="titleColor" red="0.0" green="0.91764705882352937" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -854,7 +851,7 @@
                             <button opaque="NO" alpha="0.94999999999999996" tag="23" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sEC-HB-gKd">
                                 <rect key="frame" x="94" y="586" width="68" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="55"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="40"/>
                                 <state key="normal" title="W" backgroundImage="consonantbox2S">
                                     <color key="titleColor" red="0.0" green="0.91764705882352937" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -863,9 +860,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="24" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wZl-nc-nZX">
-                                <rect key="frame" x="173" y="586" width="68" height="85"/>
+                                <rect key="frame" x="174" y="586" width="66" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="55"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="40"/>
                                 <state key="normal" title="X" backgroundImage="consonantbox2S">
                                     <color key="titleColor" red="0.0" green="0.91764705882352937" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -876,7 +873,7 @@
                             <button opaque="NO" alpha="0.94999999999999996" tag="25" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vsV-54-erg">
                                 <rect key="frame" x="252" y="586" width="68" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="55"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="40"/>
                                 <state key="normal" title="Y" backgroundImage="consonantbox2S">
                                     <color key="titleColor" red="0.0" green="0.91764705882352937" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -885,9 +882,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="26" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czw-r9-JiN">
-                                <rect key="frame" x="331" y="586" width="68" height="85"/>
+                                <rect key="frame" x="331" y="586" width="67" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="55"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="40"/>
                                 <state key="normal" title="Z" backgroundImage="consonantbox2S">
                                     <color key="titleColor" red="0.0" green="0.91764705882352937" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -922,7 +919,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <button opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTI-aI-cpw" userLabel="dismissDoubleLettersPractice">
-                                <rect key="frame" x="20" y="40" width="35" height="35"/>
+                                <rect key="frame" x="19" y="40" width="37" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="backbutton"/>
                                 <connections>
@@ -930,14 +927,14 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DOUBLE LETTERS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="ezE-Gp-fkY">
-                                <rect key="frame" x="47" y="81" width="320" height="50"/>
+                                <rect key="frame" x="46" y="82" width="322" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="33"/>
                                 <color key="textColor" red="1" green="0.90588235289999997" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" alpha="0.94999999999999996" tag="29" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7b-xx-mAk">
-                                <rect key="frame" x="20" y="166" width="85" height="85"/>
+                                <rect key="frame" x="19" y="166" width="86" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="40"/>
                                 <state key="normal" title="ch" backgroundImage="consonantbox2L">
@@ -948,7 +945,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="41" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kd4-J1-eND">
-                                <rect key="frame" x="116" y="166" width="85" height="85"/>
+                                <rect key="frame" x="116" y="166" width="85" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="40"/>
                                 <state key="normal" title="sh" backgroundImage="consonantbox2L">
@@ -959,7 +956,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="43" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qY0-PX-5Ww">
-                                <rect key="frame" x="212" y="166" width="85" height="85"/>
+                                <rect key="frame" x="212" y="166" width="86" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="40"/>
                                 <state key="normal" title="th" backgroundImage="consonantbox2L">
@@ -970,7 +967,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="39" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hA-p3-UDm">
-                                <rect key="frame" x="308" y="166" width="85" height="85"/>
+                                <rect key="frame" x="308" y="166" width="86" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="40"/>
                                 <state key="normal" title="ph" backgroundImage="consonantbox2L">
@@ -981,7 +978,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="34" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vOS-wQ-7yA">
-                                <rect key="frame" x="20" y="376" width="85" height="85"/>
+                                <rect key="frame" x="19" y="376" width="86" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="40"/>
                                 <state key="normal" title="oa" backgroundImage="consonantbox2L">
@@ -1003,7 +1000,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="37" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="toM-Br-jF7">
-                                <rect key="frame" x="212" y="376" width="85" height="85"/>
+                                <rect key="frame" x="212" y="376" width="86" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="40"/>
                                 <state key="normal" title="or" backgroundImage="consonantbox2L">
@@ -1014,7 +1011,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="38" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zWX-2h-BKm">
-                                <rect key="frame" x="308" y="376" width="85" height="85"/>
+                                <rect key="frame" x="308" y="376" width="86" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="40"/>
                                 <state key="normal" title="ou" backgroundImage="consonantbox2L">
@@ -1025,7 +1022,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="27" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EzY-Qa-uEC">
-                                <rect key="frame" x="20" y="586" width="85" height="85"/>
+                                <rect key="frame" x="19" y="586" width="86" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="40"/>
                                 <state key="normal" title="ai" backgroundImage="consonantbox2L">
@@ -1047,7 +1044,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="32" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uHU-U1-lYC">
-                                <rect key="frame" x="212" y="586" width="85" height="85"/>
+                                <rect key="frame" x="212" y="586" width="86" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="40"/>
                                 <state key="normal" title="ie" backgroundImage="consonantbox2L">
@@ -1058,7 +1055,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="44" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="szt-gI-xWe">
-                                <rect key="frame" x="308" y="586" width="85" height="85"/>
+                                <rect key="frame" x="308" y="586" width="86" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="40"/>
                                 <state key="normal" title="ue" backgroundImage="consonantbox2L">
@@ -1069,7 +1066,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="31" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g41-xZ-nPz">
-                                <rect key="frame" x="69" y="271" width="85" height="85"/>
+                                <rect key="frame" x="68" y="271" width="86" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="40"/>
                                 <state key="normal" title="ee" backgroundImage="consonantbox2L">
@@ -1080,7 +1077,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="36" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HSl-cC-v3W">
-                                <rect key="frame" x="165" y="271" width="85" height="85"/>
+                                <rect key="frame" x="165" y="271" width="85" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="40"/>
                                 <state key="normal" title="oo" backgroundImage="consonantbox2L">
@@ -1091,7 +1088,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="42" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MWR-gn-9EO">
-                                <rect key="frame" x="261" y="271" width="85" height="85"/>
+                                <rect key="frame" x="261" y="271" width="85" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="40"/>
                                 <state key="normal" title="ss" backgroundImage="consonantbox2L">
@@ -1102,7 +1099,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="40" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pgN-CM-3hp">
-                                <rect key="frame" x="69" y="481" width="85" height="85"/>
+                                <rect key="frame" x="68" y="481" width="86" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="40"/>
                                 <state key="normal" title="qu" backgroundImage="consonantbox2L">
@@ -1161,7 +1158,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <button opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rx2-YU-OWd" userLabel="dismissPhonicsPractice">
-                                <rect key="frame" x="20" y="40" width="35" height="35"/>
+                                <rect key="frame" x="19" y="40" width="37" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="backbutton"/>
                                 <connections>
@@ -1189,7 +1186,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uoR-ck-dl4" userLabel="DoubleLettersPracticeButton">
-                                <rect key="frame" x="45" y="443" width="150" height="150"/>
+                                <rect key="frame" x="45" y="443" width="150" height="151"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="doublelessonbutton2"/>
                                 <connections>
@@ -1223,7 +1220,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <button opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dJz-XH-cg1" userLabel="dismissReadingPractice">
-                                <rect key="frame" x="20" y="39" width="35" height="35"/>
+                                <rect key="frame" x="19" y="39" width="37" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="backbutton"/>
                                 <connections>
@@ -1231,11 +1228,11 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="readingpractice" translatesAutoresizingMaskIntoConstraints="NO" id="gW0-vz-Wi3" userLabel="ReadingPracticeHeader">
-                                <rect key="frame" x="67" y="103" width="280" height="140"/>
+                                <rect key="frame" x="67" y="102" width="280" height="142"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gay-Im-sRB" userLabel="PhonicsPracticeButton">
-                                <rect key="frame" x="82" y="278" width="250" height="130"/>
+                                <rect key="frame" x="81" y="279" width="252" height="129"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
                                 <state key="normal" backgroundImage="basicreadingbutton2">
@@ -1246,7 +1243,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ts4-44-0PU" userLabel="ReadingPracticeButton">
-                                <rect key="frame" x="82" y="438" width="250" height="130"/>
+                                <rect key="frame" x="81" y="438" width="252" height="130"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
                                 <state key="normal" backgroundImage="advancedreadingbutton2">
@@ -1283,7 +1280,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <button opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YSN-dG-pPw" userLabel="dismissBasicPractice">
-                                <rect key="frame" x="20" y="39" width="35" height="35"/>
+                                <rect key="frame" x="19" y="39" width="37" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="backbutton"/>
                                 <connections>
@@ -1291,7 +1288,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BAG" translatesAutoresizingMaskIntoConstraints="NO" id="QxT-hb-A29" userLabel="BasicPracticeImage">
-                                <rect key="frame" x="157" y="80" width="100" height="100"/>
+                                <rect key="frame" x="156" y="81" width="102" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1nv-1V-Ij7" userLabel="BasicLabelCover">
@@ -1302,14 +1299,14 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BAG" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B7y-jO-ixN" userLabel="BasicPracticeLabel">
-                                <rect key="frame" x="52" y="192" width="311" height="54"/>
+                                <rect key="frame" x="52" y="192" width="311" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="42"/>
                                 <color key="textColor" red="1" green="0.90588235289999997" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" alpha="0.94999999999999996" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K2R-za-1YN" userLabel="BAG-Button">
-                                <rect key="frame" x="20" y="254" width="70" height="70"/>
+                                <rect key="frame" x="19" y="254" width="72" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="b-BAG"/>
                                 <connections>
@@ -1317,7 +1314,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tel-Gc-I7t" userLabel="BAT-Button">
-                                <rect key="frame" x="96" y="254" width="70" height="70"/>
+                                <rect key="frame" x="96" y="254" width="69" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="b-BAT"/>
                                 <connections>
@@ -1333,7 +1330,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJG-9L-xNq" userLabel="BIN-Button">
-                                <rect key="frame" x="248" y="254" width="70" height="70"/>
+                                <rect key="frame" x="249" y="254" width="69" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="b-BIN"/>
                                 <connections>
@@ -1341,7 +1338,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iO5-q8-Oet" userLabel="BOY-Button">
-                                <rect key="frame" x="324" y="254" width="70" height="70"/>
+                                <rect key="frame" x="323" y="254" width="72" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="b-BOY"/>
                                 <connections>
@@ -1349,7 +1346,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="inj-2z-vGQ" userLabel="BUS-Button">
-                                <rect key="frame" x="20" y="332" width="70" height="70"/>
+                                <rect key="frame" x="19" y="332" width="72" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="b-BUS"/>
                                 <connections>
@@ -1357,7 +1354,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9yH-hQ-JOV" userLabel="CAR-Button">
-                                <rect key="frame" x="96" y="332" width="70" height="70"/>
+                                <rect key="frame" x="96" y="332" width="69" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="b-CAR"/>
                                 <connections>
@@ -1373,7 +1370,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UqM-Gd-EC0" userLabel="CUP-Button">
-                                <rect key="frame" x="248" y="332" width="70" height="70"/>
+                                <rect key="frame" x="249" y="332" width="69" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="b-CUP"/>
                                 <connections>
@@ -1381,7 +1378,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iUN-bs-Ebj" userLabel="DOG-Button">
-                                <rect key="frame" x="324" y="332" width="70" height="70"/>
+                                <rect key="frame" x="323" y="332" width="72" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="b-DOG"/>
                                 <connections>
@@ -1389,7 +1386,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8J-fP-wnJ" userLabel="FOX-Button">
-                                <rect key="frame" x="20" y="410" width="70" height="70"/>
+                                <rect key="frame" x="19" y="410" width="72" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="b-FOX"/>
                                 <connections>
@@ -1397,7 +1394,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="22h-wm-dEZ" userLabel="HAT-Button">
-                                <rect key="frame" x="96" y="410" width="70" height="70"/>
+                                <rect key="frame" x="96" y="410" width="69" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="b-HAT"/>
                                 <connections>
@@ -1405,7 +1402,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="13" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="piK-OE-b3U" userLabel="HEN-Button">
-                                <rect key="frame" x="172" y="410" width="70" height="70"/>
+                                <rect key="frame" x="172" y="410" width="70" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="b-HEN"/>
                                 <connections>
@@ -1413,7 +1410,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="14" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qf4-Dk-wOW" userLabel="JAR-Button">
-                                <rect key="frame" x="248" y="410" width="70" height="70"/>
+                                <rect key="frame" x="249" y="410" width="69" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="b-JAR"/>
                                 <connections>
@@ -1421,7 +1418,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="15" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="63N-jR-D5x" userLabel="LOG-Button">
-                                <rect key="frame" x="324" y="410" width="70" height="70"/>
+                                <rect key="frame" x="323" y="410" width="72" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="b-LOG"/>
                                 <connections>
@@ -1429,7 +1426,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="16" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SbN-Y7-zJR" userLabel="MAP-Button">
-                                <rect key="frame" x="20" y="488" width="70" height="70"/>
+                                <rect key="frame" x="19" y="489" width="72" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="b-MAP"/>
                                 <connections>
@@ -1437,7 +1434,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="17" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I3y-EZ-eUH" userLabel="PAN-Button">
-                                <rect key="frame" x="96" y="488" width="70" height="70"/>
+                                <rect key="frame" x="96" y="489" width="69" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="b-PAN"/>
                                 <connections>
@@ -1445,7 +1442,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="18" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rs7-XL-Lcl" userLabel="PEN-Button">
-                                <rect key="frame" x="172" y="488" width="70" height="70"/>
+                                <rect key="frame" x="172" y="489" width="70" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="b-PEN"/>
                                 <connections>
@@ -1453,7 +1450,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="19" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xbu-KG-GKR" userLabel="PIG-Button">
-                                <rect key="frame" x="248" y="488" width="70" height="70"/>
+                                <rect key="frame" x="249" y="489" width="69" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="b-PIG"/>
                                 <connections>
@@ -1461,7 +1458,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="20" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UlH-Hd-kZF" userLabel="RUN-Button">
-                                <rect key="frame" x="324" y="488" width="70" height="70"/>
+                                <rect key="frame" x="323" y="489" width="72" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="b-RUN"/>
                                 <connections>
@@ -1469,7 +1466,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="21" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8D0-lH-ogs" userLabel="SIT-Button">
-                                <rect key="frame" x="20" y="566" width="70" height="70"/>
+                                <rect key="frame" x="19" y="566" width="72" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="b-SIT"/>
                                 <connections>
@@ -1477,7 +1474,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="22" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n9H-uv-lle" userLabel="SUN-Button">
-                                <rect key="frame" x="96" y="566" width="70" height="70"/>
+                                <rect key="frame" x="96" y="566" width="69" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="b-SUN"/>
                                 <connections>
@@ -1493,7 +1490,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="24" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J8Y-uu-WBi" userLabel="VAN-Button">
-                                <rect key="frame" x="248" y="566" width="70" height="70"/>
+                                <rect key="frame" x="249" y="566" width="69" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="b-VAN"/>
                                 <connections>
@@ -1501,7 +1498,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="25" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TDj-Fz-Mts" userLabel="WET-Button">
-                                <rect key="frame" x="324" y="566" width="70" height="70"/>
+                                <rect key="frame" x="323" y="566" width="72" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="b-WET"/>
                                 <connections>
@@ -1539,7 +1536,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <button opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PqX-Ng-SMk" userLabel="dismissAdvancedPractice">
-                                <rect key="frame" x="20" y="39" width="35" height="35"/>
+                                <rect key="frame" x="19" y="39" width="37" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="backbutton"/>
                                 <connections>
@@ -1547,7 +1544,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BOIL" translatesAutoresizingMaskIntoConstraints="NO" id="lZc-cd-PEb" userLabel="AdvancedPracticeImage">
-                                <rect key="frame" x="157" y="80" width="100" height="100"/>
+                                <rect key="frame" x="156" y="81" width="102" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9HC-r3-mQm" userLabel="AdvancedLabelCover">
@@ -1558,14 +1555,14 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BOIL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="34" translatesAutoresizingMaskIntoConstraints="NO" id="Aew-Gw-fnx" userLabel="AdvancedPracticeLabel">
-                                <rect key="frame" x="52" y="192" width="311" height="54"/>
+                                <rect key="frame" x="52" y="192" width="311" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="42"/>
                                 <color key="textColor" red="1" green="0.90588235289999997" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" alpha="0.94999999999999996" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yU8-uI-DJu" userLabel="BOIL-Button">
-                                <rect key="frame" x="20" y="254" width="70" height="70"/>
+                                <rect key="frame" x="19" y="254" width="72" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="b-BOIL"/>
                                 <connections>
@@ -1573,7 +1570,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zcg-Wp-r66" userLabel="CHEESE-Button">
-                                <rect key="frame" x="96" y="254" width="70" height="70"/>
+                                <rect key="frame" x="96" y="254" width="69" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="b-CHEESE"/>
                                 <connections>
@@ -1589,7 +1586,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cp5-Ag-sqj" userLabel="CHURCH-Button">
-                                <rect key="frame" x="248" y="254" width="70" height="70"/>
+                                <rect key="frame" x="249" y="254" width="69" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="b-CHURCH"/>
                                 <connections>
@@ -1597,7 +1594,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nob-Lr-BXq" userLabel="CLOCK-Button">
-                                <rect key="frame" x="324" y="254" width="70" height="70"/>
+                                <rect key="frame" x="323" y="254" width="72" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="b-CLOCK"/>
                                 <connections>
@@ -1605,7 +1602,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8JI-Pv-GCr" userLabel="CORN-Button">
-                                <rect key="frame" x="20" y="332" width="70" height="70"/>
+                                <rect key="frame" x="19" y="332" width="72" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="b-CORN"/>
                                 <connections>
@@ -1613,7 +1610,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KIP-bP-R5g" userLabel="DRESS-Button">
-                                <rect key="frame" x="96" y="332" width="70" height="70"/>
+                                <rect key="frame" x="96" y="332" width="69" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="b-DRESS"/>
                                 <connections>
@@ -1629,7 +1626,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cas-8Y-DVh" userLabel="ELEPHANT-Button">
-                                <rect key="frame" x="248" y="332" width="70" height="70"/>
+                                <rect key="frame" x="249" y="332" width="69" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="b-ELEPHANT"/>
                                 <connections>
@@ -1637,7 +1634,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kbI-Dc-Qno" userLabel="FOOT-Button">
-                                <rect key="frame" x="324" y="332" width="70" height="70"/>
+                                <rect key="frame" x="323" y="332" width="72" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="b-FOOT"/>
                                 <connections>
@@ -1645,7 +1642,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52g-ky-Uq9" userLabel="GOAL-Button">
-                                <rect key="frame" x="20" y="410" width="70" height="70"/>
+                                <rect key="frame" x="19" y="410" width="72" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="b-GOAL"/>
                                 <connections>
@@ -1653,7 +1650,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HJF-VK-lJR" userLabel="HISS-Button">
-                                <rect key="frame" x="96" y="410" width="70" height="70"/>
+                                <rect key="frame" x="96" y="410" width="69" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="b-HISS"/>
                                 <connections>
@@ -1661,7 +1658,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="13" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M3v-2i-ILs" userLabel="MOUTH-Button">
-                                <rect key="frame" x="172" y="410" width="70" height="70"/>
+                                <rect key="frame" x="172" y="410" width="70" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="b-MOUTH"/>
                                 <connections>
@@ -1669,7 +1666,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="14" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="822-wt-RQZ" userLabel="QUEEN-Button">
-                                <rect key="frame" x="248" y="410" width="70" height="70"/>
+                                <rect key="frame" x="249" y="410" width="69" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="b-QUEEN"/>
                                 <connections>
@@ -1677,7 +1674,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="15" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q45-9v-Iru" userLabel="RING-Button">
-                                <rect key="frame" x="324" y="410" width="70" height="70"/>
+                                <rect key="frame" x="323" y="410" width="72" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="b-RING"/>
                                 <connections>
@@ -1685,7 +1682,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="16" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tU0-js-ReS" userLabel="ROOF-Button">
-                                <rect key="frame" x="20" y="488" width="70" height="70"/>
+                                <rect key="frame" x="19" y="489" width="72" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="b-ROOF"/>
                                 <connections>
@@ -1693,7 +1690,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="17" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NDI-Wt-Jqq" userLabel="SEED-Button">
-                                <rect key="frame" x="96" y="488" width="70" height="70"/>
+                                <rect key="frame" x="96" y="489" width="69" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="b-SEED"/>
                                 <connections>
@@ -1701,7 +1698,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="18" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7JL-0E-f3S" userLabel="SHEEP-Button">
-                                <rect key="frame" x="172" y="488" width="70" height="70"/>
+                                <rect key="frame" x="172" y="489" width="70" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="b-SHEEP"/>
                                 <connections>
@@ -1709,7 +1706,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="19" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qaY-MX-krh" userLabel="SHOP-Button">
-                                <rect key="frame" x="248" y="488" width="70" height="70"/>
+                                <rect key="frame" x="249" y="489" width="69" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="b-SHOP"/>
                                 <connections>
@@ -1717,7 +1714,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="20" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L72-BW-Yh7" userLabel="SOAP-Button">
-                                <rect key="frame" x="324" y="488" width="70" height="70"/>
+                                <rect key="frame" x="323" y="489" width="72" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="b-SOAP"/>
                                 <connections>
@@ -1725,7 +1722,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="21" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5px-3C-yvy" userLabel="STAR-Button">
-                                <rect key="frame" x="20" y="566" width="70" height="70"/>
+                                <rect key="frame" x="19" y="566" width="72" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="b-STAR"/>
                                 <connections>
@@ -1733,7 +1730,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="22" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rGM-Rs-Fow" userLabel="TAIL-Button">
-                                <rect key="frame" x="96" y="566" width="70" height="70"/>
+                                <rect key="frame" x="96" y="566" width="69" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="b-TAIL"/>
                                 <connections>
@@ -1749,7 +1746,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="24" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Lm-xJ-TMp" userLabel="TRAIN-Button">
-                                <rect key="frame" x="248" y="566" width="70" height="70"/>
+                                <rect key="frame" x="249" y="566" width="69" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="b-TRAIN"/>
                                 <connections>
@@ -1757,7 +1754,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="25" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6MF-j4-guC" userLabel="TROPHY-Button">
-                                <rect key="frame" x="324" y="566" width="70" height="70"/>
+                                <rect key="frame" x="323" y="566" width="72" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="b-TROPHY"/>
                                 <connections>
@@ -1795,7 +1792,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <button opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lv4-DH-D04" userLabel="dismissAdvancedLesson">
-                                <rect key="frame" x="20" y="39" width="35" height="35"/>
+                                <rect key="frame" x="19" y="39" width="37" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="backbutton"/>
                                 <connections>
@@ -1803,18 +1800,18 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="pnl-ZQ-IfQ" userLabel="AnswerHeader">
-                                <rect key="frame" x="83" y="262" width="249" height="101"/>
+                                <rect key="frame" x="83" y="262" width="250" height="101"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="40"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="TRAIN" translatesAutoresizingMaskIntoConstraints="NO" id="RtL-fr-uFE" userLabel="Image">
-                                <rect key="frame" x="107" y="80" width="200" height="200"/>
+                                <rect key="frame" x="107" y="81" width="200" height="199"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" alpha="0.60000002384185791" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mKb-H2-fRk" userLabel="refreshBasicAudio">
-                                <rect key="frame" x="359" y="40" width="35" height="35"/>
+                                <rect key="frame" x="358" y="40" width="37" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="refreshbutton"/>
                                 <connections>
@@ -1822,7 +1819,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999998807907104" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GNE-4k-ybj" userLabel="LL-Box">
-                                <rect key="frame" x="37" y="575" width="160" height="90"/>
+                                <rect key="frame" x="38" y="575" width="159" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="24"/>
                                 <state key="normal" title="ELEPHANT" backgroundImage="answerbutton">
@@ -1833,7 +1830,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999998807907104" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EUg-6J-FJz" userLabel="LR-Box">
-                                <rect key="frame" x="217" y="575" width="160" height="90"/>
+                                <rect key="frame" x="217" y="575" width="159" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="24"/>
                                 <state key="normal" title="ELEPHANT" backgroundImage="answerbutton">
@@ -1844,7 +1841,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rl8-pK-qrL" userLabel="UL-Box">
-                                <rect key="frame" x="37" y="355" width="160" height="90"/>
+                                <rect key="frame" x="38" y="355" width="159" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="24"/>
                                 <state key="normal" title="ELEPHANT" backgroundImage="answerbutton">
@@ -1855,7 +1852,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PhJ-PO-5ge" userLabel="UR-Box">
-                                <rect key="frame" x="217" y="355" width="160" height="90"/>
+                                <rect key="frame" x="217" y="355" width="159" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="24"/>
                                 <state key="normal" title="ELEPHANT" backgroundImage="answerbutton">
@@ -1866,7 +1863,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OZs-B0-oMu" userLabel="LL-Box">
-                                <rect key="frame" x="37" y="465" width="160" height="90"/>
+                                <rect key="frame" x="38" y="465" width="159" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="24"/>
                                 <state key="normal" title="ELEPHANT" backgroundImage="answerbutton">
@@ -1877,7 +1874,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jai-lJ-zf9" userLabel="LR-Box">
-                                <rect key="frame" x="217" y="465" width="160" height="90"/>
+                                <rect key="frame" x="217" y="465" width="159" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="24"/>
                                 <state key="normal" title="ELEPHANT" backgroundImage="answerbutton">
@@ -1948,9 +1945,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WNd-R7-LHA">
-                                <rect key="frame" x="222" y="166" width="140" height="140"/>
+                                <rect key="frame" x="223" y="166" width="139" height="139"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="75"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="75"/>
                                 <state key="normal" title="B" backgroundImage="vowelanswerbutton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -1959,9 +1956,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YN8-2t-T1X">
-                                <rect key="frame" x="52" y="336" width="140" height="140"/>
+                                <rect key="frame" x="52" y="336" width="139" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="75"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="75"/>
                                 <state key="normal" title="B" backgroundImage="vowelanswerbutton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -1970,9 +1967,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zub-Vn-9Vh">
-                                <rect key="frame" x="222" y="336" width="140" height="140"/>
+                                <rect key="frame" x="223" y="336" width="139" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="75"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="75"/>
                                 <state key="normal" title="B" backgroundImage="vowelanswerbutton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -1981,9 +1978,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6T4-hG-nCO">
-                                <rect key="frame" x="222" y="506" width="140" height="140"/>
+                                <rect key="frame" x="223" y="507" width="139" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="75"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="75"/>
                                 <state key="normal" title="B" backgroundImage="vowelanswerbutton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -1992,9 +1989,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CY4-iB-b91">
-                                <rect key="frame" x="52" y="166" width="140" height="140"/>
+                                <rect key="frame" x="52" y="166" width="139" height="139"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="75"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="75"/>
                                 <state key="normal" title="B" backgroundImage="vowelanswerbutton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -2003,9 +2000,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czm-nk-qRa">
-                                <rect key="frame" x="52" y="506" width="140" height="140"/>
+                                <rect key="frame" x="52" y="507" width="139" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="75"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="75"/>
                                 <state key="normal" title="B" backgroundImage="vowelanswerbutton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -2020,7 +2017,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999998807907104" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CONSONANTS" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="Kdv-i4-0wA">
-                                <rect key="frame" x="88" y="31" width="240" height="54"/>
+                                <rect key="frame" x="88" y="31" width="241" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2079,9 +2076,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" alpha="0.94999999999999996" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D4u-PX-WdI">
-                                <rect key="frame" x="222" y="166" width="140" height="140"/>
+                                <rect key="frame" x="223" y="166" width="139" height="139"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="75"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="75"/>
                                 <state key="normal" title="ph" backgroundImage="vowelanswerbutton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -2090,9 +2087,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xUi-Gb-6pa">
-                                <rect key="frame" x="52" y="336" width="140" height="140"/>
+                                <rect key="frame" x="52" y="336" width="139" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="75"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="75"/>
                                 <state key="normal" title="ph" backgroundImage="vowelanswerbutton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -2101,9 +2098,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U6B-uQ-KRZ">
-                                <rect key="frame" x="222" y="336" width="140" height="140"/>
+                                <rect key="frame" x="223" y="336" width="139" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="75"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="75"/>
                                 <state key="normal" title="ph" backgroundImage="vowelanswerbutton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -2112,9 +2109,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wgt-wH-qLG">
-                                <rect key="frame" x="222" y="506" width="140" height="140"/>
+                                <rect key="frame" x="223" y="507" width="139" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="75"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="75"/>
                                 <state key="normal" title="ph" backgroundImage="vowelanswerbutton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -2123,9 +2120,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ujb-L9-FQ7">
-                                <rect key="frame" x="52" y="166" width="140" height="140"/>
+                                <rect key="frame" x="52" y="166" width="139" height="139"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="75"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="75"/>
                                 <state key="normal" title="ph" backgroundImage="vowelanswerbutton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -2134,9 +2131,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5oV-ff-ooh">
-                                <rect key="frame" x="52" y="506" width="140" height="140"/>
+                                <rect key="frame" x="52" y="507" width="139" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="75"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="75"/>
                                 <state key="normal" title="ph" backgroundImage="vowelanswerbutton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -2145,7 +2142,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999998807907104" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DOUBLE LETTERS" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="3xL-py-7Vb">
-                                <rect key="frame" x="87" y="31" width="240" height="54"/>
+                                <rect key="frame" x="87" y="31" width="240" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2204,9 +2201,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" alpha="0.94999999999999996" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hMy-5F-Z8N">
-                                <rect key="frame" x="222" y="166" width="140" height="140"/>
+                                <rect key="frame" x="223" y="166" width="139" height="139"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="75"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="75"/>
                                 <state key="normal" title="xx" backgroundImage="vowelanswerbutton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -2215,9 +2212,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abD-xa-YZM">
-                                <rect key="frame" x="52" y="336" width="140" height="140"/>
+                                <rect key="frame" x="52" y="336" width="139" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="75"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="75"/>
                                 <state key="normal" title="xx" backgroundImage="vowelanswerbutton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -2226,9 +2223,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iyS-bF-4dn">
-                                <rect key="frame" x="222" y="336" width="140" height="140"/>
+                                <rect key="frame" x="223" y="336" width="139" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="75"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="75"/>
                                 <state key="normal" title="xx" backgroundImage="vowelanswerbutton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -2237,9 +2234,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZVN-fG-Gfz">
-                                <rect key="frame" x="52" y="166" width="140" height="140"/>
+                                <rect key="frame" x="52" y="166" width="139" height="139"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="75"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="75"/>
                                 <state key="normal" title="xx" backgroundImage="vowelanswerbutton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -2248,9 +2245,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRN-Bn-oQG">
-                                <rect key="frame" x="52" y="506" width="140" height="140"/>
+                                <rect key="frame" x="52" y="507" width="139" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="75"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="75"/>
                                 <state key="normal" title="xx" backgroundImage="vowelanswerbutton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -2259,9 +2256,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.94999999999999996" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QKH-NX-Ex8">
-                                <rect key="frame" x="222" y="506" width="140" height="140"/>
+                                <rect key="frame" x="223" y="507" width="139" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GothamRounded-Light" family="Gotham Rounded" pointSize="75"/>
+                                <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="75"/>
                                 <state key="normal" title="xx" backgroundImage="vowelanswerbutton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -2270,7 +2267,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999998807907104" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ALL PHONICS" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="UVy-IC-thp">
-                                <rect key="frame" x="87" y="31" width="240" height="54"/>
+                                <rect key="frame" x="87" y="31" width="240" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

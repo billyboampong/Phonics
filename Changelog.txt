@@ -1,6 +1,4 @@
-Simple Phonics
-Change log 
-
+CHANGELOG
 
 05/04/19 - Version 1.0 released
 
@@ -17,16 +15,28 @@ Change log
 - Audio stops playing on view controller exit
 - Chicken image update and button art layout updated
 
-15/04/19 - Version 1.0.4
+17/04/19 - Version 1.0.4
 - Button mashing prevention (sorry Alex!)
 
 
+xx/xx/xx - Version 1.0.5
 
-Upcoming changes
 
-- Audio sequenced rather than delayed
-- Alternate voice options
+
+UPCOMING CHANGES
+
+- Add lesson mode button
 - Clear font option with global boolean
+- Audio sequenced rather than delayed
 - Logo update
+- K and C avoidance rule
+
+- Alternate voice options
+- Higher quality audio recording
+- Volume levelling
+- Syllable sound-out in reading practice
+
+- Splash screen
 - Add credits
 - App slicing
+- iPhone X and iPad constraints

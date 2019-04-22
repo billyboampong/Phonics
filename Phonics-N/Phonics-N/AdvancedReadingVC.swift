@@ -51,6 +51,23 @@ class AdvancedReadingVC: UIViewController {
             print("Couldn't load audio") }
     }
     
+    func lockButtons() {
+        advancedFace01.isUserInteractionEnabled = false
+        advancedFace02.isUserInteractionEnabled = false
+        advancedFace03.isUserInteractionEnabled = false
+        advancedFace04.isUserInteractionEnabled = false
+        advancedFace05.isUserInteractionEnabled = false
+        advancedFace06.isUserInteractionEnabled = false
+    }
+    func releaseButtons() {
+        advancedFace01.isUserInteractionEnabled = true
+        advancedFace02.isUserInteractionEnabled = true
+        advancedFace03.isUserInteractionEnabled = true
+        advancedFace04.isUserInteractionEnabled = true
+        advancedFace05.isUserInteractionEnabled = true
+        advancedFace06.isUserInteractionEnabled = true
+    }
+    
     
 // Check answer function
     func checkAnswer (sender: UIButton) {
@@ -78,20 +95,9 @@ class AdvancedReadingVC: UIViewController {
         advancedFaces[tag]!.layer.cornerRadius = 5
         advancedFaces[tag]!.layer.borderColor = UIColor(rgb: 0x39ff14).cgColor
         advancedFaces[tag]!.layer.borderWidth = 8.0
-        advancedFaces[0]!.isUserInteractionEnabled = false
-        advancedFaces[1]!.isUserInteractionEnabled = false
-        advancedFaces[2]!.isUserInteractionEnabled = false
-        advancedFaces[3]!.isUserInteractionEnabled = false
-        advancedFaces[4]!.isUserInteractionEnabled = false
-        advancedFaces[5]!.isUserInteractionEnabled = false
+        lockButtons()
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.0, execute: {
             advancedFaces[tag]!.layer.borderWidth = 0
-            advancedFaces[0]!.isUserInteractionEnabled = true
-            advancedFaces[1]!.isUserInteractionEnabled = true
-            advancedFaces[2]!.isUserInteractionEnabled = true
-            advancedFaces[3]!.isUserInteractionEnabled = true
-            advancedFaces[4]!.isUserInteractionEnabled = true
-            advancedFaces[5]!.isUserInteractionEnabled = true
         })
     }
     
@@ -107,22 +113,10 @@ class AdvancedReadingVC: UIViewController {
         advancedFaces[tag]!.layer.cornerRadius = 5
         advancedFaces[tag]!.layer.borderColor = UIColor(rgb: 0xFB2B11).cgColor
         advancedFaces[tag]!.layer.borderWidth = 8.0
-        advancedFaces[0]!.isUserInteractionEnabled = false
-        advancedFaces[1]!.isUserInteractionEnabled = false
-        advancedFaces[2]!.isUserInteractionEnabled = false
-        advancedFaces[3]!.isUserInteractionEnabled = false
-        advancedFaces[4]!.isUserInteractionEnabled = false
-        advancedFaces[5]!.isUserInteractionEnabled = false
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.3, execute: {
-            advancedFaces[0]!.isUserInteractionEnabled = true
-            advancedFaces[1]!.isUserInteractionEnabled = true
-            advancedFaces[2]!.isUserInteractionEnabled = true
-            advancedFaces[3]!.isUserInteractionEnabled = true
-            advancedFaces[4]!.isUserInteractionEnabled = true
-            advancedFaces[5]!.isUserInteractionEnabled = true
-        })
+        lockButtons()
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.3, execute: {
             self.advancedAnswerLabel.text = ""
+            self.releaseButtons()
             advancedFaces[tag]!.layer.borderWidth = 0
         })
     }
@@ -137,14 +131,14 @@ class AdvancedReadingVC: UIViewController {
         
         let possibleArray = [advancedFace01.currentTitle, advancedFace02.currentTitle, advancedFace03.currentTitle, advancedFace04.currentTitle, advancedFace05.currentTitle, advancedFace06.currentTitle]
         
-        let when = DispatchTime.now() + 2.1
+        let when = DispatchTime.now() + 2.2
         DispatchQueue.main.asyncAfter(deadline: when) {
             self.selectedSoundFileName = possibleArray[self.randomAdvancedIndex]!+".mp3"
             self.playAudio()
         }
     }
     
-// Consonant button faces refresh function
+// Advanced button faces refresh function
     func newFaces() {
         let advancedFaces = [advancedFace01, advancedFace02, advancedFace03, advancedFace04, advancedFace05, advancedFace06]
         for (advancedFace, advanced) in zip(advancedFaces, advancedArray.shuffled()) {
@@ -167,6 +161,9 @@ class AdvancedReadingVC: UIViewController {
             self.newQuestion()
             self.newAnswer()
             self.advancedAnswerLabel.text = ""
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.6, execute: {
+            self.releaseButtons()
+        })
     }
     
 // Local VC back button function
@@ -216,9 +213,15 @@ class AdvancedReadingVC: UIViewController {
         advancedFace06.titleLabel?.minimumScaleFactor = 0.5
         advancedFace06.contentEdgeInsets = UIEdgeInsets(top: 7,left: 7,bottom: 7,right: 7)
         
+        lockButtons()
+        
         newFaces()
         newQuestion()
         newAnswer()
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.6, execute: {
+            self.releaseButtons()
+        })
         
     }
     

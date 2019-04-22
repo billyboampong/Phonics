@@ -49,6 +49,23 @@ class ConsonantsVC: UIViewController {
             print("Couldn't load audio") }
     }
     
+    //Button lock-out and release functions
+    func lockButtons() {
+        consonantFace01.isUserInteractionEnabled = false
+        consonantFace02.isUserInteractionEnabled = false
+        consonantFace03.isUserInteractionEnabled = false
+        consonantFace04.isUserInteractionEnabled = false
+        consonantFace05.isUserInteractionEnabled = false
+        consonantFace06.isUserInteractionEnabled = false
+    }
+    func releaseButtons() {
+        consonantFace01.isUserInteractionEnabled = true
+        consonantFace02.isUserInteractionEnabled = true
+        consonantFace03.isUserInteractionEnabled = true
+        consonantFace04.isUserInteractionEnabled = true
+        consonantFace05.isUserInteractionEnabled = true
+        consonantFace06.isUserInteractionEnabled = true
+    }
 
 // Check answer function
     func checkAnswer (sender: UIButton) {
@@ -76,20 +93,9 @@ class ConsonantsVC: UIViewController {
         consonantFaces[tag]!.layer.cornerRadius = 5
         consonantFaces[tag]!.layer.borderColor = UIColor(rgb: 0x39ff14).cgColor
         consonantFaces[tag]!.layer.borderWidth = 8.0
-        consonantFaces[0]!.isUserInteractionEnabled = false
-        consonantFaces[1]!.isUserInteractionEnabled = false
-        consonantFaces[2]!.isUserInteractionEnabled = false
-        consonantFaces[3]!.isUserInteractionEnabled = false
-        consonantFaces[4]!.isUserInteractionEnabled = false
-        consonantFaces[5]!.isUserInteractionEnabled = false
+        lockButtons()
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.0, execute: {
             consonantFaces[tag]!.layer.borderWidth = 0
-            consonantFaces[0]!.isUserInteractionEnabled = true
-            consonantFaces[1]!.isUserInteractionEnabled = true
-            consonantFaces[2]!.isUserInteractionEnabled = true
-            consonantFaces[3]!.isUserInteractionEnabled = true
-            consonantFaces[4]!.isUserInteractionEnabled = true
-            consonantFaces[5]!.isUserInteractionEnabled = true
         })
     }
     
@@ -105,22 +111,10 @@ class ConsonantsVC: UIViewController {
         consonantFaces[tag]!.layer.cornerRadius = 5
         consonantFaces[tag]!.layer.borderColor = UIColor(rgb: 0xFB2B11).cgColor
         consonantFaces[tag]!.layer.borderWidth = 8.0
-        consonantFaces[0]!.isUserInteractionEnabled = false
-        consonantFaces[1]!.isUserInteractionEnabled = false
-        consonantFaces[2]!.isUserInteractionEnabled = false
-        consonantFaces[3]!.isUserInteractionEnabled = false
-        consonantFaces[4]!.isUserInteractionEnabled = false
-        consonantFaces[5]!.isUserInteractionEnabled = false
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.3, execute: {
-            consonantFaces[0]!.isUserInteractionEnabled = true
-            consonantFaces[1]!.isUserInteractionEnabled = true
-            consonantFaces[2]!.isUserInteractionEnabled = true
-            consonantFaces[3]!.isUserInteractionEnabled = true
-            consonantFaces[4]!.isUserInteractionEnabled = true
-            consonantFaces[5]!.isUserInteractionEnabled = true
-        })
+        lockButtons()
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.3, execute: {
             self.consonantAnswerLabel.text = ""
+            self.releaseButtons()
             consonantFaces[tag]!.layer.borderWidth = 0
         })
     }
@@ -164,6 +158,9 @@ class ConsonantsVC: UIViewController {
             self.newQuestion()
             self.newAnswer()
             self.consonantAnswerLabel.text = ""
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.6, execute: {
+            self.releaseButtons()
+        })
     }
     
 // Local VC back button function
@@ -181,9 +178,15 @@ class ConsonantsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        lockButtons()
+        
         newFaces()
         newQuestion()
         newAnswer()
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.6, execute: {
+            self.releaseButtons()
+        })
         
     }
     

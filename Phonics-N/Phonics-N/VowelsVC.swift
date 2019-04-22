@@ -52,6 +52,21 @@ class VowelsVC: UIViewController {
             print("Couldn't load audio") }
     }
     
+//Button lock-out and release functions
+    func lockButtons() {
+        vowelFace01.isUserInteractionEnabled = false
+        vowelFace02.isUserInteractionEnabled = false
+        vowelFace03.isUserInteractionEnabled = false
+        vowelFace04.isUserInteractionEnabled = false
+        vowelFace05.isUserInteractionEnabled = false
+    }
+    func releaseButtons() {
+        vowelFace01.isUserInteractionEnabled = true
+        vowelFace02.isUserInteractionEnabled = true
+        vowelFace03.isUserInteractionEnabled = true
+        vowelFace04.isUserInteractionEnabled = true
+        vowelFace05.isUserInteractionEnabled = true
+    }
     
     // Check answer function
     func checkAnswer (sender: UIButton) {
@@ -80,18 +95,9 @@ class VowelsVC: UIViewController {
         vowelFaces[tag]!.layer.cornerRadius = 5
         vowelFaces[tag]!.layer.borderColor = UIColor(rgb: 0x39ff14).cgColor
         vowelFaces[tag]!.layer.borderWidth = 8.0
-        vowelFaces[0]!.isUserInteractionEnabled = false
-        vowelFaces[1]!.isUserInteractionEnabled = false
-        vowelFaces[2]!.isUserInteractionEnabled = false
-        vowelFaces[3]!.isUserInteractionEnabled = false
-        vowelFaces[4]!.isUserInteractionEnabled = false
+        lockButtons()
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.0, execute: {
             vowelFaces[tag]!.layer.borderWidth = 0
-            vowelFaces[0]!.isUserInteractionEnabled = true
-            vowelFaces[1]!.isUserInteractionEnabled = true
-            vowelFaces[2]!.isUserInteractionEnabled = true
-            vowelFaces[3]!.isUserInteractionEnabled = true
-            vowelFaces[4]!.isUserInteractionEnabled = true
         })
     }
     
@@ -108,20 +114,10 @@ class VowelsVC: UIViewController {
         vowelFaces[tag]!.layer.cornerRadius = 5
         vowelFaces[tag]!.layer.borderColor = UIColor(rgb: 0xFB2B11).cgColor
         vowelFaces[tag]!.layer.borderWidth = 8.0
-        vowelFaces[0]!.isUserInteractionEnabled = false
-        vowelFaces[1]!.isUserInteractionEnabled = false
-        vowelFaces[2]!.isUserInteractionEnabled = false
-        vowelFaces[3]!.isUserInteractionEnabled = false
-        vowelFaces[4]!.isUserInteractionEnabled = false
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.3, execute: {
-            vowelFaces[0]!.isUserInteractionEnabled = true
-            vowelFaces[1]!.isUserInteractionEnabled = true
-            vowelFaces[2]!.isUserInteractionEnabled = true
-            vowelFaces[3]!.isUserInteractionEnabled = true
-            vowelFaces[4]!.isUserInteractionEnabled = true
-        })
+        lockButtons()
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.3, execute: {
             self.vowelAnswerLabel.text = ""
+            self.releaseButtons()
             vowelFaces[tag]!.layer.borderWidth = 0
         })
     }
@@ -158,6 +154,9 @@ class VowelsVC: UIViewController {
             self.newQuestion()
             self.newAnswer()
             self.vowelAnswerLabel.text = ""
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.6, execute: {
+            self.releaseButtons()
+        })
         }
     
 // Local VC back button function
@@ -176,10 +175,15 @@ class VowelsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        lockButtons()
+        
         newQuestion()
         newAnswer()
         newFaces()
-
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.6, execute: {
+            self.releaseButtons()
+        })
     }
     
     

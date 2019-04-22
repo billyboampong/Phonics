@@ -49,6 +49,24 @@ class DoubleLettersVC: UIViewController {
             print("Couldn't load audio") }
     }
     
+    //Button lock-out and release functions
+    func lockButtons() {
+        doubleFace01.isUserInteractionEnabled = false
+        doubleFace02.isUserInteractionEnabled = false
+        doubleFace03.isUserInteractionEnabled = false
+        doubleFace04.isUserInteractionEnabled = false
+        doubleFace05.isUserInteractionEnabled = false
+        doubleFace06.isUserInteractionEnabled = false
+    }
+    func releaseButtons() {
+        doubleFace01.isUserInteractionEnabled = true
+        doubleFace02.isUserInteractionEnabled = true
+        doubleFace03.isUserInteractionEnabled = true
+        doubleFace04.isUserInteractionEnabled = true
+        doubleFace05.isUserInteractionEnabled = true
+        doubleFace06.isUserInteractionEnabled = true
+    }
+    
     
 // Check answer function
     func checkAnswer (sender: UIButton) {
@@ -76,20 +94,9 @@ class DoubleLettersVC: UIViewController {
         doubleFaces[tag]!.layer.cornerRadius = 5
         doubleFaces[tag]!.layer.borderColor = UIColor(rgb: 0x39ff14).cgColor
         doubleFaces[tag]!.layer.borderWidth = 8.0
-        doubleFaces[0]!.isUserInteractionEnabled = false
-        doubleFaces[1]!.isUserInteractionEnabled = false
-        doubleFaces[2]!.isUserInteractionEnabled = false
-        doubleFaces[3]!.isUserInteractionEnabled = false
-        doubleFaces[4]!.isUserInteractionEnabled = false
-        doubleFaces[5]!.isUserInteractionEnabled = false
+        lockButtons()
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.0, execute: {
             doubleFaces[tag]!.layer.borderWidth = 0
-            doubleFaces[0]!.isUserInteractionEnabled = true
-            doubleFaces[1]!.isUserInteractionEnabled = true
-            doubleFaces[2]!.isUserInteractionEnabled = true
-            doubleFaces[3]!.isUserInteractionEnabled = true
-            doubleFaces[4]!.isUserInteractionEnabled = true
-            doubleFaces[5]!.isUserInteractionEnabled = true
         })
     }
     
@@ -105,22 +112,10 @@ class DoubleLettersVC: UIViewController {
         doubleFaces[tag]!.layer.cornerRadius = 5
         doubleFaces[tag]!.layer.borderColor = UIColor(rgb: 0xFB2B11).cgColor
         doubleFaces[tag]!.layer.borderWidth = 8.0
-        doubleFaces[0]!.isUserInteractionEnabled = false
-        doubleFaces[1]!.isUserInteractionEnabled = false
-        doubleFaces[2]!.isUserInteractionEnabled = false
-        doubleFaces[3]!.isUserInteractionEnabled = false
-        doubleFaces[4]!.isUserInteractionEnabled = false
-        doubleFaces[5]!.isUserInteractionEnabled = false
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.3, execute: {
-            doubleFaces[0]!.isUserInteractionEnabled = true
-            doubleFaces[1]!.isUserInteractionEnabled = true
-            doubleFaces[2]!.isUserInteractionEnabled = true
-            doubleFaces[3]!.isUserInteractionEnabled = true
-            doubleFaces[4]!.isUserInteractionEnabled = true
-            doubleFaces[5]!.isUserInteractionEnabled = true
-        })
+        lockButtons()
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.3, execute: {
             self.doubleAnswerLabel.text = ""
+            self.releaseButtons()
             doubleFaces[tag]!.layer.borderWidth = 0
         })
     }
@@ -142,7 +137,7 @@ class DoubleLettersVC: UIViewController {
         }
     }
     
-// Consonant button faces refresh function
+// Double button faces refresh function
     func newFaces() {
         let doubleFaces = [doubleFace01, doubleFace02, doubleFace03, doubleFace04, doubleFace05, doubleFace06]
         for (doubleFace, double) in zip(doubleFaces, doubleArray.shuffled()) {
@@ -151,7 +146,7 @@ class DoubleLettersVC: UIViewController {
     }
     
     
-// Establishes correct answer based on consonant audio played
+// Establishes correct answer based on double audio played
     func newAnswer() {
         let possibleArray = [doubleFace01.currentTitle, doubleFace02.currentTitle, doubleFace03.currentTitle, doubleFace04.currentTitle, doubleFace05.currentTitle, doubleFace06.currentTitle]
         playedDouble = possibleArray[randomDoubleIndex]!
@@ -164,6 +159,9 @@ class DoubleLettersVC: UIViewController {
             self.newQuestion()
             self.newAnswer()
             self.doubleAnswerLabel.text = ""
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.6, execute: {
+            self.releaseButtons()
+        })
     }
     
 // Local VC back button function
@@ -181,9 +179,15 @@ class DoubleLettersVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        lockButtons()
+        
         newFaces()
         newQuestion()
         newAnswer()
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.6, execute: {
+            self.releaseButtons()
+        })
         
     }
     

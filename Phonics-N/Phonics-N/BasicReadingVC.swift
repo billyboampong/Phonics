@@ -52,6 +52,23 @@ class BasicReadingVC: UIViewController {
             print("Couldn't load audio") }
     }
     
+    func lockButtons() {
+        basicFace01.isUserInteractionEnabled = false
+        basicFace02.isUserInteractionEnabled = false
+        basicFace03.isUserInteractionEnabled = false
+        basicFace04.isUserInteractionEnabled = false
+        basicFace05.isUserInteractionEnabled = false
+        basicFace06.isUserInteractionEnabled = false
+    }
+    func releaseButtons() {
+        basicFace01.isUserInteractionEnabled = true
+        basicFace02.isUserInteractionEnabled = true
+        basicFace03.isUserInteractionEnabled = true
+        basicFace04.isUserInteractionEnabled = true
+        basicFace05.isUserInteractionEnabled = true
+        basicFace06.isUserInteractionEnabled = true
+    }
+    
     
 // Check answer function
     func checkAnswer (sender: UIButton) {
@@ -79,20 +96,9 @@ class BasicReadingVC: UIViewController {
         basicFaces[tag]!.layer.cornerRadius = 5
         basicFaces[tag]!.layer.borderColor = UIColor(rgb: 0x39ff14).cgColor
         basicFaces[tag]!.layer.borderWidth = 8.0
-        basicFaces[0]!.isUserInteractionEnabled = false
-        basicFaces[1]!.isUserInteractionEnabled = false
-        basicFaces[2]!.isUserInteractionEnabled = false
-        basicFaces[3]!.isUserInteractionEnabled = false
-        basicFaces[4]!.isUserInteractionEnabled = false
-        basicFaces[5]!.isUserInteractionEnabled = false
+        lockButtons()
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.0, execute: {
             basicFaces[tag]!.layer.borderWidth = 0
-            basicFaces[0]!.isUserInteractionEnabled = true
-            basicFaces[1]!.isUserInteractionEnabled = true
-            basicFaces[2]!.isUserInteractionEnabled = true
-            basicFaces[3]!.isUserInteractionEnabled = true
-            basicFaces[4]!.isUserInteractionEnabled = true
-            basicFaces[5]!.isUserInteractionEnabled = true
         })
     }
     
@@ -108,22 +114,10 @@ class BasicReadingVC: UIViewController {
         basicFaces[tag]!.layer.cornerRadius = 5
         basicFaces[tag]!.layer.borderColor = UIColor(rgb: 0xFB2B11).cgColor
         basicFaces[tag]!.layer.borderWidth = 8.0
-        basicFaces[0]!.isUserInteractionEnabled = false
-        basicFaces[1]!.isUserInteractionEnabled = false
-        basicFaces[2]!.isUserInteractionEnabled = false
-        basicFaces[3]!.isUserInteractionEnabled = false
-        basicFaces[4]!.isUserInteractionEnabled = false
-        basicFaces[5]!.isUserInteractionEnabled = false
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.3, execute: {
-            basicFaces[0]!.isUserInteractionEnabled = true
-            basicFaces[1]!.isUserInteractionEnabled = true
-            basicFaces[2]!.isUserInteractionEnabled = true
-            basicFaces[3]!.isUserInteractionEnabled = true
-            basicFaces[4]!.isUserInteractionEnabled = true
-            basicFaces[5]!.isUserInteractionEnabled = true
-        })
+        lockButtons()
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.3, execute: {
             self.basicAnswerLabel.text = ""
+            self.releaseButtons()
             basicFaces[tag]!.layer.borderWidth = 0
         })
     }
@@ -138,14 +132,14 @@ class BasicReadingVC: UIViewController {
         
         let possibleArray = [basicFace01.currentTitle, basicFace02.currentTitle, basicFace03.currentTitle, basicFace04.currentTitle, basicFace05.currentTitle, basicFace06.currentTitle]
         
-        let when = DispatchTime.now() + 2.1
+        let when = DispatchTime.now() + 2.2
         DispatchQueue.main.asyncAfter(deadline: when) {
             self.selectedSoundFileName = possibleArray[self.randomBasicIndex]!+".mp3"
             self.playAudio()
         }
     }
     
-// Consonant button faces refresh function
+// Basic button faces refresh function
     func newFaces() {
         let basicFaces = [basicFace01, basicFace02, basicFace03, basicFace04, basicFace05, basicFace06]
         for (basicFace, basic) in zip(basicFaces, basicArray.shuffled()) {
@@ -168,6 +162,9 @@ class BasicReadingVC: UIViewController {
             self.newQuestion()
             self.newAnswer()
             self.basicAnswerLabel.text = ""
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.6, execute: {
+            self.releaseButtons()
+        })
     }
     
 // Local VC back button function
@@ -218,10 +215,15 @@ class BasicReadingVC: UIViewController {
         basicFace06.titleLabel?.minimumScaleFactor = 0.5
         basicFace06.contentEdgeInsets = UIEdgeInsets(top: 7,left: 7,bottom: 7,right: 7)
         
+        lockButtons()
         
         newFaces()
         newQuestion()
         newAnswer()
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.6, execute: {
+            self.releaseButtons()
+        })
         
     }
     
