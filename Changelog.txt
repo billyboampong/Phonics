@@ -1,19 +1,25 @@
 CHANGELOG
 
-05/04/19 - Version 1.0 released
+
+05/04/19 - Version 1.0
+- Initial release
+
 
 07/04/19 - Version 1.0.1
 - Additional soundbites for correct/incorrect answers
 - Double letters back button fixed
 - New app icon
 
+
 07/04/19 - Version 1.0.2
 - Syllable hyphen extension removed
+
 
 08/04/19 - Version 1.0.3
 - Repeats word when image is clicked in reading lessons
 - Audio stops playing on view controller exit
 - Chicken image update and button art layout updated
+
 
 17/04/19 - Version 1.0.4
 - Button mashing prevention (sorry Alex!)
@@ -23,12 +29,19 @@ CHANGELOG
 - Lesson mode button added for better UI flow
 
 
+23/04/19 - Version 1.0.6
+- New title and logo
+- C, K and ck avoidance rule implemented for lessons
+- Version number displayed in settings
+- Updated app icon (included iPad icons)
+- Renamed project
+
+
+
 UPCOMING CHANGES
 
 - Clear font option with global boolean
 - Audio sequenced rather than delayed
-- Logo update
-- K and C avoidance rule
 
 - Alternate voice options
 - Higher quality audio recording
